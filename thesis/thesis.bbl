@@ -1,0 +1,34 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Lieberman and Hewitt(1983)}]{LH:83}
+\textsc{Lieberman, H. and Hewitt, C.}, 1983.
+\newblock A real-time garbage collector based on the lifetimes of objects.
+\newblock \emph{Communications of the ACM}, 26, 6  (Jun. 1983), 419--429.
+\newblock \doi{10.1145/358141.358147}.
+
+\bibitem[{Moon(1984)}]{Moon:84}
+\textsc{Moon, D.~A.}, 1984.
+\newblock Garbage collection in a large {LISP} system.
+\newblock In  LFP '84: \emph{Proceedings of the 1984 ACM Symposium on LISP and
+  Functional Programming} (Austin, Texas, USA, Aug. 1984), 235--246. ACM, New
+  York, New York, USA.
+\newblock \doi{10.1145/800055.802040}.
+
+\bibitem[{Ungar(1984)}]{Ungar:84}
+\textsc{Ungar, D.}, 1984.
+\newblock Generation scavenging: A non-disruptive high performance storage
+  reclamation algorithm.
+\newblock In  SDE 1: \emph{Proceedings of the 1st ACM SIGSOFT/SIGPLAN Software
+  Engineering Symposium on Practical Software Development Environments}
+  (Pittsburgh, Pennsylvania, USA, Apr. 1984), 157--167. ACM, New York, New
+  York, USA.
+\newblock \doi{10.1145/800020.808261}.
+
+\end{thebibliography}
