@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  3 SEP 2020 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  15 SEP 2020 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,12 +729,12 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 5.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 12.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 11.
 
-LaTeX Warning: Reference `cha:design' on page 1 undefined on input line 19.
+LaTeX Warning: Reference `cha:design' on page 1 undefined on input line 18.
 
 
-LaTeX Warning: Reference `cha:methodology' on page 1 undefined on input line 19.
+LaTeX Warning: Reference `cha:methodology' on page 1 undefined on input line 18.
 
 ) [1
 
@@ -742,21 +742,6 @@ LaTeX Warning: Reference `cha:methodology' on page 1 undefined on input line 19.
 
 ] [3] [4] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart1.tex
 Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
-
- []
-
-
-Overfull \hbox (6.35507pt too wide) in paragraph at lines 17--23
-\T1/pplx/m/n/10.95 You may ref-er-ence other pa-pers. For ex-am-ple: Gen-er-a-tional garbage col-lec-tion [[][]Lieber-
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -823,12 +808,12 @@ l.1 \chapter
 l.1 \chapter
             {Results}]
 Chapter 6.
-<figs/zerocost_intel.pdf, id=448, 361.35pt x 216.81pt>
+<figs/zerocost_intel.pdf, id=431, 361.35pt x 216.81pt>
 File: figs/zerocost_intel.pdf Graphic file (type pdf)
 <use figs/zerocost_intel.pdf>
 Package pdftex.def Info: figs/zerocost_intel.pdf  used on input line 15.
 (pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-<figs/zerobus_core.pdf, id=449, 361.35pt x 216.81pt>
+<figs/zerobus_core.pdf, id=432, 361.35pt x 216.81pt>
 File: figs/zerobus_core.pdf Graphic file (type pdf)
 <use figs/zerobus_core.pdf>
 Package pdftex.def Info: figs/zerobus_core.pdf  used on input line 16.
@@ -853,6 +838,10 @@ Chapter 7.
 \tf@brf=\write9
 \openout9 = `thesis.brf'.
 
+
+
+Package natbib Warning: Empty `thebibliography' environment on input line 10.
+
 ) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [19
 
 ]
@@ -862,9 +851,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A2D153D4BF1EABD1D3E336AD1E08AA6C;3223.
+(rerunfilecheck)             Checksum: EE9A25811EA6215738443E9156D9A96F;3123.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 2A4B19E768FC944CAC435831D26400EE;209.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -875,18 +864,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
  ) 
 Here is how much of TeX's memory you used:
- 21268 strings out of 492616
- 391376 string characters out of 6129480
- 465265 words of memory out of 5000000
- 24568 multiletter control sequences out of 15000+600000
- 57708 words of font info for 84 fonts, out of 8000000 for 9000
+ 21236 strings out of 492616
+ 390975 string characters out of 6129480
+ 465347 words of memory out of 5000000
+ 24544 multiletter control sequences out of 15000+600000
+ 53323 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,81p,493b,1550s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (35 pages, 185796 bytes).
+ 64i,11n,81p,595b,1550s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (35 pages, 163846 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
- 503 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 487 words of extra memory for PDF output out of 10000 (max. 10000000)
 

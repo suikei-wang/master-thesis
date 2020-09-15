@@ -1,41 +1,36 @@
-\chapter{An Overview of Optimization Methods}
+\chapter{An Overview of Numerical Optimization}
 \label{cha:overviewpart1}
-At the begging of each chapter, please introduce the motivation and high-level
-picture of the chapter. You also have to introduce sections in the
-chapter. \\
-
-
-Section~\ref{sec:relatedwork} yyyy.\\
+In this chapter, we aim to provide readers with an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. As the theoretical background of optimization, this field provides a solid solution for the algorithm. \\
+We then formally define the optimization of constrained problems in Section~\ref{sec:consopt} and describe the solution for these problems based on the gradient. \\
+Next, we discuss briefly the bi-level optimization, which is a parameterized lower-level problem binds variables that appear in the objective of an upper-level problem (Section~\ref{sec:bilevel}). Finally, we give a summary of the numerical optimization in constrained problems in Section~\ref{sec:2summary}.
 
 
 
 
-\section{Numerical Optimization Methods}
-\label{sec:relatedwork}
+\section{Theory of Optimization}
+\label{sec:theory}
+\subsection{Existence of Optimizers}
 
-\subsection{Gradient Descent}
-You may reference other papers. For example:
-Generational garbage collection~\citep{LH:83,Moon:84,Ungar:84} is perhaps the
-single most important advance in garbage collection since the first collectors
-were developed in the early 1960s. (doi: "doi" should just be the doi part, not
-the full URL, and it will be made to link to dx.doi.org and resolve.
-shortname: gives an optional short name for a conference like PLDI '08.)
-\subsection{Newton and Quasi-Newton Methods}
 
-\subsection{Conjugate Gradients}
+\subsection{Optimality Conditions for Unconstrained Problems}
 
-\subsection{Lagrange Multipliers}
+\subsection{Optimality Conditions for Constrained Problems}
 
-\section{Bi-level Optimization}
-\subsection{Linear Bilevel Programming}
-\subsection{Nonlinear Bilevel Programming}
+\subsection{Duality}
+
 
 \section{Constrained Optimization}
-\subsection{Global Optimization}
-\subsection{Local Optimization}
+\label{sec:consopt}
+\subsection{Equality Constrained Optimization}
+\subsection{Inequality Constrained Optimization}
+
+\section{Bi-level Optimization}
+\label{sec:bilevel}
+
 
 
 \section{Summary}
+\label{sec:2summary}
 Summary what you discussed in this chapter, and mention the story in next
 chapter. Readers should roughly understand what your thesis takes about by only reading
 words at the beginning and the end (Summary) of each chapter.
