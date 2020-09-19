@@ -35,6 +35,17 @@
 \usepackage{multirow}
 
 
+\usepackage{amsthm}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{lemma}[thm]{Lemma} % lemma
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+
+
 \renewcommand*{\backref}[1]{}
 \renewcommand*{\backrefalt}[4]{
   \ifcase #1 %
@@ -53,7 +64,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Preamble
 \title{Multiple Constraints and Non-regular Solution in Deep Declarative Network}
-\author{Ruiqi Wang}
+\author{Suikei Wang}
 \date{\today}
 
 \renewcommand{\thepage}{\roman{page}}
@@ -126,6 +137,8 @@
 
 \bibliographystyle{anuthesis}
 \bibliography{thesis}
+
+\input{appendix}
 
 \printindex
 

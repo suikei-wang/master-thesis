@@ -1,8 +1,8 @@
 \chapter{An Overview of Numerical Optimization}
 \label{cha:overviewpart1}
-In this chapter, we aim to provide readers with an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. As the theoretical background of optimization, this field provides a solid solution for the algorithm. \\
-We then formally define the optimization of constrained problems in Section~\ref{sec:consopt} and describe the solution for these problems based on the gradient. \\
-Next, we discuss briefly the bi-level optimization, which is a parameterized lower-level problem binds variables that appear in the objective of an upper-level problem (Section~\ref{sec:bilevel}). Finally, we give a summary of the numerical optimization in constrained problems in Section~\ref{sec:2summary}.
+In this chapter, we aim to provide readers with an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. As the theoretical background of optimization, this field provides a solid solution for the algorithm. 
+\par We then formally define the optimization of unconstrained and constrained problems in Section~\ref{sec:consopt} and describe the general regular solution for these problems based on the gradient calculation. 
+\par Next, we discuss briefly the bi-level optimization, which is a parameterized lower-level problem binds variables that appear in the objective of an upper-level problem (Section~\ref{sec:bilevel}). Finally, we give a summary of the numerical optimization in constrained problems in Section~\ref{sec:2summary}.
 
 
 
@@ -10,6 +10,22 @@ Next, we discuss briefly the bi-level optimization, which is a parameterized low
 \section{Theory of Optimization}
 \label{sec:theory}
 \subsection{Existence of Optimizers}
+In optimization, a basic question is to determine the existence of a global minimizer for a given function $f$. There are several sufficient conditions on $f$ to guarantee the existence, and the optimizer falls in the feasible set of solutions. For such feasible set, some definitions are following: 
+\begin{defn}
+    A subset $\Omega \in \mathbb{R}^n$ is called
+    \begin{itemize}
+        \item \emph{bounded} if there is a constant $R > 0$ such that $\|x\| \leq R$ for all $x \in \Omega$
+        \item \emph{closed} if the limit point of any convergent sequence in $\Omega$ always lies in $\Omega$
+        \item \emph{compact} if any sequence $\left\{x_{k}\right\}$ in $\Omega$ contains a subsequence that converges to a point in $\Omega$
+    \end{itemize}
+\end{defn}
+The following result gives a characterization of compact sets in $\mathbb{R}$. 
+\begin{lemma}[Bolzano-Weierstrass theorem]
+    A subset $\Omega$ in $\mathbb{R}^n$ is \emph{compact} if and only if it is bounded and closed.
+\end{lemma}
+
+
+
 
 
 \subsection{Optimality Conditions for Unconstrained Problems}
@@ -19,8 +35,9 @@ Next, we discuss briefly the bi-level optimization, which is a parameterized low
 \subsection{Duality}
 
 
-\section{Constrained Optimization}
+\section{Unconstrained and Constrained Optimization}
 \label{sec:consopt}
+\subsection{Unconstrained Optimization}
 \subsection{Equality Constrained Optimization}
 \subsection{Inequality Constrained Optimization}
 
