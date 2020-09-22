@@ -60,9 +60,9 @@ The problem we are going to discuss in this part is convex and regular, which me
 
 \subsection{Optimality Conditions for Unconstrained Problems}
 Firstly, we consider the unconstrained minimization problem
-$$
-\min _{\mathbf{x} \in \mathbb{R}^{n}} f(x),
-$$
+\begin{equation}
+    \min _{\mathbf{x} \in \mathbb{R}^{n}} f(x),
+\end{equation}
 where $f$ is given function on $\mathbb{R}^n$. 
 \par In order to determine the minimizer, it is important to understand what can happen at a minimizer, and at what condition a point must be a minimizer. Now we have to recognize the optimum point. There are two necessary conditions and one sufficient condition given below~\citep{JS:06}. The proof is given in Appendix~\ref{appendix:thm28}.
 \begin{thm}{Necessary and Sufficient Conditions.}
@@ -113,15 +113,21 @@ $$
 
 \subsection{Optimality Conditions for Constrained Problems}
 A general formulation for constrained optimization problems is as follows: 
-$$
+\begin{equation}
+\label{equ:2.2}
 \begin{array}{l}\textrm { minimize } f(x) \\ \textrm { subject to }\left\{\begin{array}{ll}c_{i}(x)=0 & \textrm { for } i=1, \cdots, m_{e}, \\ c_{i}(x) \leq 0 & \textrm { for } i=m_{e}+1, \cdots, m\end{array}\right.\end{array}
-$$
+\end{equation}
 where $f$ and $c_i$ are smooth real-valued functions on $\mathbb{R}^n$, and $m_e$ and $m$ are nonnegative integers with $m_e < m$. We set 
 $$
 \mathbb{E}:=\left\{1, \cdots, m_{e}\right\} \quad \textrm { and } \quad \mathbb{I}:=\left\{m_{e}+1, \cdots, m\right\}
 $$
 as index sets of equality constraints and inequality constraints, respectively. Here, $f$ is so-called the objective function, and $c_i, i \in \mathbb{E} \textrm{ and } \mathbb{I}$ are equality constraints and inequality constraints respectively. 
-
+\par To solve the optimization problem (\ref{equ:2.2}), we define the feasible set of it to be
+$$
+\mathbb{F}:=\left\{x \in \mathbb{R}^{n}: c_{i}(x)=0 \textrm { for } i \in \mathbb{E} \textrm { and } c_{i}(x) \leq 0 \textrm { for } i \in \mathbb{I}\right\}
+$$
+Any point $x \in \mathbb{F}$ is called a feasible point of (\ref{equ:2.2}) and we call (\ref{equ:2.2}) infeasible if $\mathbb{F} = 0$. Also, in this feasible set, a feasible point $x^* \in \mathbb{F}$ is called a local minimizer of (\ref{equ:2.2}) if it is the minimum solution in a neighborhood (strict local minimizer if it is the only one minimum solution). The definition of the global minimizer and strict global minimizer are similar, whose neighborhood is the whole feasible set. 
+\par Let us move to the constraints in this problem. For equality constraints, they are strictly equivalent. However, for inequality constraints, there are some exceptions. Let $x^*$ be a local minimizer of (\ref{equ:2.2}). If there is an index $i \in \mathbb{I}$ such that $c_i(x^*) < 0$, then, $x^*$ is still the local minimizer of the problem obtained by deleting $i$-th constraint. In this situation, we say that the $i$-th constraint is inactive at $x^*$ since it does not have any effect on the solution. 
 
 
 
