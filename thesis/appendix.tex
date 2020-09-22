@@ -1,2 +1,99 @@
-\chapter*{Appendix}
+\chapter{Appendix}
+\renewcommand{\thesection}{\Alph{section}}
 \label{appendix}
+\section{Theory of Optimization}
+\subsection{Existence of Optimizers}
+
+\subsubsection{Proof of Theorem~\ref{thm:23}}
+\label{appendix:trm23}
+Let 
+$$
+m:=\inf \{f(x): x \in \Omega\}
+$$
+By the definition of $m$ we may pick a sequence $\left\{x_{k}\right\} \subset \Omega$ with $f\left(x_{k}\right) \rightarrow m$ as $k \rightarrow \infty$. Because $\Omega$ is compact, we can extract a convergent subsequence $\left\{x_{k_j}\right\}$ from $\left\{x_{k}\right\}$. Let $x^{*} \in \Omega$ denote the limit point of $\left\{x_{k_j}\right\}$. Since $f$ is continuous, $f\left(x^{*}\right)=\lim _{j \rightarrow \infty} f\left(x_{k_{j}}\right)=m$. Thus $m$ is finite and $x^{*}$ is a global minimizer of $f$ on $\Omega$. \\
+When $\Omega = \mathbb{R}^n$, we need to impose conditions on f at infinity to guarantee the existence of a global minimizer.
+
+\subsubsection{Proof of Theorem~\ref{thm:24}}
+\label{appendix:trm24}
+Let $m:=\inf \left\{f(x): x \in \mathbb{R}^{n}\right\}$, and take a sequence $\left\{x_{k}\right\}$ such that 
+$$
+f\left(x_{k}\right) \rightarrow m \quad \textrm{as }  k \rightarrow \infty .
+$$
+Since $f$ is coervice, $\left\{x_{k}\right\}$ must be bounded; otherwise it has a subsequence $\left\{x_{k_j}\right\}$ with $\left\|x_{k_{j}}\right\| \rightarrow \infty$ as $j \rightarrow \infty$, and hence $m=\lim _{j \rightarrow \infty} f\left(x_{k_{j}}\right)=+\infty$, a contradition. 
+Thus there is $r > 0$ such that
+$$
+\left\{x_{k}\right\} \subset\left\{x \in \mathbb{R}^{n}:\left\|x_{k}\right\| \leq r\right\}.
+$$
+Because $\left\{x \in \mathbb{R}^{n}:\|x\| \leq r\right\}$ is compact, $\left\{x_{k}\right\}$ has a convergent subsequence $\left\{x_{k_j}\right\}$ with $x_{k_{j}} \rightarrow x^{*}$ as $j \rightarrow \infty$. In view of the continuity of $f$, we have 
+$$
+f\left(x^{*}\right)=\lim _{j \rightarrow \infty} f\left(x_{k_{j}}\right)=m
+$$
+Therefore $m$ is finite and $f$ achieves its minimum on $\mathbb{R}^n$ at $x^{*}$
+
+\subsubsection{Proof of Theorem~\ref{thm:25}}
+\label{appendix:thm25}
+We may assume that $\alpha>f_{*}:=\inf \left\{f(x): x \in \mathbb{R}^{n}\right\}$. Let $\left\{x_{k}\right\}$ be a minimizing sequence for $f$, i.e.
+$$
+f\left(x_{k}\right) \rightarrow f_{*} \quad \textrm { as }  k \rightarrow \infty
+$$
+Then there is an $N$ such that $f(x_k) \leq \alpha$ for all $k \geq N$, that is, $x_k \in D$ for all $k \geq N$. Since $D$ is compact, $\left\{x_{k}\right\}_{k=N}^{\infty}$ has a convergent subsequence $\left\{x_{k_j}\right\}$ with $x_{k_{j}} \rightarrow x_{*} \in D$ as $j \rightarrow \infty$. In view of the lower semi-continuity of $f$, we have
+$$
+f\left(x_{*}\right) \leq \lim _{j \rightarrow \infty} f\left(x_{k_{j}}\right)=f_{*}
+$$
+By the definition of $f_*$ we must have $f(x_{*}) = f_*$. Therefore $f$ achieves its minimum on $\mathbb{R}$ at $x_{*}$.  
+
+\subsection{Optimality Conditions for Unconstrained Problems}
+\subsubsection{Proof of Theorem~\ref{thm28}}
+\label{appendix:thm28}
+(NC1): First recall that for any $v \in \mathbb{R}^n$ there holds
+$$
+v^{T} \nabla f\left(x^{*}\right)=D_{v} f\left(x^{*}\right)=\lim _{t \searrow 0} \frac{f\left(x^{*}+t v\right)-f\left(x^{*}\right)}{t}.
+$$
+Since $x^*$ is a local minimizer, we have
+$$
+f\left(x^{*}+t v\right)-f\left(x^{*}\right) \geq 0 \quad \textrm { for small }|t|.
+$$
+Therefore
+$$
+v^{T} \nabla f\left(x^{*}\right) \geq 0 \quad \textrm { for all } v \in \mathbb{R}^{n}.
+$$
+In particular this implies $(-v)^{T} \nabla f\left(x^{*}\right) \geq 0$ and thus 
+$$
+v^{T} \nabla f\left(x^{*}\right) \leq 0 \quad \textrm { for all } v \in \mathbb{R}^{n}.
+$$
+Therefore $v^{T} \nabla f(x^{*})=0$ for all $v \in \mathbb{R}^{n}$. Taking $v=\nabla f(x^*)$ gives $\|\nabla f(x^*)\|^2 = 0$ which shows that $\nabla f(x^{*})=0$ \\
+(NC2): Recall that for any $v \in \mathbb{R}^n$ and small $t > 0$ there is $0 < s < 1$ such that 
+$$
+f\left(x^{*}+t v\right)=f\left(x^{*}\right)+t v^{T} \nabla f\left(x^{*}\right)+\frac{1}{2} t^{2} v^{T} \nabla^{2} f\left(x^{*}+s t v\right) v.
+$$
+Since $x^*$ is a local minimizer of $f$, we have $f\left(x^{*}+t v\right) \geq f\left(x^{*}\right)$ and $\nabla f(x^{*})=0$ by (NC1). Therefore
+$$
+\frac{1}{2} t^{2} v^{T} \nabla^{2} f\left(x^{*}+s t v\right) v=f\left(x^{*}+t v\right)-f\left(x^{*}\right) \geq 0 .
+$$
+This implies that
+$$
+v^{T} \nabla^{2} f\left(x^{*}+s t v\right) v \geq 0.
+$$
+Taking $t \rightarrow 0$ gives
+$$
+v^{T} \nabla^{2} f\left(x^{*}\right) v \geq 0 \quad \textrm { for all } v \in \mathbb{R}^{n}
+$$ 
+i.e. $\nabla^2 f(x^*)$ is semi-definite.\\
+(SC1): Since $\nabla^2 f(x$ is continuous and $\nabla^2 f(x^*) \geq 0$, we can find $r > 0$ such that
+$$
+B_{r}\left(x^{*}\right) \subset \Omega \quad \textrm { and } \quad \nabla^{2} f(x)>0 \textrm { for all } x \in B_{r}\left(x^{*}\right).
+$$
+By Taylor’s formula we have
+$$
+f(x)=f\left(x^{*}\right)+\nabla f\left(x^{*}\right) \cdot\left(x-x^{*}\right)+\frac{1}{2}\left(x-x^{*}\right)^{T} \nabla^{2} f(\hat{x})\left(x-x^{*}\right)
+$$
+where $\hat{x} := x^* + t(x - x^*)$ for some $0 < t < 1$.
+It is clear that $\hat{x} \in B_{r}\left(x^{*}\right)$ and hence $\nabla^2f(\hat{x}) > 0$ which implies that 
+$$
+\left(x-x^{*}\right)^{T} \nabla^{2} f(\hat{x})\left(x-x^{*}\right)>0 \quad \textrm { for } x \neq x^{*}
+$$
+Consequently
+$$
+f(x)>f\left(x^{*}\right)+\nabla f\left(x^{*}\right) \cdot\left(x-x^{*}\right)
+$$
+for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$. Since $\nabla f(x^*) = 0$, we can obtain $f(x) > f(x^*)$ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$. 

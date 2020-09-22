@@ -1,13 +1,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Function Graph of $f(x, y)=x^{4}-4 x y+y^{4}$}}{8}{figure.2.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{14}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{14}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{14}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{18}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{18}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{18}{figure.5.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{16}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{16}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{16}{figure.6.1}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{20}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{20}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{20}{figure.6.1}% 
+\addvspace {10\p@ }
 \addvspace {10\p@ }
