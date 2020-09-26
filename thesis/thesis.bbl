@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -6,6 +6,11 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bertsekas(2014)}]{BD:14}
+\textsc{Bertsekas, D.~P.}, 2014.
+\newblock \emph{Constrained optimization and Lagrange multiplier methods}.
+\newblock Academic press.
 
 \bibitem[{Nocedal and Wright(2006)}]{JS:06}
 \textsc{Nocedal, J. and Wright, S.}, 2006.

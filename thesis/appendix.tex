@@ -107,3 +107,21 @@ f(x)>f\left(x^{*}\right)+\nabla f\left(x^{*}\right) \cdot\left(x-x^{*}\right)
 $$
 for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$. Since $\nabla f(x^*) = 0$, we can obtain $f(x) > f(x^*)$ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$. 
 \end{proof}
+
+\subsubsection{Proof of Lemma~\ref{lemma:210}}
+\label{appendix:lemma210}
+\begin{proof}
+    For $d \in T_{x^{*}} \mathscr{F}$, we have ${z_k} \subset \mathscr{F}$ and ${t_k}$ such that
+    $$
+    z_{k} \rightarrow x^{*}, \quad 0<t_{k} \rightarrow 0 \quad \textrm { and } \quad \frac{z_{k}-x^{*}}{t_{k}} \rightarrow d
+    $$
+    as $k \rightarrow \infty$. As $f(x^*) \leq f(z_k)$, by Taylor’s formula we have
+    $$
+    \begin{aligned} f\left(x^{*}\right) & \leq f\left(z_{k}\right)=f\left(x^{*}+\left(z_{k}-x^{*}\right)\right) \\ &=f\left(x^{*}\right)+\left(z_{k}-x^{*}\right)^{T} \nabla f\left(x^{*}\right)+\frac{1}{2}\left(z_{k}-x^{*}\right)^{T} \nabla^{2} f\left(\hat{z}_{k}\right)\left(z_{k}-x^{*}\right) \end{aligned}
+    $$
+    where $\hat{z}_{k}$ is a point on the line segment joining $x^*$ and $z_k$. This implies that
+    $$
+    0 \leq\left(\frac{z_{k}-x^{*}}{t_{k}}\right)^{T} \nabla f\left(x^{*}\right)+\frac{1}{2}\left(z_{k}-x^{*}\right)^{T} \nabla^{2} f\left(\hat{z}_{k}\right)\left(\frac{z_{k}-x^{*}}{t_{k}}\right)
+    $$
+    Letting $k \rightarrow \infty$ gives $d^{T} \nabla f\left(x^{*}\right) \geq 0$
+\end{proof}

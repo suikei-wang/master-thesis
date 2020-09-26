@@ -119,19 +119,87 @@ A general formulation for constrained optimization problems is as follows:
 \end{equation}
 where $f$ and $c_i$ are smooth real-valued functions on $\mathbb{R}^n$, and $m_e$ and $m$ are nonnegative integers with $m_e < m$. We set 
 $$
-\mathbb{E}:=\left\{1, \cdots, m_{e}\right\} \quad \textrm { and } \quad \mathbb{I}:=\left\{m_{e}+1, \cdots, m\right\}
+\mathscr{E}:=\left\{1, \cdots, m_{e}\right\} \quad \textrm { and } \quad \mathscr{I}:=\left\{m_{e}+1, \cdots, m\right\}
 $$
-as index sets of equality constraints and inequality constraints, respectively. Here, $f$ is so-called the objective function, and $c_i, i \in \mathbb{E} \textrm{ and } \mathbb{I}$ are equality constraints and inequality constraints respectively. 
+as index sets of equality constraints and inequality constraints, respectively. Here, $f$ is so-called the objective function, and $c_i, i \in \mathscr{E} \textrm{ and } \mathscr{I}$ are equality constraints and inequality constraints respectively. 
 \par To solve the optimization problem (\ref{equ:2.2}), we define the feasible set of it to be
 $$
-\mathbb{F}:=\left\{x \in \mathbb{R}^{n}: c_{i}(x)=0 \textrm { for } i \in \mathbb{E} \textrm { and } c_{i}(x) \leq 0 \textrm { for } i \in \mathbb{I}\right\}
+\mathscr{F}:=\left\{x \in \mathbb{R}^{n}: c_{i}(x)=0 \textrm { for } i \in \mathscr{E} \textrm { and } c_{i}(x) \leq 0 \textrm { for } i \in \mathscr{I}\right\}
 $$
-Any point $x \in \mathbb{F}$ is called a feasible point of (\ref{equ:2.2}) and we call (\ref{equ:2.2}) infeasible if $\mathbb{F} = 0$. Also, in this feasible set, a feasible point $x^* \in \mathbb{F}$ is called a local minimizer of (\ref{equ:2.2}) if it is the minimum solution in a neighborhood (strict local minimizer if it is the only one minimum solution). The definition of the global minimizer and strict global minimizer are similar, whose neighborhood is the whole feasible set. 
-\par Let us move to the constraints in this problem. For equality constraints, they are strictly equivalent. However, for inequality constraints, there are some exceptions. Let $x^*$ be a local minimizer of (\ref{equ:2.2}). If there is an index $i \in \mathbb{I}$ such that $c_i(x^*) < 0$, then, $x^*$ is still the local minimizer of the problem obtained by deleting $i$-th constraint. In this situation, we say that the $i$-th constraint is inactive at $x^*$ since it does not have any effect on the solution. 
+\par Any point $x \in \mathscr{F}$ is called a feasible point of (\ref{equ:2.2}) and we call (\ref{equ:2.2}) infeasible if $\mathscr{F} = 0$. Also, in this feasible set, a feasible point $x^* \in \mathscr{F}$ is called a local minimizer of (\ref{equ:2.2}) if it is the minimum solution in a neighborhood (strict local minimizer if it is the only one minimum solution). The definition of the global minimizer and strict global minimizer is similar, whose neighborhood is the whole feasible set. 
+\par Let us move to the constraints in this problem. For equality constraints, they are strictly equivalent. However, for inequality constraints, there are some exceptions. Let $x^*$ be a local minimizer of (\ref{equ:2.2}). If there is an index $i \in \mathscr{I}$ such that $c_i(x^*) < 0$, then, $x^*$ is still the local minimizer of the problem obtained by deleting $i$-th constraint. In this situation, we say that the $i$-th constraint is inactive at $x^*$ since it does not have any effect on the solution. A general definition of active and inactive inequality constraints is as follows:
+\begin{defn}
+    At a feasible point $x \in \mathscr{F}$, the index $i \in \mathscr{I}$ is said to be \emph{active} if $\mathscr(x) = 0$ and \emph{inactive} if $c_i(x) < 0$.  
+\end{defn}
+\par In the next chapter, we will give different processes for different cases of active or inactive inequality constraints in the deep declarative nodes. In this chapter, we only focus on the necessary and sufficient conditions for a feasible point $x$ to be a local minimizer of (\ref{equ:2.2}). These conditions will be derived by considering the change of $f$ on the feasible set along with certain directions. We give the lemma for the condition of local minimizer $x^* \in \mathscr{F}$ as follows, which can be proved through Taylor’s formula in Appendix~\ref{appendix:lemma210}.
+\begin{lemma}
+    \label{lemma:210}
+    If $x^* \in \mathscr{F}$ is a local minimizer of (\ref{equ:2.2}), then
+    $$
+    d^{T} \nabla f\left(x^{*}\right) \geq 0 \quad \textrm { for all } d \in T_{x^{*}} \mathscr{F}
+    $$
+    where $T_{x^{*}} \mathscr{F}$ is the set of all vectors tangent to $\mathscr{F}$. 
+\end{lemma}
+\par However, we may not be able to extract useful results from this lemma, since $T_{x^{*}} \mathscr{F}$ depends only on the geometry of $\mathscr{F}$ but not on the constraints functions $c_i$. Not all local minimum falls on the boundary of the constraint function, which is a part of $T_{x^{*}} \mathscr{F}$. Therefore, it is necessary to introduce linearized feasible directions to give a characterization of $T_{x^{*}} \mathscr{F}$ in terms of $c_i$. 
+\begin{defn}
+    Given $x \in \mathscr{F}$, we define
+    $$
+    \operatorname{LFD}(x):=\left\{d \in \mathbb{R}^{n}: d^{T} \nabla c_{i}(x)=0 \text { for } i \in \mathscr{E} ; d^{T} \nabla c_{i}(x) \leq 0 \textrm { for } i \in \mathscr{I} \cap \mathscr{A}(x)\right\}
+    $$
+    and call it the set of linearized feasible directions of $\mathscr{F}$ at $x$. 
+\end{defn}
+\par Heuristically, for $i \in \mathscr{E}$ we should travel along directions $d$ with $d^{T} \nabla c_{i}(x)=0$ in order to stay on the curve $c_i(x)=0$; for $i \in \mathscr{I}$ we should travel along directions with $d^{T} \nabla c_{i}(x) \leq 0$ in order to stay in the region $c_i(x) \leq 0$. 
+Let us see an example of the linearized feasible directions and the tangent. Supposed we are considering a set $\mathscr{F}$ with variables $(x,y) \in \mathbb{R}^2$ and three inequality constraints functions: 
+$$
+\begin{aligned}
+    c_1(x,y) &= x-1 \leq 0 \\
+    c_2(x,y) &= -y \leq 0\\
+    c_3(x,y) &= y^2 - x \leq 0
+\end{aligned}
+$$
+\par The active set of $0={0,0)}$ is ${2, 3}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
+$$
+\nabla c_{2}(0)=(0,-1)^{T} \quad \textrm { and } \quad \nabla c_{3}(0)=(-1,0)^{T}
+$$
+\par Then we have the linearized feasible directions on $x=0$: 
+$$
+\begin{aligned} \operatorname{LFD}(0) &=\left\{d \in \mathbb{R}^{2}: d^{T} \nabla c_{2}(0) \leq 0 \text { and } d^{T} \nabla c_{3}(0) \leq 0\right\} \\ &=\left\{d \in \mathbb{R}^{2}: d \geq 0\right\} \end{aligned}
+$$
+which equals to the set of all vectors tangent to the feasible set $T_{0} \mathscr{F}$. 
+Unlike the unconstrained optimization problem, the first order necessary condition of the existence of the optimizer is different since we should consider its linearized feasible directions and constraints feasibility. This is so-called the Karush-Kuhn-Tucker theorem: 
+\begin{thm}[Karush-Kuhn-Tucker Theorem]
+    Let $x^* \in \mathscr{F}$ be a local minimizer of problem (\ref{equ:2.2}). If
+    $$
+    T_{x^*} \mathscr{F} = \operatorname{LFD}(x^*),
+    $$
+    then there exists $\lambda^{*}=\left(\lambda_{1}^{*}, \cdots, \lambda_{m}^{*}\right)^{T} \in \mathbb{R}^{m}$ such that 
+    $$
+    \nabla f\left(x^{*}\right)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i}^{*} \nabla c_{i}\left(x^{*}\right)=0, \quad(\textrm {Lagrangian stationary})
+    $$
+    $$
+    \left.\begin{array}{ll}c_{i}\left(x^{*}\right)=0 & \text { for all } i \in \mathscr{E}, \\ c_{i}\left(x^{*}\right) \leq 0 & \text { for all } i \in \mathscr{I},\end{array}\right\} \quad(\textrm {primal feasibility})
+    $$
+    $$
+    \lambda_{i}^{*} \geq 0 \quad \textrm {for all} i \in \mathscr{I}, \quad (\textrm {dual feasibility})
+    $$
+    $$
+    \lambda_i^*c_i(x^*) = 0 \quad \textrm {for all} i \in \mathscr{E} \cup \mathscr{I}. \quad (\textrm {complementary slackness})
+    $$
+    This set of equations are Karush-Kuhn-Tucker (KKT) conditions and a point $x^*$ is called a KKT point if there exists $\lambda^*$ such that $(x^*, \lambda ^*)$ satisfies the KKT conditions.
+\end{thm}
+\par For constrained optimization problem, the classic solution is using Lagrange multipliers \cite{BD:14}. This introduces the function 
+$$
+\mathscr{L}(x, \lambda):=f(x)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i} c_{i}(x)
+$$
+which is called the Lagrange function. $x$ is the primal variables and $\lambda_i, i=1, \dots, m$ are the Lagrange multipliers or the dual variables. According to the Lagrange multipliers method, we can solve this problem through the gradient of the Lagrange function: 
+$$
+\nabla_{x} \mathscr{L}(x, \lambda)=\nabla f(x)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i} \nabla c_{i}(x)
+$$
+Therefore, the first equation in KKT conditions can be written as
+$$
+\nabla_{x} \mathscr{L}\left(x^{*}, \lambda^{*}\right)=0
+$$
 
-
-
-\subsection{Duality}
 
 
 \section{Unconstrained and Constrained Optimization}
