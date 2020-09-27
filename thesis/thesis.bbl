@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -11,6 +11,14 @@
 \textsc{Bertsekas, D.~P.}, 2014.
 \newblock \emph{Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press.
+
+\bibitem[{Gould et~al.(2016)Gould, Fernando, Cherian, Anderson, Cruz, and
+  Guo}]{SG:16}
+\textsc{Gould, S.; Fernando, B.; Cherian, A.; Anderson, P.; Cruz, R.~S.; and
+  Guo, E.}, 2016.
+\newblock On differentiating parameterized argmin and argmax problems with
+  application to bi-level optimization.
+\newblock \emph{arXiv preprint arXiv:1607.05447},  (2016).
 
 \bibitem[{Nocedal and Wright(2006)}]{JS:06}
 \textsc{Nocedal, J. and Wright, S.}, 2006.

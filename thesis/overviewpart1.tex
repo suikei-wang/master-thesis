@@ -187,7 +187,7 @@ Unlike the unconstrained optimization problem, the first order necessary conditi
     $$
     This set of equations are Karush-Kuhn-Tucker (KKT) conditions and a point $x^*$ is called a KKT point if there exists $\lambda^*$ such that $(x^*, \lambda ^*)$ satisfies the KKT conditions.
 \end{thm}
-\par For constrained optimization problem, the classic solution is using Lagrange multipliers \cite{BD:14}. This introduces the function 
+\par For constrained optimization problem, the classic solution is using Lagrange multipliers \citep{BD:14}. This introduces the function 
 $$
 \mathscr{L}(x, \lambda):=f(x)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i} c_{i}(x)
 $$
@@ -195,16 +195,27 @@ which is called the Lagrange function. $x$ is the primal variables and $\lambda_
 $$
 \nabla_{x} \mathscr{L}(x, \lambda)=\nabla f(x)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i} \nabla c_{i}(x)
 $$
-Therefore, the first equation in KKT conditions can be written as
+\par Therefore, the first equation in KKT conditions can be written as
 $$
 \nabla_{x} \mathscr{L}\left(x^{*}, \lambda^{*}\right)=0
 $$
 
-
-
-\section{Unconstrained and Constrained Optimization}
+\section{Solution of Unconstrained and Constrained Optimization Problems}
 \label{sec:consopt}
+According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimality through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collect both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
+\par In this section, we are going to provide some background for the solution of both unconstrained and constrained optimization problems, which is based on the gradient of the regular point. 
 \subsection{Unconstrained Optimization}
+We consider an objective function $f: \mathbb{R}^{n} \times \mathbb{R}^m \rightarrow \mathbb{R}$:
+$$
+y(x) \in \operatorname{argmin}f(x, y)
+$$ 
+The derivative of $f(x)$ with respect to $x$ is
+$$
+\frac{df(x)}{dx} = -[\frac{\partial^{2} f}{\partial y(x)^{2}}]^{-1}\frac{\partial^{2} f}{\partial x \partial y(x)}
+$$
+which can be proved through differentiating and chain rule. 
+
+
 \subsection{Equality Constrained Optimization}
 \subsection{Inequality Constrained Optimization}
 
