@@ -269,6 +269,14 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
@@ -302,8 +310,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.idx
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
@@ -330,6 +336,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
@@ -474,6 +484,15 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_212.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_212.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_212.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_211.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_211.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_211.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm

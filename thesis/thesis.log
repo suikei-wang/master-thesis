@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  27 SEP 2020 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  29 SEP 2020 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -577,66 +577,93 @@ LaTeX Info: Redefining \] on input line 2845.
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup5
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count144
+\calc@Bcount=\count145
+\calc@Adimen=\dimen193
+\calc@Bdimen=\dimen194
+\calc@Askip=\skip59
+\calc@Bskip=\skip60
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count146
+\calc@Cskip=\skip61
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 )
-\c@thm=\count144
+\AM@pagewidth=\dimen195
+\AM@pageheight=\dimen196
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box50
+\AM@global@opts=\toks48
+\AM@toc@title=\toks49
+\c@AM@survey=\count147
+\AM@templatesizebox=\box51
+)
+\c@thm=\count148
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
-\heavyrulewidth=\dimen193
-\lightrulewidth=\dimen194
-\cmidrulewidth=\dimen195
-\belowrulesep=\dimen196
-\belowbottomsep=\dimen197
-\aboverulesep=\dimen198
-\abovetopsep=\dimen199
-\cmidrulesep=\dimen256
-\cmidrulekern=\dimen257
-\defaultaddspace=\dimen258
-\@cmidla=\count145
-\@cmidlb=\count146
-\@aboverulesep=\dimen259
-\@belowrulesep=\dimen260
-\@thisruleclass=\count147
-\@lastruleclass=\count148
-\@thisrulewidth=\dimen261
+\heavyrulewidth=\dimen197
+\lightrulewidth=\dimen198
+\cmidrulewidth=\dimen199
+\belowrulesep=\dimen256
+\belowbottomsep=\dimen257
+\aboverulesep=\dimen258
+\abovetopsep=\dimen259
+\cmidrulesep=\dimen260
+\cmidrulekern=\dimen261
+\defaultaddspace=\dimen262
+\@cmidla=\count149
+\@cmidlb=\count150
+\@aboverulesep=\dimen263
+\@belowrulesep=\dimen264
+\@thisruleclass=\count151
+\@lastruleclass=\count152
+\@thisrulewidth=\dimen265
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip59
-\subfigcapskip=\skip60
-\subfigcaptopadj=\dimen262
-\subfigbottomskip=\skip61
-\subfigcapmargin=\dimen263
-\subfiglabelskip=\skip62
-\c@subfigure=\count149
-\c@lofdepth=\count150
-\c@subtable=\count151
-\c@lotdepth=\count152
+\subfigtopskip=\skip62
+\subfigcapskip=\skip63
+\subfigcaptopadj=\dimen266
+\subfigbottomskip=\skip64
+\subfigcapmargin=\dimen267
+\subfiglabelskip=\skip65
+\c@subfigure=\count153
+\c@lofdepth=\count154
+\c@subtable=\count155
+\c@lotdepth=\count156
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 (/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip63
-\subfig@bottom=\skip64
+\subfig@top=\skip66
+\subfig@bottom=\skip67
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count153
-\lst@gtempboxa=\box50
-\lst@token=\toks48
-\lst@length=\count154
-\lst@currlwidth=\dimen264
-\lst@column=\count155
-\lst@pos=\count156
-\lst@lostspace=\dimen265
-\lst@width=\dimen266
-\lst@newlines=\count157
-\lst@lineno=\count158
-\lst@maxwidth=\dimen267
+\lst@mode=\count157
+\lst@gtempboxa=\box52
+\lst@token=\toks50
+\lst@length=\count158
+\lst@currlwidth=\dimen268
+\lst@column=\count159
+\lst@pos=\count160
+\lst@lostspace=\dimen269
+\lst@width=\dimen270
+\lst@newlines=\count161
+\lst@lineno=\count162
+\lst@maxwidth=\dimen271
  (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count159
-\lst@skipnumbers=\count160
-\lst@framebox=\box51
+\c@lstnumber=\count163
+\lst@skipnumbers=\count164
+\lst@framebox=\box53
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
@@ -649,10 +676,10 @@ Package: todonotes 2018/11/22
  (/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks49
-\XKV@tempa@toks=\toks50
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count161
+\XKV@depth=\count165
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2019/04/04 v3.1.2 (3.1.2)
@@ -662,20 +689,8 @@ File: tikzlibraryshadows.code.tex 2019/04/04 v3.1.2 (3.1.2)
 File: tikzlibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
  (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2019/04/04 v3.1.2 (3.1.2)
-))) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count162
-\calc@Bcount=\count163
-\calc@Adimen=\dimen268
-\calc@Bdimen=\dimen269
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count164
-\calc@Cskip=\skip67
-)
-\c@@todonotes@numberoftodonotes=\count165
+)))
+\c@@todonotes@numberoftodonotes=\count166
 ))
 \@indexfile=\write4
 \openout4 = `thesis.idx'.
@@ -685,54 +700,54 @@ Writing index file thesis.idx
 (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Try loading font information for T1+pplx on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 77.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplx.fd
 File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box52
-Package backref Info: ** backref set up for natbib ** on input line 75.
-Package hyperref Info: Link coloring OFF on input line 75.
+\AtBeginShipoutBox=\box54
+Package backref Info: ** backref set up for natbib ** on input line 77.
+Package hyperref Info: Link coloring OFF on input line 77.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out)
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
  (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
-\scratchdimen=\dimen270
-\scratchbox=\box53
-\nofMPsegments=\count168
-\nofMParguments=\count169
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count170
-\MPscratchDim=\dimen271
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count168
+\scratchdimen=\dimen272
+\scratchbox=\box55
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count171
+\MPscratchDim=\dimen273
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -750,10 +765,17 @@ Package caption Info: End \AtBeginDocument code.
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
- on input line 75.
+ on input line 77.
 
-\c@lstlisting=\count173
-(/Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+\c@lstlisting=\count174
+ (/Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
@@ -775,15 +797,15 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ack.tex)
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 101.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 101.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 103.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 103.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 101.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 103.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 101.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 103.
  [7
 
 ] [8
@@ -792,7 +814,7 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplx/m/it' tried instead on input line 107.
+(Font)              Font shape `T1/pplx/m/it' tried instead on input line 109.
  [10
 
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.toc
@@ -868,12 +890,41 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 15.
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [5
 
-] [6] [7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+] [6] [7]
+<contour_21.pdf, id=473, page=1, 462.52798pt x 346.89601pt>
+File: contour_21.pdf Graphic file (type pdf)
+<use contour_21.pdf, page 1>
+Package pdftex.def Info: contour_21.pdf , page1 used on input line 103.
+(pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
+<solution_212.pdf, id=474, page=1, 462.52798pt x 346.89601pt>
+File: solution_212.pdf Graphic file (type pdf)
+<use solution_212.pdf, page 1>
+Package pdftex.def Info: solution_212.pdf , page1 used on input line 110.
+(pdftex.def)             Requested size: 205.71342pt x 154.2862pt.
+<solution_211.pdf, id=475, page=1, 462.52798pt x 346.89601pt>
+File: solution_211.pdf Graphic file (type pdf)
+<use solution_211.pdf, page 1>
+Package pdftex.def Info: solution_211.pdf , page1 used on input line 111.
+(pdftex.def)             Requested size: 205.71342pt x 154.2862pt.
+
+Overfull \hbox (8.53589pt too wide) in paragraph at lines 109--113
+ [][] 
+ []
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.113 
-      ] [9] [10] [11]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [12]
+l.119 \par
+           Let us move to the sufficient condition (SC1). The result obtaine... </Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf>] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.137 \par
+           Let us move to the constraints in this problem. For equality cons... </Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_212.pdf> </Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_211.pdf
+
+pdfTeX warning: pdflatex (file /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_211.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [10] [11]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [12]
 Chapter 3.
 ) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/futurepart1.tex [13
 
@@ -934,12 +985,12 @@ l.1 \chapter
 l.1 \chapter
             {Results}]
 Chapter 6.
-<figs/zerocost_intel.pdf, id=567, 361.35pt x 216.81pt>
+<figs/zerocost_intel.pdf, id=645, 361.35pt x 216.81pt>
 File: figs/zerocost_intel.pdf Graphic file (type pdf)
 <use figs/zerocost_intel.pdf>
 Package pdftex.def Info: figs/zerocost_intel.pdf  used on input line 15.
 (pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-<figs/zerobus_core.pdf, id=568, 361.35pt x 216.81pt>
+<figs/zerobus_core.pdf, id=646, 361.35pt x 216.81pt>
 File: figs/zerobus_core.pdf Graphic file (type pdf)
 <use figs/zerobus_core.pdf>
 Package pdftex.def Info: figs/zerobus_core.pdf  used on input line 16.
@@ -972,15 +1023,15 @@ Chapter 7.
 Underfull \vbox (badness 8151) has occurred while \output is active []
 
  [27] [28] [29]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [30]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D17E0C89D634E11910475E94E55B7182;4018.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 36F088A7C38E7FE86D2FA08589377E54;446.
+(rerunfilecheck)             Checksum: DFD25B724B549AF96F11CD83F34A5E51;446.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -988,21 +1039,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 32309 strings out of 492616
- 746124 string characters out of 6129480
- 1249626 words of memory out of 5000000
- 35381 multiletter control sequences out of 15000+600000
+ 32467 strings out of 492616
+ 743315 string characters out of 6129480
+ 1076313 words of memory out of 5000000
+ 35517 multiletter control sequences out of 15000+600000
  72427 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,96p,764b,2218s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,96p,764b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (46 pages, 290512 bytes).
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (46 pages, 311126 bytes).
 PDF statistics:
- 730 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 144 named destinations out of 1000 (max. 500000)
- 559 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 810 PDF objects out of 1000 (max. 8388607)
+ 659 compressed objects within 7 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

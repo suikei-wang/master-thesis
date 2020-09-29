@@ -84,7 +84,7 @@ From the definition of function $f$, it is clear that $f$ is continuous. Then we
 $$
 f(x, y)=\left(x^{4}+y^{4}\right)\left(1-\frac{4 x y}{x^{4}+y^{4}}\right)
 $$
-we can see $f$ is coercive. Also, we give the plotting graph of function $f$ in Figure~\ref{fig:unconseg}. Therefore $f$ has global minimizers which are critical points. Now according to (NC1), we can find the global minimizer through solving the derivative of $f$ equaling to zero:
+we can see $f$ is coercive. Also, we give the contour graph of function $f$ in Figure~\ref{fig:unconseg}. Therefore $f$ has global minimizers which are critical points. Now according to (NC1), we can find the global minimizer through solving the derivative of $f$ equaling to zero:
 $$
 0=\nabla f(x, y)=\left(\begin{array}{c}4 x^{3}-4 y \\ -4 x+4 y^{3}\end{array}\right)
 $$
@@ -96,18 +96,25 @@ $$
 $$
 f(0,0)=0, \quad f(1,1)=-2, \quad f(-1,-1)=-2
 $$
-\par It achieves the same global minimum value on $(1, 1)$ and $(-1, -1)$. Therefore, they are both global minimizers of $f$. 
+\par It achieves the same global minimum value on $(1, 1)$ and $(-1, -1)$. Therefore, they are both global minimizers of $f$. Figure~\ref{fig:example12_solution} shows the function $f(x,y)$ at these two optimal points. 
 \begin{figure}[t]
 \label{fig:unconseg}
 \centering
-\begin{tikzpicture}
-    \centering
-    \begin{axis}
-    \addplot3 [surf,shader=flat,draw=black] {x^4-4*x*y+y^4};
-    \end{axis}
-\end{tikzpicture}
-\caption{Function Graph of $f(x, y)=x^{4}-4 x y+y^{4}$}
+    \includegraphics[page=1,width=.7\textwidth]{contour_21.pdf}
+\caption{Contour Graph of $f(x, y)=x^{4}-4 x y+y^{4}$}
 \end{figure}
+\begin{figure}[t]
+    \label{fig:example12_solution}
+    \centering
+    \begin{tabular}{@{}c@{\hspace{.3cm}}c@{}}
+        \includegraphics[page=1,width=.5\textwidth]{solution_212.pdf} &
+        \includegraphics[page=1,width=.5\textwidth]{solution_211.pdf} 
+    \end{tabular}
+  \caption{Function $f(x,y)$ at $x=-1$ and $x=1$ }
+  
+ \end{figure}
+
+
 \par From this example, we verify that through (NC1), we can find the global minimizer. However, not all continuous functions with critical points have any maximizer or minimizer. If the function goes to infinity along its axes or a line, it does not have any maximizer or minimizer although it has a critical point. The condition of the minimizer as the critical point is that the function $f$ should be a convex function with continuous first partial derivatives.
 \par Let us move to the sufficient condition (SC1). The result obtained under this theorem is best possible for general functions. Specifically, for a convex function $f$ is defined on a convex set $\Omega \subset \mathbb{R}^n$, any local minimizer of f is also a global minimizer. Moreover, if a function $f$ is strictly convex, it has at most one global minimizer. 
 
