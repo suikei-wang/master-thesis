@@ -106,11 +106,8 @@ $$
 \begin{figure}[t]
     \label{fig:example12_solution}
     \centering
-    \begin{tabular}{@{}c@{\hspace{.3cm}}c@{}}
-        \includegraphics[page=1,width=.5\textwidth]{solution_212.pdf} &
-        \includegraphics[page=1,width=.5\textwidth]{solution_211.pdf} 
-    \end{tabular}
-  \caption{Function $f(x,y)$ at $x=-1$ and $x=1$ }
+    \includegraphics[page=1,width=.7\textwidth]{solution_21.pdf} 
+  \caption{Function $f(x,y)$ at $x = 0$, $x=-1$ and $x=1$ }
   
  \end{figure}
 
@@ -164,7 +161,7 @@ $$
     c_3(x,y) &= y^2 - x \leq 0
 \end{aligned}
 $$
-\par The active set of $0={0,0)}$ is ${2, 3}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
+\par The active set of $0=(0,0)$ is $\{2, 3\}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
 $$
 \nabla c_{2}(0)=(0,-1)^{T} \quad \textrm { and } \quad \nabla c_{3}(0)=(-1,0)^{T}
 $$
@@ -221,6 +218,7 @@ $$
 \frac{df(x)}{dx} = -[\frac{\partial^{2} f}{\partial y(x)^{2}}]^{-1}\frac{\partial^{2} f}{\partial x \partial y(x)}
 $$
 which can be proved through differentiating and chain rule. 
+
 
 
 \subsection{Equality Constrained Optimization}
