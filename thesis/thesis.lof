@@ -6,12 +6,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{22}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{24}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{24}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{24}{figure.5.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{24}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{24}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{24}{figure.6.1}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{26}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{26}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{26}{figure.6.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

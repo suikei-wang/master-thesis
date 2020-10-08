@@ -18,39 +18,44 @@
 \BOOKMARK [1][-]{section.2.3}{Bi-level Optimization}{chapter.2}% 18
 \BOOKMARK [1][-]{section.2.4}{Summary}{chapter.2}% 19
 \BOOKMARK [0][-]{chapter.3}{Deep Declarative Network}{part.1}% 20
-\BOOKMARK [1][-]{section.3.1}{Notation}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{An Overview of Deep Declarative Network}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Structure}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.2}{Declarative Nodes}{section.3.2}% 24
-\BOOKMARK [1][-]{section.3.3}{Learning}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.4}{Back-propagation Through Declarative Nodes}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.4.1}{Unconstrained}{section.3.4}% 27
-\BOOKMARK [2][-]{subsection.3.4.2}{Equality Constrained}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.3}{Inequatlity Constrained}{section.3.4}% 29
-\BOOKMARK [1][-]{section.3.5}{Experiments}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.5.1}{Platform}{section.3.5}% 31
-\BOOKMARK [2][-]{subsection.3.5.2}{Implementation Details}{section.3.5}% 32
-\BOOKMARK [2][-]{subsection.3.5.3}{Experimental Results}{section.3.5}% 33
-\BOOKMARK [2][-]{subsection.3.5.4}{Analysis: Is the Gradient Always Converged?}{section.3.5}% 34
-\BOOKMARK [1][-]{section.3.6}{Summary}{chapter.3}% 35
-\BOOKMARK [0][-]{chapter.4}{The Future of Declarative Nodes}{part.1}% 36
-\BOOKMARK [1][-]{section.4.1}{Summary}{chapter.4}% 37
-\BOOKMARK [-1][-]{part.2}{II Deep Declarative Network: Non-regular Solution}{}% 38
-\BOOKMARK [0][-]{chapter.5}{Solution of Deep Declarative Nodes}{part.2}% 39
-\BOOKMARK [1][-]{section.5.1}{Software platform}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Hardware platform}{chapter.5}% 41
-\BOOKMARK [0][-]{chapter.6}{Results}{part.2}% 42
-\BOOKMARK [1][-]{section.6.1}{Direct Cost}{chapter.6}% 43
-\BOOKMARK [1][-]{section.6.2}{Summary}{chapter.6}% 44
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{part.2}% 45
-\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 46
-\BOOKMARK [0][-]{appendix*.8}{Appendix}{part.2}% 47
-\BOOKMARK [1][-]{section.Alph0.1}{An Overview of Numerical Optimization}{appendix*.8}% 48
-\BOOKMARK [2][-]{subsection.Alph0.1.1}{Theory of Optimization}{section.Alph0.1}% 49
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.1}{Proof of Theorem [thm][3][2]2.3}{subsection.Alph0.1.1}% 50
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.2}{Proof of Theorem [thm][4][2]2.4}{subsection.Alph0.1.1}% 51
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.3}{Proof of Theorem [thm][6][2]2.6}{subsection.Alph0.1.1}% 52
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.4}{Proof of Theorem [thm][8][2]2.8}{subsection.Alph0.1.1}% 53
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.5}{Proof of Lemma [thm][10][2]2.10}{subsection.Alph0.1.1}% 54
-\BOOKMARK [2][-]{subsection.Alph0.1.2}{Solution of Unconstrained and Constrained Optimization Problems}{section.Alph0.1}% 55
-\BOOKMARK [3][-]{subsubsection.Alph0.1.2.1}{Proof of Equation [equation][3][2]2.3}{subsection.Alph0.1.2}% 56
+\BOOKMARK [1][-]{section.3.1}{An Overview of Deep Declarative Network}{chapter.3}% 21
+\BOOKMARK [2][-]{subsection.3.1.1}{Structure}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.2}{Declarative Nodes}{section.3.1}% 23
+\BOOKMARK [1][-]{section.3.2}{Learning}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Back-propagation Through Declarative Nodes}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Unconstrained}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Equality Constrained}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{Inequatlity Constrained}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Examples of Declarative Nodes}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.4.1}{Unconstrained}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.2}{Equality Constrained}{section.3.4}% 31
+\BOOKMARK [2][-]{subsection.3.4.3}{Inequatlity Constrained}{section.3.4}% 32
+\BOOKMARK [1][-]{section.3.5}{Summary}{chapter.3}% 33
+\BOOKMARK [0][-]{chapter.4}{The Future of Declarative Nodes}{part.1}% 34
+\BOOKMARK [-1][-]{part.2}{II Deep Declarative Network: Non-regular Solution}{}% 35
+\BOOKMARK [0][-]{chapter.5}{An Overview of Regular and Non-regular Solution}{part.2}% 36
+\BOOKMARK [1][-]{section.5.1}{Problems in Regular Deep Declarative Nodes}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Related Work in Non-regular Solution}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Overdetermined System}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Rand Deficiency}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.3}{Non-convex Problems}{section.5.2}% 41
+\BOOKMARK [0][-]{chapter.6}{Solutions of Non-regular Point}{part.2}% 42
+\BOOKMARK [1][-]{section.6.1}{Overdetermined System}{chapter.6}% 43
+\BOOKMARK [2][-]{subsection.6.1.1}{Least-Squared Method}{section.6.1}% 44
+\BOOKMARK [1][-]{section.6.2}{Conjugate Gradient and Preconditioning}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.3}{Rank Deficiency}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.4}{Non-convex Problems}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 48
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{part.2}% 49
+\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 50
+\BOOKMARK [0][-]{appendix*.8}{Appendix}{part.2}% 51
+\BOOKMARK [1][-]{section.Alph0.1}{An Overview of Numerical Optimization}{appendix*.8}% 52
+\BOOKMARK [2][-]{subsection.Alph0.1.1}{Theory of Optimization}{section.Alph0.1}% 53
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.1}{Proof of Theorem [thm][3][2]2.3}{subsection.Alph0.1.1}% 54
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.2}{Proof of Theorem [thm][4][2]2.4}{subsection.Alph0.1.1}% 55
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.3}{Proof of Theorem [thm][6][2]2.6}{subsection.Alph0.1.1}% 56
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.4}{Proof of Theorem [thm][8][2]2.8}{subsection.Alph0.1.1}% 57
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.5}{Proof of Lemma [thm][10][2]2.10}{subsection.Alph0.1.1}% 58
+\BOOKMARK [2][-]{subsection.Alph0.1.2}{Solution of Unconstrained and Constrained Optimization Problems}{section.Alph0.1}% 59
+\BOOKMARK [3][-]{subsubsection.Alph0.1.2.1}{Proof of Equation [equation][3][2]2.3}{subsection.Alph0.1.2}% 60
+\BOOKMARK [3][-]{subsubsection.Alph0.1.2.2}{Proof of Equation [equation][4][2]2.4}{subsection.Alph0.1.2}% 61

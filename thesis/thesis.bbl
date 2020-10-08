@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -6,6 +6,11 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Amos and Kolter(2017)}]{AB:17}
+\textsc{Amos, B. and Kolter, J.~Z.}, 2017.
+\newblock Optnet: Differentiable optimization as a layer in neural networks.
+\newblock \emph{arXiv preprint arXiv:1703.00443},  (2017).
 
 \bibitem[{Bertsekas(2014)}]{BD:14}
 \textsc{Bertsekas, D.~P.}, 2014.
