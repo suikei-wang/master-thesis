@@ -100,17 +100,15 @@ $$
 \begin{figure}[t]
 \label{fig:unconseg}
 \centering
-    \includegraphics[page=1,width=.7\textwidth]{contour_21.pdf}
+    \includegraphics[page=1,width=.7\columnwidth]{figs/contour_21.pdf}
 \caption{Contour Graph of $f(x, y)=x^{4}-4 x y+y^{4}$}
 \end{figure}
 \begin{figure}[t]
     \label{fig:example12_solution}
     \centering
-    \includegraphics[page=1,width=.7\textwidth]{solution_21.pdf} 
+    \includegraphics[page=1,width=.7\columnwidth]{figs/solution_21.pdf} 
   \caption{Function $f(x,y)$ at $x = 0$, $x=-1$ and $x=1$ }
-  
  \end{figure}
-
 
 \par From this example, we verify that through (NC1), we can find the global minimizer. However, not all continuous functions with critical points have any maximizer or minimizer. If the function goes to infinity along its axes or a line, it does not have any maximizer or minimizer although it has a critical point. The condition of the minimizer as the critical point is that the function $f$ should be a convex function with continuous first partial derivatives.
 \par Let us move to the sufficient condition (SC1). The result obtained under this theorem is best possible for general functions. Specifically, for a convex function $f$ is defined on a convex set $\Omega \subset \mathbb{R}^n$, any local minimizer of f is also a global minimizer. Moreover, if a function $f$ is strictly convex, it has at most one global minimizer. 
@@ -161,7 +159,14 @@ $$
     c_3(x,y) &= y^2 - x \leq 0
 \end{aligned}
 $$
-\par The active set of $0=(0,0)$ is $\{2, 3\}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
+\begin{figure}[t]
+    \label{fig:example22_set}
+    \centering
+    \includegraphics[page=1,width=.7\textwidth]{figs/solution_22.pdf} 
+  \caption{Feasible set of constraints $c_1$, $c_2$ and $c_3$}
+ \end{figure}
+
+\par We can illustrate the feasible set of constriants $c_1$, $c_2$ and $c_3$ in Fig~\ref{fig:example22_set}. The active set of $0=(0,0)$ is $\{2, 3\}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
 $$
 \nabla c_{2}(0)=(0,-1)^{T} \quad \textrm { and } \quad \nabla c_{3}(0)=(-1,0)^{T}
 $$
@@ -209,19 +214,51 @@ $$
 According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimality through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collect both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
 \par In this section, we are going to provide some background for the solution of both unconstrained and constrained optimization problems, which is based on the gradient of the regular point. 
 \subsection{Unconstrained Optimization}
-We consider an objective function $f: \mathbb{R}^{n} \times \mathbb{R}^m \rightarrow \mathbb{R}$:
+For unconstrained optimization problems, the solution is easy to obtain since we only need to focus on the optimality of the objective function. We consider an objective function $f: \mathbb{R}^{n} \times \mathbb{R}^m \rightarrow \mathbb{R}$:
 $$
 y(x) \in \operatorname{argmin}f(x, y)
 $$ 
-The derivative of $f(x)$ with respect to $x$ is
+The derivative of $y(x)$ with respect to $x$ is
+\begin{equation}
+\label{equ:2.3}
+\frac{dy(x)}{dx} = -[\frac{\partial^{2} f}{\partial y(x)^{2}}]^{-1}\frac{\partial^{2} f}{\partial x \partial y(x)}
+\end{equation}
+which can be proved through differentiating and chain rule.~[\ref{appendix:equ2.3}]
+\par A very classic example of the unconstrained minimization problem based on a closed convex nonempty set is the L2 norm $\|\cdot\|_2$. Let $\Omega \in \mathbb{R}^n$ be a closed convex nonempty set. For any $x \in \mathbb{R}^{n}$, the minimization problem is defined as follows:
 $$
-\frac{df(x)}{dx} = -[\frac{\partial^{2} f}{\partial y(x)^{2}}]^{-1}\frac{\partial^{2} f}{\partial x \partial y(x)}
+\min _{y \in \Omega}\|y-x\|_2^{2}
 $$
-which can be proved through differentiating and chain rule. 
+This problem has a unique minimizer, which can be denoted by $P_\Omega(x)$, the Euclidean projection of $x$ onto $\Omega$. 
+\begin{proof}
+    Let $m:=\inf _{y \in \Omega}\|y-x\|_2^{2}$. Since $\Omega \neq \emptyset$, we have $0 \leq m < \infty$. Let $\{y_k\} \subset \Omega$ be a minimizing sequence such that $\left\|y_{k}-x\right\|_2^{2} \rightarrow m$ as $k \rightarrow \infty$. Thus $\left\|y_{k}-x\right\|_2^{2} \leq m+1$ for large $k$ which implies that $\left\|y_{k}\right\|_2 \leq\|x\|_2+\sqrt{m+1}$ for large $k$. Therefore $\{y_k\}$ is a bounded sequence. Consequently $\{y_k\}$ has a convegent subsequence  $\{y_{k_{l}}\}$ with limit $y^*$. Since $\Omega$ is closed, we have $y^* \in \Omega$, Thus
+    $$
+    m=\lim _{l \rightarrow \infty}\left\|y_{k_{l}}-x\right\|_2^{2}=\left\|y^{*}-x\right\|_2^{2}
+    $$
+    which means that $m$ is achieved at $y^*$, i.e. the given minimization problem has a solution. 
+    \par Next we show that the given minimization problem has a unique solution by contradiction. If the solution is not unique, let $y_0$ and $y_1$ be two distinct solutions. Then for $0 < t < 1$ we set $y_{t}=t y_{1}+(1-t) y_{1}$. Since $\Omega$ is convex, we have $y_t \in \Omega$. Thus
+    $$
+    \begin{aligned}
+        \left\|y_{0}-x\right\|_2^{2}=&\left\|y_{1}-x\right\|_2^{2} \leq\left\|y_{t}-x\right\|_2^{2}=\left\|t\left(y_{1}-x\right)+(1-t)\left(y_{0}-x\right)\right\|_2^{2} \\
+        =& t^{2}\left\|y_{1}-x\right\|_2^{2}+(1-t)^{2}\left\|y_{0}-x\right\|_2^{2}+2 t(1-t)\left\langle y_{1}-x, y_{0}-x\right\rangle \\
+        =& t\left\|y_{1}-x\right\|_2^{2}+(1-t)\left\|y_{0}-x\right\|_2^{2}-\left(t-t^{2}\right)\left\|y_{1}-x\right\|_2^{2} \\ 
+        &-\left(1-t-(1-t)^{2}\right)\left\|y_{0}-x\right\|_2^{2}+2 t(1-t)\left\langle y_{1}-x, y_{0}-x\right\rangle \\
+        =& t\left\|y_{1}-x\right\|_2^{2}+(1-t)\left\|y_{0}-x\right\|_2^{2} \\ 
+        &-t(1-t)\left(\left\|y_{1}-x\right\|_2^{2}+\left\|y_{0}-x\right\|_2^{2}-2\left\langle y_{1}-x, y_{0}-x\right\rangle\right) \\
+        =&\left\|y_{0}-x\right\|_2^{2}-t(1-t)\left\|y_{1}-y_{0}\right\|_2^{2} 
+    \end{aligned}
+    $$
+    where $\langle\cdot, \cdot\rangle$ denotes the inner product on $\mathbb{R}^n$. Therefore $t(1-t)\left\|y_{1}-y_{0}\right\|_2^{2} \leq 0$ for $0 < t < 1$ and thus $\left\|y_{1}-y_{0}\right\|_2^{2} \leq 0$. So $y_1 = y_0$ 
+    which is a contradiction. 
+    \par Overall, the minimization problem defined above has a unique minimizer. 
+\end{proof}
+There are many different methods to solve the unconstrained optimization problem since generally, we treat this kind of problem as basic one. There are two most classical methods, Newton method~\citep{NT:36} and the Method of Steepest Descent~\citep{DP:09}. The former one, Newton method starts from an initial guess $x_0$ and defines a sequence $\{x_k\}$
+iteratively according to some rule. It uses the tangent line of the objective function $f$ at $x_k$ to replace $f$ and uses the root of $L(x) = 0$, where $L(x)$ is the updated $f(x)$ as the next iterate $x_{k+1}$. Finally, the iteration is terminted as long as the difference between $x_k$ and $x_{k+1}$ less than a preassigned small number. The later one, steepest descent is a basic gradient method, which decreases the value of the objective function in a direction of most rapid change. The change rate of a function $f$ at $x$ in the direction $u$, a unit vector in $\mathbb{R}$ is determined by the directional derivative. Therefore, at $x$ the value of $f$ decrease fastest in the direction $u=-\nabla f(x)/\|\nabla f(x)\|$, which leads to the gradient method: we update the $x$ through the direction: $x_{k+1}=x_{k}-\alpha_{k} \nabla f\left(x_{k}\right)$ for $k = 0, 1, \dots$, where $\alpha_{k}$ is the step length. 
 
 
 
 \subsection{Equality Constrained Optimization}
+
+
 \subsection{Inequality Constrained Optimization}
 
 \section{Bi-level Optimization}

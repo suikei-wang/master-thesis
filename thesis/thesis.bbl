@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{6}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -12,6 +12,12 @@
 \newblock \emph{Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press.
 
+\bibitem[{Debye(1909)}]{DP:09}
+\textsc{Debye, P.}, 1909.
+\newblock N{\"a}herungsformeln f{\"u}r die zylinderfunktionen f{\"u}r gro{\ss}e
+  werte des arguments und unbeschr{\"a}nkt ver{\"a}nderliche werte des index.
+\newblock \emph{Mathematische Annalen}, 67, 4  (1909), 535--558.
+
 \bibitem[{Gould et~al.(2016)Gould, Fernando, Cherian, Anderson, Cruz, and
   Guo}]{SG:16}
 \textsc{Gould, S.; Fernando, B.; Cherian, A.; Anderson, P.; Cruz, R.~S.; and
@@ -19,6 +25,13 @@
 \newblock On differentiating parameterized argmin and argmax problems with
   application to bi-level optimization.
 \newblock \emph{arXiv preprint arXiv:1607.05447},  (2016).
+
+\bibitem[{Newton and Colson(1736)}]{NT:36}
+\textsc{Newton, I. and Colson, J.}, 1736.
+\newblock \emph{The Method of Fluxions and Infinite Series; with Its
+  Application to the Geometry of Curve-lines... Translated from the Author's
+  Latin Original Not Yet Made Publick. To which is Subjoin'd a Perpetual
+  Comment Upon the Whole Work... by J. Colson}.
 
 \bibitem[{Nocedal and Wright(2006)}]{JS:06}
 \textsc{Nocedal, J. and Wright, S.}, 2006.

@@ -1,8 +1,8 @@
 \chapter{Appendix}
 \renewcommand{\thesection}{\Alph{section}}
 \label{appendix}
-\section{Theory of Optimization}
-\subsection{Existence of Optimizers}
+\section{An Overview of Numerical Optimization}
+\subsection{Theory of Optimization}
 
 \subsubsection{Proof of Theorem~\ref{thm:23}}
 \label{appendix:trm23}
@@ -46,7 +46,6 @@ f\left(x_{*}\right) \leq \lim _{j \rightarrow \infty} f\left(x_{k_{j}}\right)=f_
 $$
 By the definition of $f_*$ we must have $f(x_{*}) = f_*$. Therefore $f$ achieves its minimum on $\mathbb{R}$ at $x_{*}$.  
 \end{proof}
-\subsection{Optimality Conditions for Unconstrained Problems}
 \subsubsection{Proof of Theorem~\ref{thm28}}
 \label{appendix:thm28}
 \begin{proof}
@@ -124,4 +123,25 @@ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$. Since $\nabla f(x^*) 
     0 \leq\left(\frac{z_{k}-x^{*}}{t_{k}}\right)^{T} \nabla f\left(x^{*}\right)+\frac{1}{2}\left(z_{k}-x^{*}\right)^{T} \nabla^{2} f\left(\hat{z}_{k}\right)\left(\frac{z_{k}-x^{*}}{t_{k}}\right)
     $$
     Letting $k \rightarrow \infty$ gives $d^{T} \nabla f\left(x^{*}\right) \geq 0$
+\end{proof}
+
+\subsection{Solution of Unconstrained and Constrained Optimization Problems}
+\subsubsection{Proof of Equation~\ref{equ:2.3}}
+\label{appendix:equ2.3}
+\begin{proof}
+    Firstly, for any optimal $y$, according to the first-order optimality condition, we have
+    $$
+    \frac{df(x, y)}{dy} = \boldsymbol{0} \in \mathbb{R}^{1 \times m}
+    $$
+    Then from the implicit function theorem, rearranging and differentiating both sides we have
+    $$
+    \begin{aligned}
+        \operatorname{D}(\frac{df(x, y)}{dy})^T &= \boldsymbol{0} \in \mathbb{R}^{m \times n} \\
+        &= \frac{\partial^{2}}{\partial x \partial y}f(x,y) + \frac{\partial^2}{\partial y^2}f(x, y) \frac{dy(x)}{dx}
+    \end{aligned}
+    $$
+    $$ \frac{dy(x)}{dx} = -[(\frac{\partial^2}{\partial y^2})f(x,y)]^{-1} (\frac{\partial^2}{\partial x \partial y})f(x, y)$$
+    
+    
+
 \end{proof}

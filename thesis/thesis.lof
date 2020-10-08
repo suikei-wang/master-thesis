@@ -2,15 +2,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Contour Graph of $f(x, y)=x^{4}-4 x y+y^{4}$}}{8}{figure.2.1}% 
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Function $f(x,y)$ at $x = 0$, $x=-1$ and $x=1$ }}{9}{figure.2.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Feasible set of constraints $c_1$, $c_2$ and $c_3$}}{11}{figure.2.3}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{20}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{20}{figure.5.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{20}{figure.5.1}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{22}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{22}{figure.5.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{22}{figure.5.1}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{22}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{22}{figure.6.1}% 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{22}{figure.6.1}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The cost of zero initialization}}{24}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fraction of cycles spent on zeroing}}}{24}{figure.6.1}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {BytesZeroed / BytesBurstTransactionsTransferred}}}{24}{figure.6.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

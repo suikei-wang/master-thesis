@@ -484,12 +484,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -498,8 +498,13 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/futurepart1.tex
@@ -544,10 +549,18 @@ INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplrc9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out

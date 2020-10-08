@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  29 SEP 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  8 OCT 2020 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -891,37 +891,51 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [5
 
 ] [6] [7]
-<contour_21.pdf, id=473, page=1, 462.52798pt x 346.89601pt>
-File: contour_21.pdf Graphic file (type pdf)
-<use contour_21.pdf, page 1>
-Package pdftex.def Info: contour_21.pdf , page1 used on input line 103.
+<figs/contour_21.pdf, id=483, page=1, 462.52798pt x 346.89601pt>
+File: figs/contour_21.pdf Graphic file (type pdf)
+<use figs/contour_21.pdf, page 1>
+Package pdftex.def Info: figs/contour_21.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-<solution_21.pdf, id=474, page=1, 462.52798pt x 346.89601pt>
-File: solution_21.pdf Graphic file (type pdf)
-<use solution_21.pdf, page 1>
-Package pdftex.def Info: solution_21.pdf , page1 used on input line 109.
+<figs/solution_21.pdf, id=484, page=1, 462.52798pt x 346.89601pt>
+File: figs/solution_21.pdf Graphic file (type pdf)
+<use figs/solution_21.pdf, page 1>
+Package pdftex.def Info: figs/solution_21.pdf , page1 used on input line 109.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.116 \par
-           Let us move to the sufficient condition (SC1). The result obtaine... </Users/sukays/Desktop/Research Project/master-thesis/thesis/contour_21.pdf>] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+l.114 \par
+           Let us move to the sufficient condition (SC1). The result obtaine... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf>] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.134 \par
-           Let us move to the constraints in this problem. For equality cons... </Users/sukays/Desktop/Research Project/master-thesis/thesis/solution_21.pdf>] [10] [11]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [12]
-Chapter 3.
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/futurepart1.tex [13
+l.132 \par
+           Let us move to the constraints in this problem. For equality cons... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [10]
+<figs/solution_22.pdf, id=561, page=1, 462.52798pt x 346.89601pt>
+File: figs/solution_22.pdf Graphic file (type pdf)
+<use figs/solution_22.pdf, page 1>
+Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 165.
+(pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 
-] [14
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.187     $$
+             </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf>]
+Underfull \vbox (badness 3219) has occurred while \output is active []
+
+ [12] [13]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [14]
+Chapter 3.
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/futurepart1.tex [15
+
+] [16
 
 ]
 Chapter 4.
-) [15] [16
+) [17] [18
 
-] [17] [18] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
+] [19] [20] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
 Chapter 5.
 (/Users/sukays/Desktop/Research Project/master-thesis/thesis/table/machines.tex
 LaTeX Font Info:    Try loading font information for T1+uop on input line 4.
@@ -958,33 +972,33 @@ Overfull \hbox (3.18645pt too wide) in paragraph at lines 27--32
  [][] 
  []
 
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [19
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [21
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.1 \chapter
-            {Results}] [20pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
+            {Results}] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.1 \chapter
             {Results}]
 Chapter 6.
-<figs/zerocost_intel.pdf, id=622, 361.35pt x 216.81pt>
+<figs/zerocost_intel.pdf, id=670, 361.35pt x 216.81pt>
 File: figs/zerocost_intel.pdf Graphic file (type pdf)
 <use figs/zerocost_intel.pdf>
 Package pdftex.def Info: figs/zerocost_intel.pdf  used on input line 15.
 (pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-<figs/zerobus_core.pdf, id=623, 361.35pt x 216.81pt>
+<figs/zerobus_core.pdf, id=671, 361.35pt x 216.81pt>
 File: figs/zerobus_core.pdf Graphic file (type pdf)
 <use figs/zerobus_core.pdf>
 Package pdftex.def Info: figs/zerobus_core.pdf  used on input line 16.
 (pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [21
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [23
 
-] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
+] [24pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -994,31 +1008,34 @@ l.1 \chapter
 pdfTeX warning: pdflatex (file /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/zerobus_core.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Chapter 7.
-) [23
+) [25
 
-] [24
+] [26
 
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
 \tf@brf=\write9
 \openout9 = `thesis.brf'.
 
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [25
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [27
 
-] [26
+] [28
 
 ]
 Underfull \vbox (badness 8151) has occurred while \output is active []
 
- [27] [28] [29]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [30]
+ [29] [30]
+Underfull \vbox (badness 5133) has occurred while \output is active []
+
+ [31]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [32]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D17E0C89D634E11910475E94E55B7182;4018.
+(rerunfilecheck)             Checksum: 56E48667B26885745D452CCCB9BBF149;4156.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: DFD25B724B549AF96F11CD83F34A5E51;446.
+(rerunfilecheck)             Checksum: 780BCE7B83BD5065AE0D2820136412C9;580.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1029,18 +1046,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 32462 strings out of 492616
- 743178 string characters out of 6129480
+ 32506 strings out of 492616
+ 743851 string characters out of 6129480
  1076313 words of memory out of 5000000
- 35513 multiletter control sequences out of 15000+600000
- 72427 words of font info for 117 fonts, out of 8000000 for 9000
+ 35546 multiletter control sequences out of 15000+600000
+ 76297 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,96p,764b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,96p,1026b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (46 pages, 305756 bytes).
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (48 pages, 323630 bytes).
 PDF statistics:
- 787 PDF objects out of 1000 (max. 8388607)
- 654 compressed objects within 7 object streams
- 145 named destinations out of 1000 (max. 500000)
- 569 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 838 PDF objects out of 1000 (max. 8388607)
+ 692 compressed objects within 7 object streams
+ 152 named destinations out of 1000 (max. 500000)
+ 582 words of extra memory for PDF output out of 10000 (max. 10000000)
 
