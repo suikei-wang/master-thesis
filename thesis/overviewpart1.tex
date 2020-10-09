@@ -257,7 +257,7 @@ iteratively according to some rule. It uses the tangent line of the objective fu
 
 
 \subsection{Equality Constrained Optimization}
-Constrained problems are usually more complicated since the solution is restricted on a boundary or in a feasible region. For equality constraints, the basic case is the linear equality constraints $A \boldsymbol{y} = \boldsymbol{b}$. Again, we consider an objective function $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$. Let $A \in \mathbb{R}^{m \times n}$ and $b \in \mathbb{R}^{m}$. $A$ is a set of $m$ linear equations as constraints $A \boldsymbol{y} = \boldsymbol{b}$. The problem is defined as follows:
+Constrained problems are usually more complicated since the solution is restricted on a boundary or in a feasible region. For equality constraints, the basic case is the linear equality constraints $A \boldsymbol{y} = \boldsymbol{b}$. Again, we consider an objective function $f: \mathbb{R}^{m} \times \mathbb{R}^{n} \rightarrow \mathbb{R}$. Let $A \in \mathbb{R}^{p \times m}$ and $b \in \mathbb{R}^{p}$. $A$ is a set of $p$ linear equations as constraints $A \boldsymbol{y} = \boldsymbol{b}$. The problem is defined as follows:
 $$
 \begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & A \boldsymbol{y}=\boldsymbol{b}\end{array}
 $$
