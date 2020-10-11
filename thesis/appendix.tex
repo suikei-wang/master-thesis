@@ -141,10 +141,11 @@ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$.
         &= \frac{\partial^{2}}{\partial x \partial y}f(x,y) + \frac{\partial^2}{\partial y^2}f(x, y) \frac{dy(x)}{dx}
     \end{aligned}
     $$
-    $$ \frac{dy(x)}{dx} = -[(\frac{\partial^2}{\partial y^2})f(x,y)]^{-1} (\frac{\partial^2}{\partial x \partial y})f(x, y)$$
+    $$ \frac{dy(x)}{dx} = -[(\frac{\partial^2}{\partial y^2})f(x,y)]^{-1} (\frac{\partial^2}{\partial x \partial y})f(x, y)
+    $$
 \end{proof}
 
-\subsubsection{Proof of Equation~\ref{equ:2.4}}
+\subsubsection{Proof of Equation~\ref{equ:2.4} \citep{SG:19}}
 \label{appendix:equ2.4}
 \begin{proof}
     According to the definition of Lagrange multipliers, we can define the Lagrangian:
@@ -158,11 +159,30 @@ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$.
     \end{equation}
     
     \begin{equation}
+        \label{equ:apd:242}
         A \boldsymbol{y} - \boldsymbol{b} = 0
     \end{equation}
     \par Since $y$ is the optimal point, we have $\frac{\partial}{\partial y} f(x,y) = 0$, which can be an unconstrained problem or it is orthogonal to the constraint surface. For unconstrained cases, we can set $\lambda = 0$ directly. For the orthogonal case, from Equation ~\ref{equ:apd:241}, we have
     $$
     \frac{\partial}{\partial y} f(x,y) = \sum_{i=1}^{p} \lambda_{i} \frac{\partial}{\partial y}(A_{i}y_i - b_i) = \lambda^T A
     $$
-    
+    \par Now we are going to calculate the derivative of the Lagrangian with respect to $x$ for both ~\ref{equ:apd:241} and ~\ref{equ:apd:242}: 
+    \begin{equation}
+        \label{equ:apd:243}
+        \frac{\partial^2}{\partial x \partial y} f(x, y) +\frac{\partial^2}{\partial y^2} f(x,y) \mathrm{D} y-\frac{\partial}{\partial y} (A\boldsymbol{y}-\boldsymbol{b})^T \mathrm{D} \lambda = 0 
+    \end{equation}
+
+    \begin{equation}
+        \label{equ:apd:244}
+        \frac{\partial}{\partial x} (A\boldsymbol{y}-\boldsymbol{b}) + \frac{\partial}{\partial y} (A\boldsymbol{y}-\boldsymbol{b}) \mathrm{D}y = 0
+    \end{equation}
+    \par Solving ~\ref{equ:apd:243} and ~\ref{equ:apd:244}, we get:
+    $$
+    \mathrm{D} y(x)=\left(H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1} A H^{-1}-H^{-1}\right) B
+    $$
+    where 
+    $$
+    H = \frac{\partial^2}{\partial y^2} f(x,y) ,\quad
+    B = \frac{\partial^2}{\partial x \partial y} f(x,y)
+    $$
 \end{proof}

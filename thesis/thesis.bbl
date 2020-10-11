@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -31,6 +31,11 @@
   application to bi-level optimization.
 \newblock \emph{arXiv preprint arXiv:1607.05447},  (2016).
 
+\bibitem[{Gould et~al.(2019)Gould, Hartley, and Campbell}]{SG:19}
+\textsc{Gould, S.; Hartley, R.; and Campbell, D.}, 2019.
+\newblock Deep declarative networks: A new hope.
+\newblock \emph{arXiv preprint arXiv:1909.04866},  (2019).
+
 \bibitem[{Newton and Colson(1736)}]{NT:36}
 \textsc{Newton, I. and Colson, J.}, 1736.
 \newblock \emph{The Method of Fluxions and Infinite Series; with Its
@@ -47,5 +52,12 @@
 \textsc{Oman, G.}, 2017.
 \newblock A short proof of the bolzano-weierstrass theorem.
 \newblock \emph{The College Mathematics Journal},  (2017).
+
+\bibitem[{Yeniay(2005)}]{YO:05}
+\textsc{Yeniay, {\"O}.}, 2005.
+\newblock Penalty function methods for constrained optimization with genetic
+  algorithms.
+\newblock \emph{Mathematical and computational Applications}, 10, 1  (2005),
+  45--56.
 
 \end{thebibliography}

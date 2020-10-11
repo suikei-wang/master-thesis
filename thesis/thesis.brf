@@ -1,3 +1,4 @@
+\backcite {SG:19}{{xii}{(document)}{Doc-Start}}
 \backcite {OG:17}{{6}{[subsection][1][2.1]2.1.1}{thm.2.1}}
 \backcite {JS:06}{{6}{[subsection][1][2.1]2.1.1}{thm.2.2}}
 \backcite {JS:06}{{6}{[thm][3][2]2.3}{thm.2.3}}
@@ -10,3 +11,5 @@
 \backcite {NT:36}{{14}{[subsection][1][2.2]2.2.1}{equation.2.2.3}}
 \backcite {DP:09}{{14}{[subsection][1][2.2]2.2.1}{equation.2.2.3}}
 \backcite {BD:14}{{15}{[subsection][2][2.2]2.2.2}{equation.2.2.4}}
+\backcite {YO:05}{{16}{[subsection][2][2.2]2.2.2}{figure.2.4}}
+\backcite {SG:19}{{36}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}

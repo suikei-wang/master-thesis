@@ -145,6 +145,7 @@ $$
 \end{lemma}
 \par However, we may not be able to extract useful results from this lemma, since $T_{x^{*}} \mathscr{F}$ depends only on the geometry of $\mathscr{F}$ but not on the constraints functions $c_i$. Not all local minimum falls on the boundary of the constraint function, which is a part of $T_{x^{*}} \mathscr{F}$. Therefore, it is necessary to introduce linearized feasible directions to give a characterization of $T_{x^{*}} \mathscr{F}$ in terms of $c_i$. 
 \begin{defn}
+    \label{defn:lfd}
     Given $x \in \mathscr{F}$, we define
     $$
     \operatorname{LFD}(x):=\left\{d \in \mathbb{R}^{n}: d^{T} \nabla c_{i}(x)=0 \text { for } i \in \mathscr{E} ; d^{T} \nabla c_{i}(x) \leq 0 \textrm { for } i \in \mathscr{I} \cap \mathscr{A}(x)\right\}
@@ -178,6 +179,7 @@ $$
 which equals to the set of all vectors tangent to the feasible set $T_{0} \mathscr{F}$. 
 \par Unlike the unconstrained optimization problem, the first order necessary condition of the existence of the optimizer is different since we should consider its linearized feasible directions and constraints feasibility. This is so-called the Karush-Kuhn-Tucker theorem: 
 \begin{thm}[Karush-Kuhn-Tucker Theorem]
+    \label{thm:kkt}
     Let $x^* \in \mathscr{F}$ be a local minimizer of problem (\ref{equ:2.2}). If
     $$
     T_{x^*} \mathscr{F} = \operatorname{LFD}(x^*),
@@ -268,15 +270,51 @@ $$
 \end{equation}
 where $H = \partial^{2} f(x, y) / \partial y(x)^2$ and $B = \partial^{2} f(x, y) / \partial x \partial y(x)$. 
 \par The solution in~\ref{equ:2.4} can be proved through the Lagrange multipliers~\citep{BD:14} in ~\ref{appendix:equ2.4}. 
+More generally, constraints can be non-linear. That means we cannot use $A$ as a weight matrix for constrained parameters anymore. Therefore, we define the equality constraints problem using a set of $m$ constraints functions $c(x, y)$: 
+$$
+\begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & c_i(x, y) = 0, \quad i = 1, \dots, m \end{array}
+$$
+\par Solution for general multiple non-linear equality constraints is discussed in the chapter of deep declarative network nodes. Here, we are giving a simple example of non-linear equality constrained optimization problem. 
+\par For any given nonzero vector $y \in \mathbb{R}^n$, we define the minimization problem as follows:
+$$
+\begin{array}{cc}\textrm { minimize } & -x^{T} y \\ \textrm { subject to } & \|x\|_{2}^{2}=1\end{array}
+$$
 
+\begin{figure}[t]
+    \label{fig:example23_cons}
+    \centering
+    \includegraphics[page=1,width=.7\textwidth]{figs/constrained_22.pdf} 
+  \caption{Constrained function $c(x) = \|x\|_{2}^{2} - 1$}
+ \end{figure}
 
+\par From the constraint defined above, we can write the constraint function as $c(x) = \|x\|_{2}^{2} - 1$ and illustrate it in Fig~\ref{fig:example23_cons}.  Differentiating $c(x)$ with respect to $x$, we get $\nabla c(x) = x \neq 0$. Therefore, it follows the definition of LFD~\ref{defn:lfd} and the theorem of KKT~\ref{thm:kkt}, which means that every local minimizer of this problem is a KKT point. Now we can write the Lagrangian function:
+$$
+\mathcal{L}(x, \lambda)=-x^{T} y+\lambda\left(\|x\|_{2}^{2}-1\right)
+$$
+and the KKT conditions are:
+$$
+\nabla_x \mathcal{L} = -y+2\lambda x = 0, \quad \|x\|_{2}^{2} = 1
+$$
+From $-y+2\lambda x = 0$ and $y \neq 0$ defined in the question, we must have $\lambda \neq 0$ and $x = y / 2\lambda$. Combined with $\|x\|_{2}^{2} = 1$, we get 
+$$ 
+4 \lambda^{2}=\|y\|_{2}^{2} \Leftrightarrow \lambda=\pm \frac{\|y\|_{2}}{2}
+$$
+\par Therefore, consequently, we have $x = \pm \frac{y}{\|y\|_{2}}$. For each $x$, we can compute its corresponding value of the objective function:
+$$
+x = \frac{y}{\|y\|_{2}}, -x^{T} y=-\|y\|_{2}
+$$
+$$
+x = -\frac{y}{\|y\|_{2}}, -x^{T} y=\|y\|_{2}
+$$ 
+\par Obviously, the minimum is achieved $-\|y\|_{2}$ at $x = \frac{y}{\|y\|_{2}}$. 
+\par Algorithms for solving constrained problems are various. For basic linear programming, which means that all functions involved are linear, we can transform it into standard form with matrix $A$, then solve the problem using Lagrangian function based on the KKT condition. 
+\par Penalty method\citep{YO:05}, a function determining when a point $x$ is feasible or not, is used to replace the constrained problem with an unconstrained one. For a minimization problem $f(x)$, the penalty function $P(x)$ associated with a penalty parameter are introduced to combine with $f(x)$ and now we are going to solve a series of unconstrained problems. These problems have converged solutions of the original constrained problem. 
 
 \subsection{Inequality Constrained Optimization}
-
-\section{Bi-level Optimization}
-\label{sec:bilevel}
+Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. In general, 
 
 
+\section{Differentiable Neural Network}
 
 \section{Summary}
 \label{sec:2summary}
