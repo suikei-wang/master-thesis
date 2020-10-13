@@ -214,7 +214,7 @@ $$
 
 \section{Solution of Unconstrained and Constrained Optimization Problems}
 \label{sec:consopt}
-According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimality through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collect both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. ~\cite{AB:17} also present a solution for exact, constrained optimization within a neural network. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
+According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimality through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collected both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. ~\cite{AB:17} also present a solution for exact, constrained optimization within a neural network. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
 \par In this section, we are going to provide some background for the solution of both unconstrained and constrained optimization problems, which is based on the gradient of the regular point. 
 \subsection{Unconstrained Optimization}
 For unconstrained optimization problems, the solution is easy to obtain since we only need to focus on the optimality of the objective function. We consider an objective function $f: \mathbb{R}^{n} \times \mathbb{R}^m \rightarrow \mathbb{R}$:
@@ -311,7 +311,7 @@ $$
 \par Penalty method\citep{YO:05}, a function determining when a point $x$ is feasible or not, is used to replace the constrained problem with an unconstrained one. For a minimization problem $f(x)$, the penalty function $P(x)$ associated with a penalty parameter are introduced to combine with $f(x)$ and now we are going to solve a series of unconstrained problems. These problems have converged solutions of the original constrained problem. 
 
 \subsection{Inequality Constrained Optimization}
-Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. In general, 
+Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. \cite{SG:16} introduced a method approximating the gradient of the inequality constrained problem based on ideas from interior-point methods~\citep{BS:04}. 
 
 
 \section{Differentiable Neural Network}

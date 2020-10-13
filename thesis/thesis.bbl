@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -16,6 +16,11 @@
 \textsc{Bertsekas, D.~P.}, 2014.
 \newblock \emph{Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press.
+
+\bibitem[{Boyd et~al.(2004)Boyd, Boyd, and Vandenberghe}]{BS:04}
+\textsc{Boyd, S.; Boyd, S.~P.; and Vandenberghe, L.}, 2004.
+\newblock \emph{Convex optimization}.
+\newblock Cambridge university press.
 
 \bibitem[{Debye(1909)}]{DP:09}
 \textsc{Debye, P.}, 1909.

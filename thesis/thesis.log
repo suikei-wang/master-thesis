@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  11 OCT 2020 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  12 OCT 2020 22:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -948,7 +948,10 @@ Underfull \vbox (badness 4492) has occurred while \output is active []
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.293 $$
-         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [16] [17] [18
+         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [17] [18
 
 ]
 Chapter 3.
@@ -1009,12 +1012,12 @@ l.1 \chapter
 l.1 \chapter
             {Solutions of Non-regular Point}]
 Chapter 6.
-<figs/zerocost_intel.pdf, id=771, 361.35pt x 216.81pt>
+<figs/zerocost_intel.pdf, id=776, 361.35pt x 216.81pt>
 File: figs/zerocost_intel.pdf Graphic file (type pdf)
 <use figs/zerocost_intel.pdf>
 Package pdftex.def Info: figs/zerocost_intel.pdf  used on input line 23.
 (pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-<figs/zerobus_core.pdf, id=772, 361.35pt x 216.81pt>
+<figs/zerobus_core.pdf, id=777, 361.35pt x 216.81pt>
 File: figs/zerobus_core.pdf Graphic file (type pdf)
 <use figs/zerobus_core.pdf>
 Package pdftex.def Info: figs/zerobus_core.pdf  used on input line 24.
@@ -1084,7 +1087,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 68D649C4B110A7109D999BAAC3DAC36F;4691.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 96B6FEDD5F5A23C0BF8556229C8BB887;896.
+(rerunfilecheck)             Checksum: C093183C13BDFE816D5D30DCFD13D48D;1034.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1095,18 +1098,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 32571 strings out of 492616
- 744744 string characters out of 6129480
+ 32580 strings out of 492616
+ 744839 string characters out of 6129480
  1077313 words of memory out of 5000000
- 35588 multiletter control sequences out of 15000+600000
+ 35596 multiletter control sequences out of 15000+600000
  77598 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,96p,931b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (53 pages, 354062 bytes).
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (53 pages, 354530 bytes).
 PDF statistics:
- 967 PDF objects out of 1000 (max. 8388607)
- 785 compressed objects within 8 object streams
- 171 named destinations out of 1000 (max. 500000)
+ 974 PDF objects out of 1000 (max. 8388607)
+ 792 compressed objects within 8 object streams
+ 172 named destinations out of 1000 (max. 500000)
  627 words of extra memory for PDF output out of 10000 (max. 10000000)
 
