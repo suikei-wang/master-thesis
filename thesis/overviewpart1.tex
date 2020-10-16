@@ -2,7 +2,7 @@
 \label{cha:overviewpart1}
 In this chapter, we aim to provide readers with an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. As the theoretical background of optimization, this field provides a solid solution for the algorithm. 
 \par We then formally define the optimization of unconstrained and constrained problems in Section~\ref{sec:consopt} and describe the general regular solution for these problems based on the gradient calculation. 
-\par Next, we discuss briefly the bi-level optimization, which is a lower-level optimization problem embedded within an upper-level problem sharing the same variables. (Section~\ref{sec:bilevel}). Finally, we give a summary of the numerical optimization in constrained problems in Section~\ref{sec:2summary}.
+\par Next, we discuss briefly the differentiable optimization in neural network, which is a novel end-to-end network structure involving optimization problem in each layer with and without constraints. (Section~\ref{sec:differentiable}). Finally, we give a summary of the numerical optimization for solving unconstrained and constrained problems in Section~\ref{sec:2summary}.
 
 
 
@@ -311,10 +311,32 @@ $$
 \par Penalty method\citep{YO:05}, a function determining when a point $x$ is feasible or not, is used to replace the constrained problem with an unconstrained one. For a minimization problem $f(x)$, the penalty function $P(x)$ associated with a penalty parameter are introduced to combine with $f(x)$ and now we are going to solve a series of unconstrained problems. These problems have converged solutions of the original constrained problem. 
 
 \subsection{Inequality Constrained Optimization}
-Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. \cite{SG:16} introduced a method approximating the gradient of the inequality constrained problem based on ideas from interior-point methods~\citep{BS:04}. 
-
+Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. In general, the standard form of inequality constrained problem is negative constraints:
+$$
+\begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & c_i(x, y) \leq 0, \quad i = 1, \dots, m \end{array}
+$$
+\par Solutions for inequality constrained problems are various. According to the properties of inequality constraints, active and inactive constraints have different criteria. We aim to find the gradient of the optimal solution, $f\prime (x)$, based on the inequality constrained argmin function. 
+ \cite{PE:88} proposed a globally convergent algorithm for solving the minimization of smooth objective function based on smooth inequality constraints. This algorithm is based on the Quasi-Newton~\citep{DJ:77} iteration for the solution of the first order condition of the optimality in KKT. An updated verision of this algorithm, a new QP-free method demonstrated by \cite{QH:00}, emphasizes the feasibility of all iterates. It reformulates the KKT optimality condition Fischer–Burmeister function~\citep{JH:99} for nonlinear complementarity problems. The classical solution is still based on the Lagrange multipliers. \cite{BD:14} proposed that for one-sided inequality constrained problems, it cannot be converted to equality constrained problem. Therefore, it introduced the method minimizing the augumented Lagrangian with respect to $x$ for various value of the Lagrange parameters, which is presented by \cite{PM:69} and \cite{HM:69}: 
+ $$
+ \begin{aligned} \bar{L}_{c}(x, z, \lambda, \mu)=& f(x)+\lambda^{\prime} h(x)+\frac{1}{2} c|h(x)|^{2} \\ &+\sum_{j=1}^{r}\left\{\mu_{j}\left[g_{j}(x)+z_{j}^{2}\right]+\frac{1}{2} c\left|g_{j}(x)+z_{j}^{2}\right|^{2}\right\} \end{aligned}
+ $$
+ \par The minimization of this augumented Lagrangian can be found through computing the first order derivative with respect to $z$ explicitly for each fixed $x$. 
+\par More recently, \cite{SG:16} introduced a method approximating the gradient of the inequality constrained problem based on ideas from interior-point methods~\citep{BS:04}. It gives a demonstration of log-barrier function, which transforms the original constrained problem into a unconstrained minimization problem.
+\begin{equation}
+\label{equ:log-barrier}
+\phi(x, y)=\sum_{i=1}^{m} \log \left(-c_{i}(x, y)\right)
+\end{equation}
+\begin{equation}
+\label{equ:2.6}
+\operatorname{minimize}_{y} \quad t f(x, y)-\sum_{i=1}^{m} \log \left(-c_{i}(x, y)\right)
+\end{equation}
+Equation~\ref{equ:log-barrier} is the log-barrier function, which takes the sum of the logrithm for all constraints. Then substracting it in the unconstrained minimization problem approximates the original inequality constrained problem. $t$ in Equation~\ref{equ:2.6} is a scaling factor for duality gap control if the solution set is convex. 
+\par Similar to the solution for unconstrained and equality constrained problem, minimizing Equation~\ref{equ:2.6} is based on the gradient and hessian of the log-barrier function. 
 
 \section{Differentiable Neural Network}
+\label{sec:differentiable}
+If a problem is differentiable, that means the solution of this problem can be backpropagated. In neural network, 
+
 
 \section{Summary}
 \label{sec:2summary}

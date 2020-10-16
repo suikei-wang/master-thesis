@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Equality Constrained Optimization}{14}{subsection.2.2.2}% 
 \contentsline {subsection}{\numberline {2.2.3}Inequality Constrained Optimization}{16}{subsection.2.2.3}% 
 \contentsline {section}{\numberline {2.3}Differentiable Neural Network}{17}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}Summary}{17}{section.2.4}% 
+\contentsline {section}{\numberline {2.4}Summary}{18}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Deep Declarative Network}{19}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}An Overview of Deep Declarative Network}{19}{section.3.1}% 
 \contentsline {subsection}{\numberline {3.1.1}Structure}{19}{subsection.3.1.1}% 

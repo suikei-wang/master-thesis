@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -28,6 +28,11 @@
   werte des arguments und unbeschr{\"a}nkt ver{\"a}nderliche werte des index.
 \newblock \emph{Mathematische Annalen}, 67, 4  (1909), 535--558.
 
+\bibitem[{Dennis and Mor{\'e}(1977)}]{DJ:77}
+\textsc{Dennis, J.~E., Jr and Mor{\'e}, J.~J.}, 1977.
+\newblock Quasi-newton methods, motivation and theory.
+\newblock \emph{SIAM review}, 19, 1  (1977), 46--89.
+
 \bibitem[{Gould et~al.(2016)Gould, Fernando, Cherian, Anderson, Cruz, and
   Guo}]{SG:16}
 \textsc{Gould, S.; Fernando, B.; Cherian, A.; Anderson, P.; Cruz, R.~S.; and
@@ -40,6 +45,19 @@
 \textsc{Gould, S.; Hartley, R.; and Campbell, D.}, 2019.
 \newblock Deep declarative networks: A new hope.
 \newblock \emph{arXiv preprint arXiv:1909.04866},  (2019).
+
+\bibitem[{Hestenes(1969)}]{HM:69}
+\textsc{Hestenes, M.~R.}, 1969.
+\newblock Multiplier and gradient methods.
+\newblock \emph{Journal of optimization theory and applications}, 4, 5  (1969),
+  303--320.
+
+\bibitem[{Jiang(1999)}]{JH:99}
+\textsc{Jiang, H.}, 1999.
+\newblock Global convergence analysis of the generalized newton and
+  gauss-newton methods of the fischer-burmeister equation for the
+  complementarity problem.
+\newblock \emph{Mathematics of Operations Research}, 24, 3  (1999), 529--543.
 
 \bibitem[{Newton and Colson(1736)}]{NT:36}
 \textsc{Newton, I. and Colson, J.}, 1736.
@@ -57,6 +75,24 @@
 \textsc{Oman, G.}, 2017.
 \newblock A short proof of the bolzano-weierstrass theorem.
 \newblock \emph{The College Mathematics Journal},  (2017).
+
+\bibitem[{Panier et~al.(1988)Panier, Tits, and Herskovits}]{PE:88}
+\textsc{Panier, E.~R.; Tits, A.~L.; and Herskovits, J.~N.}, 1988.
+\newblock A qp-free, globally convergent, locally superlinearly convergent
+  algorithm for inequality constrained optimization.
+\newblock \emph{SIAM Journal on Control and Optimization}, 26, 4  (1988),
+  788--811.
+
+\bibitem[{Powell(1969)}]{PM:69}
+\textsc{Powell, M.~J.}, 1969.
+\newblock A method for nonlinear constraints in minimization problems.
+\newblock \emph{Optimization},  (1969), 283--298.
+
+\bibitem[{Qi and Qi(2000)}]{QH:00}
+\textsc{Qi, H.-D. and Qi, L.}, 2000.
+\newblock A new qp-free, globally convergent, locally superlinearly convergent
+  algorithm for inequality constrained optimization.
+\newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.
