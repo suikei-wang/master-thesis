@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -7,10 +7,23 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
+\bibitem[{Agrawal et~al.(2019)Agrawal, Amos, Barratt, Boyd, Diamond, and
+  Kolter}]{AA:19}
+\textsc{Agrawal, A.; Amos, B.; Barratt, S.; Boyd, S.; Diamond, S.; and Kolter,
+  J.~Z.}, 2019.
+\newblock Differentiable convex optimization layers.
+\newblock In \emph{Advances in neural information processing systems},
+  9562--9574.
+
 \bibitem[{Amos and Kolter(2017)}]{AB:17}
 \textsc{Amos, B. and Kolter, J.~Z.}, 2017.
 \newblock Optnet: Differentiable optimization as a layer in neural networks.
 \newblock \emph{arXiv preprint arXiv:1703.00443},  (2017).
+
+\bibitem[{Amos and Yarats(2019)}]{AB:19}
+\textsc{Amos, B. and Yarats, D.}, 2019.
+\newblock The differentiable cross-entropy method.
+\newblock \emph{arXiv preprint arXiv:1909.12830},  (2019).
 
 \bibitem[{Bertsekas(2014)}]{BD:14}
 \textsc{Bertsekas, D.~P.}, 2014.
@@ -22,6 +35,25 @@
 \newblock \emph{Convex optimization}.
 \newblock Cambridge university press.
 
+\bibitem[{Campbell et~al.(2020)Campbell, Liu, and Gould}]{CD:20}
+\textsc{Campbell, D.; Liu, L.; and Gould, S.}, 2020.
+\newblock Solving the blind perspective-n-point problem end-to-end with robust
+  differentiable geometric optimization.
+\newblock \emph{arXiv preprint arXiv:2007.14628},  (2020).
+
+\bibitem[{Chen et~al.(2020)Chen, Parra, Cao, Li, and Chin}]{CB:20}
+\textsc{Chen, B.; Parra, A.; Cao, J.; Li, N.; and Chin, T.-J.}, 2020.
+\newblock End-to-end learnable geometric vision by backpropagating pnp
+  optimization.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 8100--8109.
+
+\bibitem[{Chen and Duvenaud(2019)}]{CR:19}
+\textsc{Chen, R.~T. and Duvenaud, D.~K.}, 2019.
+\newblock Neural networks with cheap differential operators.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  9961--9971.
+
 \bibitem[{Debye(1909)}]{DP:09}
 \textsc{Debye, P.}, 1909.
 \newblock N{\"a}herungsformeln f{\"u}r die zylinderfunktionen f{\"u}r gro{\ss}e
@@ -32,6 +64,12 @@
 \textsc{Dennis, J.~E., Jr and Mor{\'e}, J.~J.}, 1977.
 \newblock Quasi-newton methods, motivation and theory.
 \newblock \emph{SIAM review}, 19, 1  (1977), 46--89.
+
+\bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
+  Bengio}]{GI:16}
+\textsc{Goodfellow, I.; Bengio, Y.; Courville, A.; and Bengio, Y.}, 2016.
+\newblock \emph{Deep learning}, vol.~1.
+\newblock MIT press Cambridge.
 
 \bibitem[{Gould et~al.(2016)Gould, Fernando, Cherian, Anderson, Cruz, and
   Guo}]{SG:16}
@@ -66,6 +104,14 @@
   Latin Original Not Yet Made Publick. To which is Subjoin'd a Perpetual
   Comment Upon the Whole Work... by J. Colson}.
 
+\bibitem[{Niemeyer et~al.(2020)Niemeyer, Mescheder, Oechsle, and
+  Geiger}]{NM:20}
+\textsc{Niemeyer, M.; Mescheder, L.; Oechsle, M.; and Geiger, A.}, 2020.
+\newblock Differentiable volumetric rendering: Learning implicit 3d
+  representations without 3d supervision.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 3504--3515.
+
 \bibitem[{Nocedal and Wright(2006)}]{JS:06}
 \textsc{Nocedal, J. and Wright, S.}, 2006.
 \newblock \emph{Numerical optimization}.
@@ -93,6 +139,12 @@
 \newblock A new qp-free, globally convergent, locally superlinearly convergent
   algorithm for inequality constrained optimization.
 \newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
+
+\bibitem[{Wang et~al.(2019)Wang, Donti, Wilder, and Kolter}]{WP:19}
+\textsc{Wang, P.-W.; Donti, P.~L.; Wilder, B.; and Kolter, Z.}, 2019.
+\newblock Satnet: Bridging deep learning and logical reasoning using a
+  differentiable satisfiability solver.
+\newblock \emph{arXiv preprint arXiv:1905.12149},  (2019).
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

@@ -1,4 +1,5 @@
 \backcite {SG:19}{{xii}{(document)}{Doc-Start}}
+\backcite {SG:19}{{1}{[section][2][1]1.2}{section.1.2}}
 \backcite {OG:17}{{6}{[subsection][1][2.1]2.1.1}{thm.2.1}}
 \backcite {JS:06}{{6}{[subsection][1][2.1]2.1.1}{thm.2.2}}
 \backcite {JS:06}{{6}{[thm][3][2]2.3}{thm.2.3}}
@@ -21,4 +22,13 @@
 \backcite {HM:69}{{17}{[subsection][3][2.2]2.2.3}{subsection.2.2.3}}
 \backcite {SG:16}{{17}{[subsection][3][2.2]2.2.3}{subsection.2.2.3}}
 \backcite {BS:04}{{17}{[subsection][3][2.2]2.2.3}{subsection.2.2.3}}
-\backcite {SG:19}{{36}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}
+\backcite {GI:16}{{17}{[section][3][2]2.3}{section.2.3}}
+\backcite {AB:17}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {WP:19}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {AA:19}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {CB:20}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {CD:20}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {AB:19}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {NM:20}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {CR:19}{{18}{[section][3][2]2.3}{section.2.3}}
+\backcite {SG:19}{{38}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}

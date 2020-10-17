@@ -277,6 +277,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty

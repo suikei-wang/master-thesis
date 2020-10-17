@@ -3,7 +3,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Thesis Outline}{1}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Contribution}{1}{section.1.3}% 
+\contentsline {section}{\numberline {1.3}Contribution}{2}{section.1.3}% 
 \contentsline {part}{I\hspace {1em}Deep Declarative Network: Multiple Constrained Declarative Nodes}{3}{part.1}% 
 \contentsline {chapter}{\numberline {2}An Overview of Numerical Optimization}{5}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Theory of Optimization}{5}{section.2.1}% 
@@ -16,45 +16,46 @@
 \contentsline {subsection}{\numberline {2.2.3}Inequality Constrained Optimization}{16}{subsection.2.2.3}% 
 \contentsline {section}{\numberline {2.3}Differentiable Neural Network}{17}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}Summary}{18}{section.2.4}% 
-\contentsline {chapter}{\numberline {3}Deep Declarative Network}{19}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}An Overview of Deep Declarative Network}{19}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Structure}{19}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Declarative Nodes}{19}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}Learning}{19}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Back-propagation Through Declarative Nodes}{19}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Unconstrained}{19}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Equality Constrained}{19}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Inequatlity Constrained}{19}{subsection.3.3.3}% 
-\contentsline {section}{\numberline {3.4}Examples of Declarative Nodes}{19}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Unconstrained}{19}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Equality Constrained}{19}{subsection.3.4.2}% 
-\contentsline {subsection}{\numberline {3.4.3}Inequatlity Constrained}{19}{subsection.3.4.3}% 
-\contentsline {section}{\numberline {3.5}Summary}{19}{section.3.5}% 
-\contentsline {chapter}{\numberline {4}The Future of Declarative Nodes}{21}{chapter.4}% 
-\contentsline {part}{II\hspace {1em}Deep Declarative Network: Non-regular Solution}{23}{part.2}% 
-\contentsline {chapter}{\numberline {5}An Overview of Regular and Non-regular Solution}{25}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Problems in Regular Deep Declarative Nodes}{25}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Related Work in Non-regular Solution}{25}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Overdetermined System}{25}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Rand Deficiency}{25}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}Non-convex Problems}{25}{subsection.5.2.3}% 
-\contentsline {chapter}{\numberline {6}Solutions of Non-regular Point}{27}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Overdetermined System}{27}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}Least-Squared Method}{27}{subsection.6.1.1}% 
-\contentsline {section}{\numberline {6.2}Conjugate Gradient and Preconditioning}{27}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Rank Deficiency}{27}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}Non-convex Problems}{27}{section.6.4}% 
-\contentsline {section}{\numberline {6.5}Summary}{27}{section.6.5}% 
-\contentsline {chapter}{\numberline {7}Conclusion}{29}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}Future Work}{29}{section.7.1}% 
-\contentsline {chapter}{Appendix}{33}{appendix*.8}% 
-\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{33}{section.Alph0.1}% 
-\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{33}{subsection.Alph0.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{33}{subsubsection.Alph0.1.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{33}{subsubsection.Alph0.1.1.2}% 
-\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{34}{subsubsection.Alph0.1.1.3}% 
-\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{34}{subsubsection.Alph0.1.1.4}% 
-\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{35}{subsubsection.Alph0.1.1.5}% 
-\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{36}{subsection.Alph0.1.2}% 
-\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{36}{subsubsection.Alph0.1.2.1}% 
-\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{36}{subsubsection.Alph0.1.2.2}% 
+\contentsline {chapter}{\numberline {3}Deep Declarative Network}{21}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}An Overview of Deep Declarative Network}{21}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}Structure}{21}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Declarative Nodes}{21}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}Learning}{21}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Back-propagation Through Declarative Nodes}{21}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Unconstrained}{21}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Equality Constrained}{21}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Inequatlity Constrained}{21}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Examples of Declarative Nodes}{21}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Equality Constrained}{21}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Inequatlity Constrained}{21}{subsection.3.4.2}% 
+\contentsline {section}{\numberline {3.5}Summary}{21}{section.3.5}% 
+\contentsline {chapter}{\numberline {4}The Future of Declarative Nodes}{23}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Improvements of the Optimization}{23}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Applications in Computer Vision Tasks}{23}{section.4.2}% 
+\contentsline {part}{II\hspace {1em}Deep Declarative Nodes: Non-regular Solution}{25}{part.2}% 
+\contentsline {chapter}{\numberline {5}An Overview of Regular and Non-regular Solution}{27}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Problems in Regular Deep Declarative Nodes}{27}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Related Work in Non-regular Solution}{27}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Overdetermined System}{27}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Rand Deficiency}{27}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}Non-convex Problems}{27}{subsection.5.2.3}% 
+\contentsline {chapter}{\numberline {6}Solutions of Non-regular Point}{29}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Overdetermined System}{29}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Least-Squared Method}{29}{subsection.6.1.1}% 
+\contentsline {section}{\numberline {6.2}Conjugate Gradient and Preconditioning}{29}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Rank Deficiency}{29}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Non-convex Problems}{29}{section.6.4}% 
+\contentsline {section}{\numberline {6.5}Summary}{29}{section.6.5}% 
+\contentsline {chapter}{\numberline {7}Conclusion}{31}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Future Work}{31}{section.7.1}% 
+\contentsline {chapter}{Appendix}{35}{appendix*.7}% 
+\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{35}{section.Alph0.1}% 
+\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{35}{subsection.Alph0.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{35}{subsubsection.Alph0.1.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{35}{subsubsection.Alph0.1.1.2}% 
+\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{36}{subsubsection.Alph0.1.1.3}% 
+\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{36}{subsubsection.Alph0.1.1.4}% 
+\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{37}{subsubsection.Alph0.1.1.5}% 
+\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{38}{subsection.Alph0.1.2}% 
+\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{38}{subsubsection.Alph0.1.2.1}% 
+\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{38}{subsubsection.Alph0.1.2.2}% 
