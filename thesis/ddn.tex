@@ -84,6 +84,11 @@ where $\operatorname{D}_XJ(x,y)$ is the partial derivatives of $J(x,y)$ with res
     \end{aligned}
 \end{equation}
 where $\operatorname{D}_Yf(x,y) = 0$ since $y$ is the minimum of $f(x,y)$ and $f(x,y)$ is an unconstrained problem, its partial derivative should be zero. 
+\par In addition, for the solution $y$, we should verify its regularity. 
+\begin{defn}[Regular Point]~\citep{SG:19}
+    A feasible point $u$ is said to be \emph{regular} if the equality constraints gradient $D_Uh_i$ and the active inequality constraints gradients $D_Ug_i$ are linearly independent, or there are no equality constraints and the inequality constraints are all inactive at $u$.
+\end{defn}
+Therefore, in unconstrained problems, we can consider the solution is regular by default. However in constrained problems, especially the inequality constrained problems, we should be aware of the feasible set is continuous or not. 
 
 \section{Back-propagation Through Declarative Nodes}
 \label{sec:bp}
@@ -94,14 +99,48 @@ Firstly, the most basic case is the unconstrained problem. Consider a function $
 \begin{equation}
     y \in \underset{u \in C}{\arg \min } f(x, u)
 \end{equation}
-We make the assumption that the solution of this problem, $y(x)$ exists, and in the neighborhood of the point $(x, y(x))$, $f$ is second-order differentiable. Therefore, we can compute the derivative of $y$ with respect to $x$ is
+\par We make the assumption that the solution of this problem, $y(x)$ exists, and in the neighborhood of the point $(x, y(x))$, $f$ is second-order differentiable. Therefore, we can compute the derivative of $y$ with respect to $x$ is
 $$
 \operatorname{D}y(x) = -H^{-1}B
 $$
 where $H = \operatorname{D}_{YY}^2 f(x, y(x)) \in \mathbb{R}^{m \times m}$ is the second-order derivative of $f$ with respect to $y$, and it is a non-singular matrix. $B = \operatorname{D}_{XY}^2 f(x, y(x)) \in \mathbb{R}^{m \times n}$ is the second-order derivative of $f$ with respect to $y$ and $x$ (the derivative of $D_Yf(x,y)$ with respect to $x$). 
-\par The proof of this solution is similar to the proof of Equation~\ref{equ:2.3}, setting the 
+\par The proof of this solution is similar to the proof of Equation~\ref{equ:2.3}: setting the partial derivative of $f(x,y)$ with respect to the optimal $y$ as 0, then transposing and differentiating both sides according to the implicit function theorem: 
+\begin{equation}
+    \begin{aligned} 
+        0_{m \times n} &=\operatorname{D}\left(\operatorname{D}_{Y} f(x, y)\right)^{T} \\ &=\operatorname{D}_{X Y}^{2} f(x, y)+\operatorname{D}_{Y Y}^{2} f(x, y) \operatorname{D} y(x) 
+    \end{aligned}
+\end{equation}
+After rearrangement, we get
+\begin{equation}
+    \operatorname{D} y(x)=-\left(\operatorname{D}_{Y Y}^{2} f(x, y)\right)^{-1} \operatorname{D}_{X Y}^{2} f(x, y)
+\end{equation}
+\par Since this is the unconstrained case, for any stationary point of $f(x,y)$, the result is valid. In the following constrained cases, the optimal solution is actually the stationary point of the Lagrangian. 
 
 \subsection{Equality Constrained}
+Secondly, we consider the equality constrained problem, that means the feasible set is defined by $p$ nonlinear equality constraints. Consider functions $f: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$ and $h: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^p$, we have
+\begin{equation}
+    \begin{aligned} 
+        y(x) \in & \arg \min _{u \in \mathbb{R}^{m}} f(x, u) \\ & \text { subject to } \quad h_{i}(x, u)=0, i=1, \ldots, p 
+    \end{aligned}
+\end{equation}
+where $h = [h_1, \dots, h_p]^T$ are a set of constraints. 
+\par Again, we make the assumption that the solution of this problem, $y(x)$ exists and both $f$ and all constraints in $h$ are second-order differentiable. Also, we should consider the Jacobian matrix of $h$ with respect to $y$ is full rank since we need the optimal point is regular. Then we can calculate the derivative of $y$ with respect to $x$ is
+$$
+\operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
+$$
+where
+$$
+\begin{aligned} 
+    A &=\operatorname{D}_{Y} h(x, y) \in \mathbb{R}^{p \times m} \\ B &=\operatorname{D}_{X Y}^{2} f(x, y)-\sum_{i=1}^{p} \lambda_{i} \operatorname{D}_{X Y}^{2} h_{i}(x, y) \in \mathbb{R}^{m \times n} \\ C &=\operatorname{D}_{X} h(x, y) \in \mathbb{R}^{p \times n} \\ H &=\operatorname{D}_{Y Y}^{2} f(x, y)-\sum_{i=1}^{p} \lambda_{i} \operatorname{D}_{Y Y}^{2} h_{i}(x, y) \in \mathbb{R}^{m \times m} 
+\end{aligned}
+$$
+and $\lambda \in \mathbb{R}^p$ can be solved through the system $\lambda ^T A = \operatorname{D}_Yf(x,y)$. 
+\par Similar to the solution of linear equality constrained problem in Equation~\ref{equ:2.4}, we can form the Lagrangian by the method of Lagrange multipliers\citep{BD:14}:
+\begin{equation}
+    \mathcal{L}(x, y, \lambda)=f(x, y)-\sum_{i=1}^{p} \lambda_{i} h_{i}(x, y)
+\end{equation}
+\par We introduce the Lagrange multipliers $\lambda$ to set the stationary point of this Lagrangian is $(y, \lambda)$. Then we differentiate $\mathcal{L}$ with respect to $y$ and $\lambda$ separately, which are both resulting in 0 since $y$ is the optimality. 
+
 \subsection{Inequatlity Constrained}
 
 \section{Examples of Declarative Nodes}
