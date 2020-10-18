@@ -12,6 +12,7 @@ In this chapter, we will cover the structure and nodes in the deep declarative n
 \subsection{Declarative Node}
 In deep declarative network, it defines the solution of a constrained optimization problem with parameter $x \in \mathbb{R}^n$ as the output of each node $y \in \mathbb{R}^m$. The general optimization problem can be defined as 
 \begin{equation}
+    \label{equ:ddn-basic}
     y \in \underset{u \in C}{\arg \min } f(x, u)
 \end{equation}
 where $f$ is the objective function $f: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$, and $C \in \mathbb{R}^m$ is the set of constraints parameterized by $x$. 
@@ -67,13 +68,39 @@ where $f$ is the objective function $f: \mathbb{R}^n \times \mathbb{R}^m \righta
 \par Since the definition of deep declarative nodes is very general, it can be embedded within another network for solving subproblems such as robust fitting. However, we may not be able to find the gradient when the feasible set is discrete, or the declarative node is low efficiency to evaluate. As non-regular solution cases, the nonexistent gradient problem will be discussed in the next part. In the next subsection, the learning details of the deep declarative network are described. 
 
 \subsection{Learning}
-
-
+Since in declarative nodes, there is no explicit forward function defined, we can directly compute the optimal solution $y$ through some algorithms. Under this assumption, when we performing the back-propagation, we can compute the gradient of the output from each node with respect to the corresponding input through the implicit differentiation directly. This can be treated as a bi-level optimization problem\citep{BJ:98} where the parameterized constraints as a lower-level problem blinds variables in the objective function, an upper-level problem. Combining the schematic illustration in Figure~\ref{fig:ddn}, the problem can be defined formally as
+\begin{equation}
+    \begin{array}{ll}\operatorname{minimize} & J(x, y) \\ \text { subject to } & y \in \arg \min _{u \in C} f(x, u)\end{array}
+\end{equation}
+\par We may have additional layers to make the objective function $J(x, y)$ depend on $y$, which is a function of $x$. In general, it is the sum of loss terms and regularization terms. We can solve this minimization problem through the gradient descent as follows:
+\begin{equation}
+    \operatorname{D}J(x,y) = \operatorname{D}_XJ(x,y) + \operatorname{D}_YJ(x,y)\operatorname{D}y(x)
+\end{equation}
+where $\operatorname{D}_XJ(x,y)$ is the partial derivatives of $J(x,y)$ with respect to $x$ and $\operatorname{D}_YJ(x,y)$ is the partial derivatives of $J(x,y)$ with respect to $y$. We used to use $\operatorname{D}_X$ and $\operatorname{D}_Y$ to denote the partial derivatives. We decompose the total derivatives of $J(x,y)$ as the sum of the partial derivatives with the chain rule. In application, we can consider it as the sum of gradients for losses on training examples. 
+\par The lower-level objective function $f$ can be simpler. If it is the only term involving $y$ in the upper-level objective function $J$, that means $J(x,y) = g(x, f(x,y))$ and the lower-level problem is actually unconstrained with $u \in C=\mathbb{R}^m$. Under this condition, the calculation of the gradient can be expanded using chain rule through both $\operatorname{D}_XJ(x,y)$ and $\operatorname{D}_YJ(x,y)$:
+\begin{equation}
+    \begin{aligned} 
+        \operatorname{D} J(x, y) &=\operatorname{D}_{X} g(x, f)+\operatorname{D}_{F} g(x, f)\left(\operatorname{D} f+\operatorname{D}_{Y} f \operatorname{D} y\right) \\ &=\operatorname{D}_{X} g(x, f)+\operatorname{D}_{F} g(x, f) \operatorname{D} f 
+    \end{aligned}
+\end{equation}
+where $\operatorname{D}_Yf(x,y) = 0$ since $y$ is the minimum of $f(x,y)$ and $f(x,y)$ is an unconstrained problem, its partial derivative should be zero. 
 
 \section{Back-propagation Through Declarative Nodes}
 \label{sec:bp}
+Let us focus back on the more general case with $y$ involving in different terms. The backward pass is different in different sub-classes of declarative nodes. We consider three common cases based on Equation~\ref{equ:ddn-basic}. 
 
 \subsection{Unconstrained}
+Firstly, the most basic case is the unconstrained problem. Consider a function $f: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$, we have
+\begin{equation}
+    y \in \underset{u \in C}{\arg \min } f(x, u)
+\end{equation}
+We make the assumption that the solution of this problem, $y(x)$ exists, and in the neighborhood of the point $(x, y(x))$, $f$ is second-order differentiable. Therefore, we can compute the derivative of $y$ with respect to $x$ is
+$$
+\operatorname{D}y(x) = -H^{-1}B
+$$
+where $H = \operatorname{D}_{YY}^2 f(x, y(x)) \in \mathbb{R}^{m \times m}$ is the second-order derivative of $f$ with respect to $y$, and it is a non-singular matrix. $B = \operatorname{D}_{XY}^2 f(x, y(x)) \in \mathbb{R}^{m \times n}$ is the second-order derivative of $f$ with respect to $y$ and $x$ (the derivative of $D_Yf(x,y)$ with respect to $x$). 
+\par The proof of this solution is similar to the proof of Equation~\ref{equ:2.3}, setting the 
+
 \subsection{Equality Constrained}
 \subsection{Inequatlity Constrained}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -24,6 +24,12 @@
 \textsc{Amos, B. and Yarats, D.}, 2019.
 \newblock The differentiable cross-entropy method.
 \newblock \emph{arXiv preprint arXiv:1909.12830},  (2019).
+
+\bibitem[{Bard(1998)}]{BJ:98}
+\textsc{Bard, J.~F.}, 1998.
+\newblock \emph{Practical Bilevel Optimization: Algorithms and Applications},
+  vol.~30.
+\newblock Springer Science \& Business Media.
 
 \bibitem[{Bertsekas(2014)}]{BD:14}
 \textsc{Bertsekas, D.~P.}, 2014.

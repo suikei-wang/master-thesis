@@ -5,45 +5,45 @@ The style file: anuthesis.bst
 Database file #1: thesis.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in NT:36
-You've used 24 entries,
+You've used 25 entries,
             3096 wiz_defined-function locations,
-            737 strings with 8267 characters,
-and the built_in function-call counts, 14283 in all, are:
-= -- 1107
-> -- 578
-< -- 15
-+ -- 222
-- -- 186
-* -- 1059
-:= -- 2143
-add.period$ -- 71
-call.type$ -- 24
-change.case$ -- 185
-chr.to.int$ -- 24
-cite$ -- 25
-duplicate$ -- 1089
-empty$ -- 1143
-format.name$ -- 258
-if$ -- 2845
+            743 strings with 8358 characters,
+and the built_in function-call counts, 14722 in all, are:
+= -- 1137
+> -- 588
+< -- 17
++ -- 226
+- -- 189
+* -- 1082
+:= -- 2211
+add.period$ -- 74
+call.type$ -- 25
+change.case$ -- 190
+chr.to.int$ -- 25
+cite$ -- 26
+duplicate$ -- 1129
+empty$ -- 1186
+format.name$ -- 262
+if$ -- 2934
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 232
-newline$ -- 128
-num.names$ -- 96
-pop$ -- 498
+missing$ -- 242
+newline$ -- 133
+num.names$ -- 100
+pop$ -- 520
 preamble$ -- 1
-purify$ -- 158
+purify$ -- 163
 quote$ -- 0
-skip$ -- 417
+skip$ -- 433
 stack$ -- 0
-substring$ -- 624
-swap$ -- 536
-text.length$ -- 1
+substring$ -- 635
+swap$ -- 552
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 201
+type$ -- 207
 warning$ -- 1
-while$ -- 100
+while$ -- 103
 width$ -- 0
-write$ -- 314
+write$ -- 327
 (There was 1 warning)
