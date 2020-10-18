@@ -19,17 +19,17 @@
 \BOOKMARK [1][-]{section.2.4}{Summary}{chapter.2}% 19
 \BOOKMARK [0][-]{chapter.3}{Deep Declarative Network}{part.1}% 20
 \BOOKMARK [1][-]{section.3.1}{An Overview of Deep Declarative Network}{chapter.3}% 21
-\BOOKMARK [2][-]{subsection.3.1.1}{Structure}{section.3.1}% 22
-\BOOKMARK [2][-]{subsection.3.1.2}{Declarative Nodes}{section.3.1}% 23
-\BOOKMARK [1][-]{section.3.2}{Learning}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.3}{Back-propagation Through Declarative Nodes}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.1}{Unconstrained}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.2}{Equality Constrained}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.3}{Inequatlity Constrained}{section.3.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Examples of Declarative Nodes}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.4.1}{Equality Constrained}{section.3.4}% 30
-\BOOKMARK [2][-]{subsection.3.4.2}{Inequatlity Constrained}{section.3.4}% 31
-\BOOKMARK [1][-]{section.3.5}{Summary}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.1.1}{Declarative Node}{section.3.1}% 22
+\BOOKMARK [2][-]{subsection.3.1.2}{Learning}{section.3.1}% 23
+\BOOKMARK [1][-]{section.3.2}{Back-propagation Through Declarative Nodes}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Unconstrained}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{Equality Constrained}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.3}{Inequatlity Constrained}{section.3.2}% 27
+\BOOKMARK [1][-]{section.3.3}{Examples of Declarative Nodes}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{Implementation Details}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{Equality Constrained}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.3}{Inequatlity Constrained}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Summary}{chapter.3}% 32
 \BOOKMARK [0][-]{chapter.4}{The Future of Declarative Nodes}{part.1}% 33
 \BOOKMARK [1][-]{section.4.1}{Improvements of the Optimization}{chapter.4}% 34
 \BOOKMARK [1][-]{section.4.2}{Applications in Computer Vision Tasks}{chapter.4}% 35

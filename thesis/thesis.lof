@@ -5,6 +5,7 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Feasible set of constraints $c_1$, $c_2$ and $c_3$}}{11}{figure.2.3}% 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Constrained function $c(x) = \delimiter "026B30D x\delimiter "026B30D _{2}^{2} - 1$}}{15}{figure.2.4}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-end learnable declarative node}}{22}{figure.3.1}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Hello world in Java and C.}}{28}{figure.5.1}% 

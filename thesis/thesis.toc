@@ -18,17 +18,17 @@
 \contentsline {section}{\numberline {2.4}Summary}{18}{section.2.4}% 
 \contentsline {chapter}{\numberline {3}Deep Declarative Network}{21}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}An Overview of Deep Declarative Network}{21}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}Structure}{21}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}Declarative Nodes}{21}{subsection.3.1.2}% 
-\contentsline {section}{\numberline {3.2}Learning}{21}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}Back-propagation Through Declarative Nodes}{21}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Unconstrained}{21}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Equality Constrained}{21}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Inequatlity Constrained}{21}{subsection.3.3.3}% 
-\contentsline {section}{\numberline {3.4}Examples of Declarative Nodes}{21}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Equality Constrained}{21}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Inequatlity Constrained}{21}{subsection.3.4.2}% 
-\contentsline {section}{\numberline {3.5}Summary}{21}{section.3.5}% 
+\contentsline {subsection}{\numberline {3.1.1}Declarative Node}{21}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Learning}{22}{subsection.3.1.2}% 
+\contentsline {section}{\numberline {3.2}Back-propagation Through Declarative Nodes}{22}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Unconstrained}{22}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Equality Constrained}{22}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}Inequatlity Constrained}{22}{subsection.3.2.3}% 
+\contentsline {section}{\numberline {3.3}Examples of Declarative Nodes}{22}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Implementation Details}{22}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Equality Constrained}{22}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}Inequatlity Constrained}{22}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Summary}{22}{section.3.4}% 
 \contentsline {chapter}{\numberline {4}The Future of Declarative Nodes}{23}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}Improvements of the Optimization}{23}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}Applications in Computer Vision Tasks}{23}{section.4.2}% 
