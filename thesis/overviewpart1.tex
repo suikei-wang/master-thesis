@@ -28,7 +28,7 @@ In optimization, a basic question is to determine the existence of a global mini
 \par We also assume that the function $f$ is continuous and "$+\infty$ at infinity". More precisely, $f(x) \rightarrow+\infty$ if $|x| \rightarrow+\infty$. Such a function is called \emph{inf-compact} or \emph{coercive}.~\citep{JS:06} Then the problem can be restricted to a bounded set and existence of a global minimum $x^{*}$ is guaranteed: a continuous function has a minimum on a compact set. This theorem is defined as follows and the proof is given in Appendix~\ref{appendix:trm23}.
 \begin{thm}~\citep{JS:06}
     \label{thm:23}
-    If $f$ is a continuous function defined on a compact set $\Omega$ in $\mathbb{R}$, then $f$ has a global minimizer $x^{*}$ on $\Omega$ i.e. there exists $x^{*} \in \Omega$ such that $f\left(x^{*}\right) \leq f(x)$ for all $x \in \Omega$
+    If $f$ is a continuous function defined on a compact set $\Omega$ in $\mathbb{R}$, then $f$ has a global minimizer $x^{*}$ on $\Omega$ i.e. there exists $x^{*} \in \Omega$ such that $f\left(x^{*}\right) \leq f(x)$ for all $x \in \Omega$.
 \end{thm}
 More general, based on the definition of coercive function $f$, we can give following theorem. Proof is given in Appendix~\ref{appendix:trm24}.
 \begin{thm}~\citep{JS:06}
@@ -43,7 +43,7 @@ Recall our assumptions on function $f$, it is a continuous function, which is al
 \par The theorem of the existence of the optimizer of lower semi-continuous function is given as follows and the proof is given in Appendix~\ref{appendix:thm25}
 \begin{thm}~\citep{JS:06}
     \label{thm:25}
-    Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a lower semi-continuous function. If $f$ has a nonempty, compact sublevel set $D:=\left\{x \in \mathbb{R}^{n}: f(x) \leq \alpha\right\}$, then $f$ achieves a global minimizer on $\mathbb{R}$
+    Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a lower semi-continuous function. If $f$ has a nonempty, compact sublevel set $D:=\left\{x \in \mathbb{R}^{n}: f(x) \leq \alpha\right\}$, then $f$ achieves a global minimizer on $\mathbb{R}$.
 \end{thm}
 Also, we introduce the definition of convex function and convex set which are important in regular optimization problems.
 \begin{defn}
@@ -114,6 +114,7 @@ $$
 \par Let us move to the sufficient condition (SC1). The result obtained under this theorem is best possible for general functions. Specifically, for a convex function $f$ is defined on a convex set $\Omega \subset \mathbb{R}^n$, any local minimizer of f is also a global minimizer. Moreover, if a function $f$ is strictly convex, it has at most one global minimizer. 
 
 \subsection{Optimality Conditions for Constrained Problems}
+\label{sec:opt-con-constrained}
 A general formulation for constrained optimization problems is as follows: 
 \begin{equation}
 \label{equ:2.2}
@@ -166,7 +167,7 @@ $$
     \centering
     \includegraphics[page=1,width=.7\textwidth]{figs/solution_22.pdf} 
   \caption{Feasible set of constraints $c_1$, $c_2$ and $c_3$}
- \end{figure}
+\end{figure}
 
 \par We can illustrate the feasible set of constriants $c_1$, $c_2$ and $c_3$ in Fig~\ref{fig:example22_set}. The active set of $0=(0,0)$ is $\{2, 3\}$, since $c_1(0) = -1 < 0$, which is inactive. And we can get the derivative of $c_2$ and $c_3$ at 0: 
 $$
@@ -199,7 +200,87 @@ which equals to the set of all vectors tangent to the feasible set $T_{0} \maths
     $$
     This set of equations are Karush-Kuhn-Tucker (KKT) conditions and a point $x^*$ is called a KKT point if there exists $\lambda^*$ such that $(x^*, \lambda ^*)$ satisfies the KKT conditions.
 \end{thm}
-\par For constrained optimization problem, the classic solution is using Lagrange multipliers \citep{BD:14}. This introduces the function 
+\par For constrained optimization problem, the classic solution is using Lagrange multipliers \citep{BD:14}. Figure~\ref{fig:lagrange-example} shows an example of constrained problem, where $f(x, y) = d_i, i = 1, 2, 3$ are the contours of different solution of the objective function and $c(x,y) = 0$ is the equality constraint of the problem. 
+\begin{figure}[t]
+    \label{fig:lagrange-example}
+    \centering
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+        %uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+
+        %Shape: Axis 2D [id:dp5517214573358842] 
+        \draw  (149,249.3) -- (512.5,249.3)(185.35,45) -- (185.35,272) (505.5,244.3) -- (512.5,249.3) -- (505.5,254.3) (180.35,52) -- (185.35,45) -- (190.35,52)  ;
+        %Shape: Ellipse [id:dp22516389660099345] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}] (254.92,143.8) .. controls (257.05,125.08) and (281.04,112.44) .. (308.49,115.56) .. controls (335.95,118.69) and (356.48,136.39) .. (354.36,155.11) .. controls (352.23,173.83) and (328.24,186.47) .. (300.78,183.34) .. controls (273.33,180.22) and (252.79,162.52) .. (254.92,143.8) -- cycle ;
+        %Shape: Ellipse [id:dp49554237272610546] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}] (233.99,145.42) .. controls (234.87,113.97) and (276.43,89.62) .. (326.82,91.04) .. controls (377.21,92.45) and (417.34,119.1) .. (416.46,150.55) .. controls (415.57,182) and (374.01,206.34) .. (323.62,204.93) .. controls (273.23,203.51) and (233.1,176.87) .. (233.99,145.42) -- cycle ;
+        %Shape: Ellipse [id:dp7806828933868084] 
+        \draw  [dash pattern={on 4.5pt off 4.5pt}] (207.02,137.45) .. controls (208.08,87.51) and (271.42,48.35) .. (348.51,49.98) .. controls (425.6,51.61) and (487.24,93.41) .. (486.18,143.35) .. controls (485.13,193.28) and (421.78,232.45) .. (344.69,230.82) .. controls (267.6,229.19) and (205.97,187.39) .. (207.02,137.45) -- cycle ;
+        %Curve Lines [id:da36285843872545764] 
+        \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ]   (197.5,275) .. controls (360.5,294) and (296.5,89) .. (515.5,89) ;
+        %Straight Lines [id:da4302907773489495] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (267,66) -- (272.66,78.19) ;
+        \draw [shift={(273.5,80)}, rotate = 245.1] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da6345979393684194] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (418,64) -- (413.23,76.14) ;
+        \draw [shift={(412.5,78)}, rotate = 291.45] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da7677780782766945] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (485,152) -- (473.48,150.29) ;
+        \draw [shift={(471.5,150)}, rotate = 368.43] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da8512837599521172] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (397.5,225) -- (394.09,213.91) ;
+        \draw [shift={(393.5,212)}, rotate = 432.9] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da3071908779325687] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (247,203) -- (253.37,193.65) ;
+        \draw [shift={(254.5,192)}, rotate = 484.29] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da5957752677824286] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (343,93) -- (341.73,104.01) ;
+        \draw [shift={(341.5,106)}, rotate = 276.58] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da5092844275104522] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (413,134) -- (401.33,139.19) ;
+        \draw [shift={(399.5,140)}, rotate = 336.03999999999996] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da5964396149228721] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (233.99,145.42) -- (244.52,146.75) ;
+        \draw [shift={(246.5,147)}, rotate = 187.2] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da9112805859116238] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (350,203) -- (347.88,191.96) ;
+        \draw [shift={(347.5,190)}, rotate = 439.11] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da43676935921676785] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (305.49,115.56) -- (303.74,130.01) ;
+        \draw [shift={(303.5,132)}, rotate = 276.92] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da25083239726932716] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (294,182) -- (296.06,172.95) ;
+        \draw [shift={(296.5,171)}, rotate = 462.8] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da2609797419698736] 
+        \draw [line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (349,167) -- (338.06,158.25) ;
+        \draw [shift={(336.5,157)}, rotate = 398.65999999999997] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da07880955478656193] 
+        \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (273,263) -- (280.51,276.26) ;
+        \draw [shift={(281.5,278)}, rotate = 240.46] [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da08010617347401983] 
+        \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (350,168) -- (362.96,178.72) ;
+        \draw [shift={(364.5,180)}, rotate = 219.61] [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+        %Straight Lines [id:da39064759588652787] 
+        \draw [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]  [dash pattern={on 4.5pt off 4.5pt}]  (429,103) -- (433.88,118.1) ;
+        \draw [shift={(434.5,120)}, rotate = 252.07] [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,draw opacity=1 ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+
+        % Text Node
+        \draw (166,45) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle y$};
+        % Text Node
+        \draw (493,253) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle x$};
+        % Text Node
+        \draw (272,141.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$f( x,\ y) \ =\ d_1$};
+        % Text Node
+        \draw (324.62,204.33) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$f( x,\ y) \ =\ d_2$};
+        % Text Node
+        \draw (400,227.4) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$f( x,\ y) \ =\ d_3$};
+        % Text Node
+        \draw (488,92.4) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,opacity=1 ]  {$c( x,\ y) = 0$};
+    \end{tikzpicture}
+    \caption{Contour of a constrained problem}
+\end{figure}
+
+For multiple constraints, this method introduces the function 
 $$
 \mathscr{L}(x, \lambda):=f(x)+\sum_{i \in \mathscr{E} \cup \mathscr{I}} \lambda_{i} c_{i}(x)
 $$
@@ -259,6 +340,7 @@ iteratively according to some rule. It uses the tangent line of the objective fu
 
 
 \subsection{Equality Constrained Optimization}
+\label{sec:equ-opt}
 Constrained problems are usually more complicated since the solution is restricted on a boundary or in a feasible region. For equality constraints, the basic case is the linear equality constraints $A \boldsymbol{y} = \boldsymbol{b}$. Again, we consider an objective function $f: \mathbb{R}^{m} \times \mathbb{R}^{n} \rightarrow \mathbb{R}$. Let $A \in \mathbb{R}^{p \times m}$ and $b \in \mathbb{R}^{p}$. $A$ is a set of $p$ linear equations as constraints $A \boldsymbol{y} = \boldsymbol{b}$. The problem is defined as follows:
 $$
 \begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & A \boldsymbol{y}=\boldsymbol{b}\end{array}
@@ -311,6 +393,7 @@ $$
 \par Penalty method\citep{YO:05}, a function determining when a point $x$ is feasible or not, is used to replace the constrained problem with an unconstrained one. For a minimization problem $f(x)$, the penalty function $P(x)$ associated with a penalty parameter are introduced to combine with $f(x)$ and now we are going to solve a series of unconstrained problems. These problems have converged solutions of the original constrained problem. 
 
 \subsection{Inequality Constrained Optimization}
+\label{sec:ineq-opt}
 Similar to equality constrained problems, inequality constrained problem usually defined the solution in a feasible set. In general, the standard form of inequality constrained problem is negative constraints:
 $$
 \begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & c_i(x, y) \leq 0, \quad i = 1, \dots, m \end{array}
@@ -343,7 +426,7 @@ If a problem is differentiable, that means the solution of this problem can be b
 
 \section{Summary}
 \label{sec:2summary}
-In Chapter~\ref{cha:overviewpart1}, firstly, introduce the numerical optimization briefly with some necessary conditions and theorems. For the general convex optimization problem, the existence of the local or global optimizers can be determined by the feasible set. Next, the optimality of both unconstrained and constrained problems are discussed. For unconstrained problems, we only need to follow the necessary and sufficient conditions to find the global minimum of the solution. For constrained problems, it should also satisfy the KKT condition. Then we compare existing algorithms on the solution to these problems. Here, for constrained optimization problems, we have to consider the linearity of constraints. Specifically, the activity of inequality constraints can also be solved with different algorithms. Finally, since this thesis is based on the end-to-end differentiable network, some related works of the application are described since these works inspire the deep declarative network in the next chapter. In the next chapter, we are going to describe the deep declarative network in detail with examples. 
+In Chapter~\ref{cha:overviewpart1}, firstly, we introduce the numerical optimization briefly with some necessary conditions and theorems. For the general convex optimization problem, the existence of the local or global optimizers can be determined by the feasible set. Next, the optimality of both unconstrained and constrained problems are discussed. For unconstrained problems, we only need to follow the necessary and sufficient conditions to find the global minimum of the solution. For constrained problems, it should also satisfy the KKT condition. Then we compare existing algorithms on the solution to these problems. Here, for constrained optimization problems, we have to consider the linearity of constraints. Specifically, the activity of inequality constraints can also be solved with different algorithms. Finally, since this thesis is based on the end-to-end differentiable network, some related works of the application are described since these works inspire the deep declarative network in the next chapter. In the next chapter, we are going to describe the deep declarative network in detail with examples. 
 
 
 

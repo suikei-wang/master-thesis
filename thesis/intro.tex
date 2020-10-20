@@ -2,7 +2,7 @@
 \label{cha:intro}
 
 \section{Motivation}
-\label{sec.motivation}
+\label{sec:motivation}
 
 
 
@@ -10,17 +10,16 @@
 \section{Thesis Outline}
 \label{sec:outline}
 Following the two central themes we mentioned above, this thesis consists of two parts -- PART I Deep Declarative Network: Multiple Constrained Declarative Nodes and Part II Deep Declarative Nodes: Non-regular Solution. 
-\par PART I focus on the regular points of multiple constrained declarative nodes in deep declarative network, with some basic examples of different constraints nodes. 
+\par PART I focus on the regular points of multiple constrained declarative nodes in the deep declarative network, with some basic examples of different constraints nodes. 
 \begin{description}
-    \item In Chapter ~\ref{cha:overviewpart1}, we first give an overview of the theory of optimization, with the discussion of the optimality. Next we formally define the unconstrained, equality constrained and inequality constrained problems. We then discuss several related works on the solutions of these problems. Finally, differentiable neural network, an application of numerical optimization in machine learning is briefly discussed with various modern deep learning algorithms based on it. 
-    \item In Chapter ~\ref{cha:ddn}, we present the details of the deep declarative network. We begin with the overview structure and how it works through the specific declarative nodes. We then introduce the learning progress of the deep declarative network. We analysize the backpropagation through the declarative nodes in different constrained problems. Finally, we give multiple examples of the implementation of the deep declarative nodes in both equality constrained and inequality constrained optimization problems. This chapter is based on works of \cite{SG:19}. 
-    \item In Chapter ~\ref{cha:futurepart1}, we point out the limitation of current deep declarative nodes and address some ideas for the future improvements in the optimization process. We also look to the practical application of the deep declarative network in computer vision tasks, which will be forseeable. 
+    \item In Chapter ~\ref{cha:overviewpart1}, we first give an overview of the theory of optimization, with the discussion of the optimality. Next, we formally define the unconstrained, equality constrained and inequality constrained problems. We then discuss several related works on the solutions of these problems. Finally, the differentiable neural network, an application of numerical optimization in machine learning is briefly discussed with various modern deep learning algorithms based on it. 
+    \item In Chapter ~\ref{cha:ddn}, we present the details of the deep declarative network. We begin with the overview structure and how it works through the specific declarative nodes. We then introduce the learning progress of the deep declarative network. We analyze the backpropagation through the declarative nodes in different constrained problems. Finally, we give multiple examples of the implementation of the deep declarative nodes in both equality constrained and inequality constrained optimization problems. Also, we point out the limitation of current deep declarative nodes and address some ideas for future improvements in the optimization process. We also look to the practical application of the deep declarative network in computer vision tasks, which will be foreseeable. This chapter is based on works of \cite{SG:19}. 
 \end{description}
 
 \par PART II is an extension of the deep declarative nodes in non-regular solution problems, which cannot be solved through the traditional numerical optimization methods. Detailedly, 
 \begin{description}
-    \item In Chapter~\ref{cha:overviewpart2}, we give an overview of the non-regular solution problems. We list the general non-regular solution cases: Overdetermined system, rand deficiency and non-convex feasible set. We also introduce various related works for solving the problems when the gradient result is not a regular point. 
-    \item In Chapter~\ref{cha:result}, we demonstrate various possible solutions for each non-regular point case. Since for non-regular solution problems, there is no exact solution, we can only appxiate the closed result. Thus, we also compare and discuss the results of each method on minimizing the final loss. 
+    \item In Chapter~\ref{cha:overviewpart2}, we give an overview of the non-regular solution problems. We list the general non-regular solution cases: Overdetermined system, rand deficiency, and non-convex feasible set. We also introduce various related works for solving the problems when the gradient result is not a regular point. 
+    \item In Chapter~\ref{cha:result}, we demonstrate various possible solutions for each non-regular point case. Since for non-regular solution problems, there is no exact solution, we can only approximate the closed result. Thus, we also compare and discuss the results of each method on minimizing the final loss. 
 \end{description}
 We will finally conclude in Chapter~\ref{cha:conc}. Proofs for the important theorems and definitions are given in the Appendix.
 

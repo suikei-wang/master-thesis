@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -102,6 +102,11 @@
   gauss-newton methods of the fischer-burmeister equation for the
   complementarity problem.
 \newblock \emph{Mathematics of Operations Research}, 24, 3  (1999), 529--543.
+
+\bibitem[{Maclaurin et~al.(2015)Maclaurin, Duvenaud, and Adams}]{MD:15}
+\textsc{Maclaurin, D.; Duvenaud, D.; and Adams, R.~P.}, 2015.
+\newblock Autograd: Effortless gradients in numpy.
+\newblock In \emph{ICML 2015 AutoML Workshop}, vol. 238, 5.
 
 \bibitem[{Newton and Colson(1736)}]{NT:36}
 \textsc{Newton, I. and Colson, J.}, 1736.

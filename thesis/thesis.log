@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  19 OCT 2020 00:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  20 OCT 2020 14:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -868,12 +868,6 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 
 ] [14
 
-] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lot)
-\tf@lot=\write8
-\openout8 = `thesis.lot'.
-
- [15] [16
-
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/intro.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
@@ -892,12 +886,12 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [5
 
 ] [6] [7]
-<figs/contour_21.pdf, id=526, page=1, 462.52798pt x 346.89601pt>
+<figs/contour_21.pdf, id=514, page=1, 462.52798pt x 346.89601pt>
 File: figs/contour_21.pdf Graphic file (type pdf)
 <use figs/contour_21.pdf, page 1>
 Package pdftex.def Info: figs/contour_21.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-<figs/solution_21.pdf, id=527, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_21.pdf, id=515, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_21.pdf Graphic file (type pdf)
 <use figs/solution_21.pdf, page 1>
 Package pdftex.def Info: figs/solution_21.pdf , page1 used on input line 109.
@@ -914,39 +908,47 @@ Underfull \vbox (badness 1067) has occurred while \output is active []
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.131 $$
+l.132 $$
          </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [10]
-<figs/solution_22.pdf, id=604, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_22.pdf, id=591, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_22.pdf Graphic file (type pdf)
 <use figs/solution_22.pdf, page 1>
-Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 167.
+Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 168.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.186     $$
-             </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf>] [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.187     $$
+             </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf>]
+Underfull \vbox (badness 4846) has occurred while \output is active []
 
- [13]
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
- [14]
-<figs/constrained_22.pdf, id=666, page=1, 462.52798pt x 346.89601pt>
-File: figs/constrained_22.pdf Graphic file (type pdf)
-<use figs/constrained_22.pdf, page 1>
-Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 286.
-(pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-
-Underfull \vbox (badness 4492) has occurred while \output is active []
-
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.293 $$
-         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>] [16] [17] [18]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [19] [20
+l.290 $$
+        ] [13] [14]
+<figs/constrained_22.pdf, id=654, page=1, 462.52798pt x 346.89601pt>
+File: figs/constrained_22.pdf Graphic file (type pdf)
+<use figs/constrained_22.pdf, page 1>
+Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
+(pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
+
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+ [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.398 $$
+         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>]
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [17] [18]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [19] [20
 
 ]
 Chapter 3.
@@ -958,98 +960,67 @@ l.78 \end{equation}
                    ] [23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/futurepart1.tex [25] [26
+ [24] [25] [26] [27]
+<figs/linear_equality_example.pdf, id=853, page=1, 462.52798pt x 346.89601pt>
+File: figs/linear_equality_example.pdf Graphic file (type pdf)
+<use figs/linear_equality_example.pdf, page 1>
+Package pdftex.def Info: figs/linear_equality_example.pdf , page1 used on input line 207.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 
-]
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.216 \par
+           Now we consider a multiple non-linear equality constrained proble... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>]
+<figs/multiple_equality_example.pdf, id=883, page=1, 462.52798pt x 346.89601pt>
+File: figs/multiple_equality_example.pdf Graphic file (type pdf)
+<use figs/multiple_equality_example.pdf, page 1>
+Package pdftex.def Info: figs/multiple_equality_example.pdf , page1 used on input line 227.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.240 \end{equation}
+                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_equality_example.pdf>]
+<figs/multiple_inequality_example.pdf, id=915, page=1, 462.52798pt x 346.89601pt>
+File: figs/multiple_inequality_example.pdf Graphic file (type pdf)
+<use figs/multiple_inequality_example.pdf, page 1>
+Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on input line 244.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.252 \par
+           In solving the real computer vision tasks, comparing to other dif... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf>]) [31] [32
+
+] [33] [34] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
 Chapter 4.
-) [27] [28
-
-] [29] [30] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
-Chapter 5.
-(/Users/sukays/Desktop/Research Project/master-thesis/thesis/table/machines.tex
-LaTeX Font Info:    Try loading font information for T1+uop on input line 4.
-LaTeX Font Info:    No file T1uop.fd. on input line 4.
-
-
-LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 4.
-
-
-LaTeX Font Warning: Font shape `T1/uop/bx/n' undefined
-(Font)              using `T1/uop/m/n' instead on input line 9.
-
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 42.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 42.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 42.
- (/Users/sukays/Desktop/Research Project/master-thesis/thesis/code/hello.c
-LaTeX Font Info:    Font shape `T1/fvm/bx/n' in size <9> not available
-(Font)              Font shape `T1/fvm/b/n' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 1.
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/code/hello.java)
-Overfull \hbox (3.18645pt too wide) in paragraph at lines 42--47
- [][] 
- []
-
-
-Overfull \hbox (3.18645pt too wide) in paragraph at lines 42--47
- [][] 
- []
-
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [31
-
-pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1 \chapter
-            {Solutions of Non-regular Point}] [32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1 \chapter
-            {Solutions of Non-regular Point}]
-Chapter 6.
-<figs/zerocost_intel.pdf, id=895, 361.35pt x 216.81pt>
-File: figs/zerocost_intel.pdf Graphic file (type pdf)
-<use figs/zerocost_intel.pdf>
-Package pdftex.def Info: figs/zerocost_intel.pdf  used on input line 23.
-(pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-<figs/zerobus_core.pdf, id=896, 361.35pt x 216.81pt>
-File: figs/zerobus_core.pdf Graphic file (type pdf)
-<use figs/zerobus_core.pdf>
-Package pdftex.def Info: figs/zerobus_core.pdf  used on input line 24.
-(pdftex.def)             Requested size: 411.42686pt x 246.85829pt.
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [33
-
-] [34pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.1 \chapter
-            {Conclusion} </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/zerocost_intel.pdf> </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/zerobus_core.pdf
-
-pdfTeX warning: pdflatex (file /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/zerobus_core.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]
-Chapter 7.
-) [35
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [35
 
 ] [36
 
+]
+Chapter 5.
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [37] [38
+
+]
+Chapter 6.
+) [39] [40
+
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
-\tf@brf=\write9
-\openout9 = `thesis.brf'.
+\tf@brf=\write8
+\openout8 = `thesis.brf'.
 
- [37
+ [41
 
-]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [38] [39
+] [42]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [43] [44
 
-] [40] [41]
+] [45] [46] [47]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 148.
@@ -1081,35 +1052,35 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [42]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ [48]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [49]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EC10C44E78FF104378DF22369F9FCE0D;4804.
+(rerunfilecheck)             Checksum: 53A9CFFF1E58B06D757C4EA59E36B7C0;4722.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 3803FD8E2B262C14B924EF87835F3445;2323.
+(rerunfilecheck)             Checksum: 49B71FCDE8B7F1107B492B134A4E658B;2460.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 32997 strings out of 492616
- 750623 string characters out of 6129480
- 1084812 words of memory out of 5000000
- 35975 multiletter control sequences out of 15000+600000
- 77598 words of font info for 129 fonts, out of 8000000 for 9000
+ 32655 strings out of 492616
+ 747643 string characters out of 6129480
+ 1077814 words of memory out of 5000000
+ 35666 multiletter control sequences out of 15000+600000
+ 79035 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,96p,1240b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (59 pages, 386199 bytes).
+ 62i,16n,96p,1325b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (63 pages, 386119 bytes).
 PDF statistics:
- 1122 PDF objects out of 1200 (max. 8388607)
- 932 compressed objects within 10 object streams
- 206 named destinations out of 1000 (max. 500000)
- 635 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1177 PDF objects out of 1200 (max. 8388607)
+ 948 compressed objects within 10 object streams
+ 201 named destinations out of 1000 (max. 500000)
+ 624 words of extra memory for PDF output out of 10000 (max. 10000000)
 

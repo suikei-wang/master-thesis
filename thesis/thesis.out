@@ -29,34 +29,32 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Implementation Details}{section.3.3}% 29
 \BOOKMARK [2][-]{subsection.3.3.2}{Equality Constrained}{section.3.3}% 30
 \BOOKMARK [2][-]{subsection.3.3.3}{Inequatlity Constrained}{section.3.3}% 31
-\BOOKMARK [1][-]{section.3.4}{Summary}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{The Future of Declarative Nodes}{part.1}% 33
-\BOOKMARK [1][-]{section.4.1}{Improvements of the Optimization}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Applications in Computer Vision Tasks}{chapter.4}% 35
-\BOOKMARK [-1][-]{part.2}{II Deep Declarative Nodes: Non-regular Solution}{}% 36
-\BOOKMARK [0][-]{chapter.5}{An Overview of Regular and Non-regular Solution}{part.2}% 37
-\BOOKMARK [1][-]{section.5.1}{Problems in Regular Deep Declarative Nodes}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.2}{Related Work in Non-regular Solution}{chapter.5}% 39
-\BOOKMARK [2][-]{subsection.5.2.1}{Overdetermined System}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.2}{Rand Deficiency}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.3}{Non-convex Problems}{section.5.2}% 42
-\BOOKMARK [0][-]{chapter.6}{Solutions of Non-regular Point}{part.2}% 43
-\BOOKMARK [1][-]{section.6.1}{Overdetermined System}{chapter.6}% 44
-\BOOKMARK [2][-]{subsection.6.1.1}{Least-Squared Method}{section.6.1}% 45
-\BOOKMARK [1][-]{section.6.2}{Conjugate Gradient and Preconditioning}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.3}{Rank Deficiency}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.4}{Non-convex Problems}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 49
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{part.2}% 50
-\BOOKMARK [1][-]{section.7.1}{Future Work}{chapter.7}% 51
-\BOOKMARK [0][-]{appendix*.7}{Appendix}{part.2}% 52
-\BOOKMARK [1][-]{section.Alph0.1}{An Overview of Numerical Optimization}{appendix*.7}% 53
-\BOOKMARK [2][-]{subsection.Alph0.1.1}{Theory of Optimization}{section.Alph0.1}% 54
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.1}{Proof of Theorem [thm][3][2]2.3}{subsection.Alph0.1.1}% 55
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.2}{Proof of Theorem [thm][4][2]2.4}{subsection.Alph0.1.1}% 56
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.3}{Proof of Theorem [thm][6][2]2.6}{subsection.Alph0.1.1}% 57
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.4}{Proof of Theorem [thm][8][2]2.8}{subsection.Alph0.1.1}% 58
-\BOOKMARK [3][-]{subsubsection.Alph0.1.1.5}{Proof of Lemma [thm][10][2]2.10}{subsection.Alph0.1.1}% 59
-\BOOKMARK [2][-]{subsection.Alph0.1.2}{Solution of Unconstrained and Constrained Optimization Problems}{section.Alph0.1}% 60
-\BOOKMARK [3][-]{subsubsection.Alph0.1.2.1}{Proof of Equation [equation][3][2]2.3}{subsection.Alph0.1.2}% 61
-\BOOKMARK [3][-]{subsubsection.Alph0.1.2.2}{Proof of Equation [equation][4][2]2.4 SG:19}{subsection.Alph0.1.2}% 62
+\BOOKMARK [1][-]{section.3.4}{Future Work of the Deep Declarative Network}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.5}{Summary}{chapter.3}% 33
+\BOOKMARK [-1][-]{part.2}{II Deep Declarative Nodes: Non-regular Solution}{}% 34
+\BOOKMARK [0][-]{chapter.4}{An Overview of Regular and Non-regular Solution}{part.2}% 35
+\BOOKMARK [1][-]{section.4.1}{Problems in Regular Deep Declarative Nodes}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.2}{Related Work in Non-regular Solution}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Solutions of Non-regular Point}{part.2}% 38
+\BOOKMARK [1][-]{section.5.1}{Overdetermined System}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.1.1}{Least-Squared Method}{section.5.1}% 40
+\BOOKMARK [2][-]{subsection.5.1.2}{Conjugate Gradient and Preconditioning}{section.5.1}% 41
+\BOOKMARK [1][-]{section.5.2}{Rank Deficiency}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.2.1}{Singular Value Decomposition Method}{section.5.2}% 43
+\BOOKMARK [2][-]{subsection.5.2.2}{Strategies in Applications}{section.5.2}% 44
+\BOOKMARK [1][-]{section.5.3}{Non-convex Problems}{chapter.5}% 45
+\BOOKMARK [2][-]{subsection.5.3.1}{Augumented Lagrange Method}{section.5.3}% 46
+\BOOKMARK [2][-]{subsection.5.3.2}{Non-linear Lagrangian Duality}{section.5.3}% 47
+\BOOKMARK [1][-]{section.5.4}{Summary}{chapter.5}% 48
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{part.2}% 49
+\BOOKMARK [0][-]{appendix*.6}{Appendix}{part.2}% 50
+\BOOKMARK [1][-]{section.Alph0.1}{An Overview of Numerical Optimization}{appendix*.6}% 51
+\BOOKMARK [2][-]{subsection.Alph0.1.1}{Theory of Optimization}{section.Alph0.1}% 52
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.1}{Proof of Theorem [thm][3][2]2.3}{subsection.Alph0.1.1}% 53
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.2}{Proof of Theorem [thm][4][2]2.4}{subsection.Alph0.1.1}% 54
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.3}{Proof of Theorem [thm][6][2]2.6}{subsection.Alph0.1.1}% 55
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.4}{Proof of Theorem [thm][8][2]2.8}{subsection.Alph0.1.1}% 56
+\BOOKMARK [3][-]{subsubsection.Alph0.1.1.5}{Proof of Lemma [thm][10][2]2.10}{subsection.Alph0.1.1}% 57
+\BOOKMARK [2][-]{subsection.Alph0.1.2}{Solution of Unconstrained and Constrained Optimization Problems}{section.Alph0.1}% 58
+\BOOKMARK [3][-]{subsubsection.Alph0.1.2.1}{Proof of Equation [equation][3][2]2.3}{subsection.Alph0.1.2}% 59
+\BOOKMARK [3][-]{subsubsection.Alph0.1.2.2}{Proof of Equation [equation][4][2]2.4 SG:19}{subsection.Alph0.1.2}% 60

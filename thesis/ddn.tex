@@ -16,7 +16,7 @@ In deep declarative network, it defines the solution of a constrained optimizati
     y \in \underset{u \in C}{\arg \min } f(x, u)
 \end{equation}
 where $f$ is the objective function $f: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$, and $C \in \mathbb{R}^m$ is the set of constraints parameterized by $x$. 
-\par Apart from the traditional forward processing mapping node, deep declarative node does not explicitly define the transforming function from the input to the output. It defines the input-output relationship implicitly by an objective and constriants optimization problem, where the solution of the problem is the output. 
+\par Apart from the traditional forward processing mapping node, deep declarative node does not explicitly define the transforming function from the input to the output. It defines the input-output relationship implicitly by an objective and constraints optimization problem, where the solution of the problem is the output. 
 \begin{figure}
     \label{fig:ddn}
     \centering
@@ -139,16 +139,117 @@ and $\lambda \in \mathbb{R}^p$ can be solved through the system $\lambda ^T A = 
 \begin{equation}
     \mathcal{L}(x, y, \lambda)=f(x, y)-\sum_{i=1}^{p} \lambda_{i} h_{i}(x, y)
 \end{equation}
-\par We introduce the Lagrange multipliers $\lambda$ to set the stationary point of this Lagrangian is $(y, \lambda)$. Then we differentiate $\mathcal{L}$ with respect to $y$ and $\lambda$ separately, which are both resulting in 0 since $y$ is the optimality. 
+\par We introduce the Lagrange multipliers $\lambda$ to set the stationary point of this Lagrangian is $(y, \lambda)$. Then we differentiate $\mathcal{L}$ with respect to $y$ and $\lambda$ separately, which are both resulting in 0 since $y$ is the optimality. We have two cases at the optimal point $y$. The first one is that the partial derivatives of $f$ with respect to $y$ equals to zero: $\operatorname{D}_Yf(x,y) = 0 \in \mathbb{R}^{1 \times m}$. That means we transfer this problem to an unconstrained problem since its solution satisfies the constraints directly. Under this case, $\lambda$ can be set as 0 directly. The second one is that the partial derivatives of $f$ with respect to $y$ is non-zero vector, and it is orthogonal to the constraint surface, which is controlled by the set of equality constraints $h(x, y) = 0$. In this case, from the derivative of $\mathcal{L}$ with respect to $y$ equaling to zero, we have
+\begin{equation}
+    \mathrm{D}_{Y} f(x, y)=\sum_{i=1}^{p} \lambda_{i} \mathrm{D}_{Y} h_{i}(x, y)=\lambda^{T} A
+\end{equation}
+where $A$ is the same as the defined above. 
+\par To solve this equation for $\lambda$, if we want to compute explicitly, it has a unique analytic solution $\lambda = (AA^T)^{-1}A(\operatorname{D}_Yf)^T$. 
+
+\par Next, we compute the second-order derivative of $\mathcal{L}$ with respect to $x$. It still equals to zero in both functions. Solving the equation through variable elimination~\citep{BS:04} we have
+\begin{equation}
+    \operatorname{D} \lambda(x)=\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)
+\end{equation}
+
+\begin{equation}
+    \operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
+\end{equation}
+which is our result. 
+\par The problem and solution defined in Section~\ref{sec:equ-opt} is the simplier case of this general one. Also, if we only have one constraint, the matrix $A$ and vector $\lambda$ can be simplifed as vector and scalar separately. Moreover, for linear only constraints, the repsentation of matrix $H$ and $B$ are also simper since $\lambda = 0$.  
 
 \subsection{Inequatlity Constrained}
+Lastly, inequality constrained problems are more complicated since we have to consider the solution for active and inactive constraints. Also, previous works metioned in Section~\ref{sec:ineq-opt} are approximation results or focusing on the convex problems. Here, the declarative nodes consider the the problem containing both equality and inequality constraints. Consider functions $f: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}$ and $h: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^p$, and $g: \mathbb{R}^n \times \mathbb{R}^m \rightarrow \mathbb{R}^q$, we have
+\begin{equation}
+    \begin{aligned} 
+        y(x) \in & \arg \min _{u \in \mathbb{R}^{m}} f(x, u) \\ & \text { subject to } \quad\begin{array}{l}h_{i}(x, u)=0, i=1, \ldots, p \\ g_{i}(x, u) \leq 0, i=1, \ldots, q\end{array}
+    \end{aligned}
+\end{equation}
+where $h = [h_1, \dots, h_p]^T$ are still a set of equality constraints, and $g = [g_1, \dots, g_q]^T$ are a set of inequality constraints. 
+\par In declarative nodes, it present a more general result based on activity of all inequality constraints at the optimal point $y(x)$. Also, assumptions of the existence of the optimal point $y(x)$ and second-order differentiation of $f$, $g$, $h$ remain true. We combine the equality constraints and inequality constraints together in $\tilde{h} = [h_1, \dots, h_p, g_1, \dots, g_q]$ and the derivative of $\tilde{h}$ with respect to $y$ is a full rank matrix to keep the regularity. We have
+$$
+\operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
+$$
+where
+$$
+\begin{aligned} 
+    A &=\operatorname{D}_{Y} \tilde{h}(x, y) \in \mathbb{R}^{(p+q) \times m} \\ B &=\operatorname{D}_{X Y}^{2} f(x, y)-\sum_{i=1}^{p} \lambda_{i} \operatorname{D}_{X Y}^{2} \tilde{h}_{i}(x, y) \in \mathbb{R}^{m \times n} \\ C &=\operatorname{D}_{X} \tilde{h}(x, y) \in \mathbb{R}^{(p+q) \times n} \\ H &=\operatorname{D}_{Y Y}^{2} f(x, y)-\sum_{i=1}^{p+q} \lambda_{i} \operatorname{D}_{Y Y}^{2} \tilde{h}_{i}(x, y) \in \mathbb{R}^{m \times m} 
+\end{aligned}
+$$
+and $\lambda \in \mathbb{R}^{p+q}$ satisfies $\lambda ^T A = \operatorname{D}_Yf(x,y)$ with $\lambda_i \leq 0$ for $i = p+1, \dots, p+q$, which is almost the same as the solution of the equality constrained problem. 
+\par However, in inequality constraints, the gradient is discontinuous since the Lagrange multipliers $\lambda$ for active inequality constraints are zero. We separate the solution of inequality constrained declarative nodes into 3 scenarios. For any inequality constraints $g(x, u) \leq 0$, the constraint can be active or inactive at the optimal solution $y$. In the first scenario, the constraint is inactive at the solution $y$, that means $g(x,y) < 0$ and it is completely in the feasible set. Therefore we have $\operatorname{D}_Yf(x,y) = 0$ and we can consider it as an unconstrained problem. In the second scenario, the constraint is active at $y$, but it is orthogonal to the constraint surface. Then we have $\operatorname{D}_Yf(x,y) \neq 0$ and $\lambda \neq 0$. Then we can consider this inequality constraint as an equality one since the solution falls on the boundary of the feasible set, but the gradient of negative and pointing outside the set. The last scenario, the constraint is active and $\operatorname{D}_Yf(x,y) = 0$ when the solution is on the boundary and it is a local minimum. For the backward propagation, in this case, we can choose both solutions of unconstrained or equality constrained gradient. 
 
 \section{Examples of Declarative Nodes}
 \label{sec:example}
-
 \subsection{Implementation Details}
-\subsection{Equality Constrained}
+We give the implementation of both equality and inequality constraints with linear and nonlinear cases in raw Python under the gradient calculation package Autograd\citep{MD:15}. In this subsection, we are going to show the implementation details of the basic deep declarative nodes.
+\par \textbf{Constraints definition.}  
+In the multiple equality constraints node and inequality constraints node, equality constraints and inequality constraints are defined in two functions separately. If there are more than one constraint, they are stored in a 1-d array. All constraints equal to zero or less than 0, which means all parameters in the equations are in the left-hand side and the right-hand side is always zero. There is a specific checking function defined to check this. In the linear equality constraints node, the set of linear constraints are defined as a single matrix $A$ and its corresponding vector $b$ in the initialization directly. 
 
+\par \textbf{Gradient computation.}
+To compute the gradient of the solution under the constraints, we need to calculate the Jacobian and Hessian matrix, which are the first-order and second-order derivative matrix of the constraints. For matrix $H$ in the general solution of the constrained problem, it is costly to compute the inverse of it. Therefore, we transfer the problem to solving a linear system $Hx_1 = A^T$ and $Hx_2 = B$ where $x_1 = H^{-1}A^T$ and $x_2 = H^{-1}B$ to solve them. Cholesky decomposition, an algorithm for solving the linear system efficiently, is applied to this problem. It decomposes a Hermitian positive-definite matrix into the product of a lower triangular matrix with real and positive diagonal entries with its conjugate transpose, which is the unique decomposition. In our problems, since matrix $H$ is a symmetric real positive-definite matrix, it can be decomposed through this algorithm effectively. The solution of the Lagrange multipliers $\lambda$ similar, which is the solution of a linear system $\lambda^T A = \operatorname{D}_Yf(x,y)$ through the least-square solution solver. 
+\par \textbf{Optimality checking.} For constrained optimization problems, according to the optimality conditions defined in Section~\ref{sec:opt-con-constrained}, we should check if the first-order optimality condition is satisfied or not. We define a function in all cases for checking the optimality: the gradient of constraint is zero at optimal point ($\operatorname{D}_Yh(x,y) = 0$), or the gradient of objective function equals to the product of the Lagrange multipliers and the gradient of constraints ($\operatorname{D}_Yf(x, y) = \lambda \operatorname{D}_Yh(x, y)$). 
+
+\par \textbf{Exception handling.}
+Since our assumptions are based on the regular solution, and not all problems have a regular optimal point, we define the exception cases for this problem. When we solve the linear system for the Lagrange multipliers $\lambda$, if the solution does not falls as a regular point, we may get a null value in $\lambda$ due to the non-existence of the gradient on a non-regular solution. We are going to discuss the solution for this specific case in the next part. For here, we just throw the exception once there is a null value in the Lagrange multipliers $\lambda$. 
+
+\subsection{Equality Constrained}
+Firstly, we consider a single linear equality constrained problem, minimizing the KL-divergence between the input $x$ and output $y$ subject to the output forming a valid probablility vector, which can be formally defined as 
+\begin{equation}
+    \begin{array}{rll}
+        y =& \text{argmin}_u & - \sum_{i=1}^{n} x_i \log u_i \\
+        & \text{subject to} & \sum_{i=1}^{n} u_i = 1
+    \end{array}
+\end{equation}
+where the positivity constraint on $y$ is automatically satisfied by the domain of the log function.
+\begin{figure}[t]
+    \label{fig:equ-lin-eg}
+    \centering
+    \includegraphics[page=1,width=.8\textwidth]{figs/linear_equality_example.pdf} 
+    \caption{Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}
+\end{figure}
+\par A nice feature of this problem is that we can solve it in closed-form as
+$$
+y = \frac{1}{\sum_{i=1}^{n} x_i} x.
+$$
+
+\par Now we are going to solve this problem via an iterative method with derivative of deep declarative node. Set $n=5$ and $m=5$, which means the input $x \in \mathbb{R}^5$ and the output $y \in \mathbb{R}^5$. We begin from a random feasible solution, which is the normalization of the value $y$, then preform the gradient update. Figure~\ref{fig:equ-lin-eg} shows the function and gradient sweeping the first component of the input $x_1$ from 0.1 to 10.0 while holding the other elements of $x$ constant. 
+\par Now we consider a multiple non-linear equality constrained problem which is defined formally as
+\begin{equation}
+    \begin{array}{rll}
+        y =& \text{argmin}_u & \sum_{i=1}^{n} x_i u_i^{2} \\
+        & \text{subject to} & \sum_{i=1}^{n-1} u_i^2 = 1 \\
+        & & \sum_{i=1}^{n} u_i = 0 \\
+    \end{array}
+\end{equation}
+\begin{figure}[t]
+    \label{fig:equ-nonlin-eg}
+    \centering
+    \includegraphics[page=1,width=.8\textwidth]{figs/multiple_equality_example.pdf} 
+    \caption{Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}
+\end{figure}
+\par Same as the previous example, we instantiate the multiple equality constriants nodes in deep declarative nodes with $n=3$ and $m=3$. We begin from a feasible solution, $\cos^2 x + \sin^2 x - \sin x - \cos x = 0$, performing the gradient descent until the convergence. Figure~\ref{fig:equ-nonlin-eg} shows the function $y$ and its gradient changes. 
 \subsection{Inequatlity Constrained}
+For inequality constrained problems, we consider a similar problem based on the multiple equality constrained problem above. The only difference is that we restrict the first parameter $u_1$ is less than $u_2$. Therefore, the problem is defined as
+\begin{equation}
+    \begin{array}{rll}
+        y =& \text{argmin}_u & \sum_{i=1}^{n} x_i u_i^{2} \\
+        & \text{subject to} & \sum_{i=1}^{n-1} u_i^2 = 1 \\
+        & & \sum_{i=1}^{n} u_i = 0 \\
+        & & u_1 - u_2 < 0
+    \end{array}
+\end{equation}
+\begin{figure}[t]
+    \label{fig:ineq-eg}
+    \centering
+    \includegraphics[page=1,width=.8\textwidth]{figs/multiple_inequality_example.pdf} 
+    \caption{Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}
+\end{figure}
+\par The deep declarative node is the instantiation of inequality constraints nodes with $n=3$ and $m=3$. Same as the feasible solution as the beginning, we set $x=\pi / 6$, which satisfies the inequality constraints since $\sin (\pi/6) < \cos (\pi/6)$. Figure~\ref{fig:ineq-eg} shows the function $y$ and its gradient changes. The gradient flattened to some extreme value at the beginning of the iteration then converge to almost zero. 
+
+\section{Future Work of the Deep Declarative Network}
+There are various possible challenging extensions of the deep declarative network in both theory and application. As a differentiable network, it combines the exact functionality solution with the iterative gradient method. In this section, we give several future foreseeable extensions of the declarative network comparing with other state-of-the-art differentiable models in both theory optimization and applications in computer vision tasks. 
+\par We give the solution to the deep declarative nodes of constrained problems under the assumption that the solution of the problem $y(x)$ exists, and it should be a regular point whose gradient can be computed. Also, both objective function and constraints are required to be first and second-order differentiable, which also means that they are continuous instead of discrete. Therefore, in some computer vision tasks such as binary constrained classification problem may not be able to solve using this approach. Some relevant extension methods are discussed in PART II. Also, the robustness of the declarative nodes can be improved by introducing attention to specific constraints. 
+\par In solving the real computer vision tasks, comparing to other differentiable models, the deep declarative network can be applied to the visual Sudoku problem. Also, many constrained optimization problems in the graph can be solved through this method. Future work in applications can focus on providing a more specific algorithm for different tasks. 
 
 \section{Summary}
+In Chapter~\ref{cha:ddn}, we describe the deep declarative network from its structure to its implementation with examples of different constrained problems. As a differentiable neural network, the deep declarative network defines its nodes to process input implicitly through the optimization problem, which can find the optimal solution directly without the verification of the local or global minimum. Its learning progress is also based on the derivative of the solution and the gradient of its constraints. We also introduce the back-propagation through deep declarative nodes in three subclasses: unconstrained, constrained, and inequality constrained problems. All representations of the gradient in declarative nodes have assumptions of the existence of the optimal point, its regularity, and its first and second-order derivative. In the next chapter, we are going to give an overview of the non-regular solution with related previous works. 
