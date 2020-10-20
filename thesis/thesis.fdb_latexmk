@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex thesis"] 1603109145 "thesis.aux" "thesis.bbl" "thesis" 1603164485
+["bibtex thesis"] 1603109145 "thesis.aux" "thesis.bbl" "thesis" 1603170570
   "./anuthesis.bst" 1335961000 30878 82d4a8bf00cac1db4db901a4f9573b2b ""
   "thesis.aux" 1603164485 21974 96a821a5b1abf753732628cd8d50e2dd "pdflatex"
   "thesis.bib" 1603071876 6551 7d02bcb0de935dd3aae59f752515ce12 ""
   (generated)
   "thesis.blg"
   "thesis.bbl"
-["makeindex thesis.idx"] 1603019445 "thesis.idx" "thesis.ind" "thesis" 1603164485
+["makeindex thesis.idx"] 1603019445 "thesis.idx" "thesis.ind" "thesis" 1603170570
   "thesis.idx" 1603164484 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "thesis.ind"
   "thesis.ilg"
-["pdflatex"] 1603164483 "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.tex" "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" "thesis" 1603164485
+  "thesis.ind"
+["pdflatex"] 1603164483 "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.tex" "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" "thesis" 1603170570
   "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux" 1603164485 21974 96a821a5b1abf753732628cd8d50e2dd ""
   "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.tex" 1603101729 3582 b630fc62e779c8b06c3894fa88c10d80 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -314,13 +314,13 @@
   "thesis.toc" 1603164485 5673 70f446470cb9a829c0b290ce07a9497b "pdflatex"
   "titlepage.tex" 1597735617 669 b249f2f04348ce6f1201659c57d25edc ""
   (generated)
-  "thesis.out"
+  "thesis.pdf"
+  "thesis.log"
   "thesis.aux"
+  "thesis.toc"
+  "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.log"
+  "thesis.lof"
   "thesis.brf"
   "thesis.idx"
   "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf"
-  "thesis.toc"
-  "thesis.pdf"
-  "thesis.lof"
-  "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.log"
-  "thesis.log"
+  "thesis.out"
