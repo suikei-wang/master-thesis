@@ -34,9 +34,9 @@
 \BOOKMARK [-1][-]{part.2}{II Deep Declarative Nodes: Non-regular Solution}{}% 34
 \BOOKMARK [0][-]{chapter.4}{An Overview of Regular and Non-regular Solution}{part.2}% 35
 \BOOKMARK [1][-]{section.4.1}{Problems in Regular Deep Declarative Nodes}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.1.1}{Assumptions}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.1}{Assumptions and Problems}{section.4.1}% 37
 \BOOKMARK [2][-]{subsection.4.1.2}{Overdetermined System}{section.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.1.3}{Rank Deficiency Problem}{section.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.1.3}{Rank Deficiency Problems}{section.4.1}% 39
 \BOOKMARK [2][-]{subsection.4.1.4}{Non-convex Cases}{section.4.1}% 40
 \BOOKMARK [1][-]{section.4.2}{Related Work in Non-regular Solution}{chapter.4}% 41
 \BOOKMARK [1][-]{section.4.3}{Summary}{chapter.4}% 42

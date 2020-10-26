@@ -9,14 +9,58 @@ In PART I, we described the solution for both unconstrained and constrained prob
 \section{Problems in Regular Deep Declarative Nodes}
 \label{sec:problems-in-non-regular}
 
-\subsection{Assumptions}
+\subsection{Assumptions and Problems}
 In Section~\ref{sec:bp}, we provided general solutions for unconstrained and constrained optimization problems in deep declarative nodes. For both problems, we assume that the solution of the problem, $y(x)$ exists in the neighborhood of the point $(x, y(x))$. Also, the objective function is supposed to be second-order differentiable. In particular, for constrained optimization problems, all constraints are also assumed to be second-order differentiable. These assumptions are made to guarantee that the optimal point is regular and strictly minimum. 
-\par However, not all problems have differentiable constraints and the jacobian or hessian matrix of constraints is full-ranked. According to the solution of equality constraints and inequality constraints in Equation~\ref{equ:solution-eq} and Equation~\ref{equ:solution-ineq} with their corresponding representations of matrix $H$, 
+\par However, not all problems have differentiable constraints and the jacobian or hessian matrix of constraints is full-ranked. Also, the first-order derivatives of the equality constraints and active inequality constraints may not linear independent. The dimension of the output may also various from the number of active constraints. According to the solution of equality constraints and inequality constraints in Equation~\ref{equ:solution-eq} and Equation~\ref{equ:solution-ineq} with their corresponding representations of matrix $H$, we have to compute the inverse of the matrix $H$ to get the solution. If $H$ is singular or very sparse, we are not able to get the exact solution since we cannot apply the Cholesky decomposition to this matrix. 
+\par There are many possible problems of non-regular solutions in the deep declarative nodes. We summarize them as three majority cases: Overdetermined system, rank deficiency problems, and non-convex cases. 
 
 \subsection{Overdetermined System}
+If the constraints we get are more than unknowns we are going to solve, this system of equations is considered overdetermined. In declarative nodes, we require at least one degree of freedom for the back-propagation, since we have to update the gradient with the direction in a feasible solution set. Therefore, when the number of active constraints exceeds the dimensionality of the output, the system is overdetermined. 
+\begin{figure}[t]
+    \label{fig:overdetermined-solution}
+    \centering
+    \includegraphics[page=1, width=.8\textwidth]{figs/overdetermined.pdf}
+    \caption{The feasible solution set and the results of the overdetermined system}
+\end{figure}
+\par We give the first example constrains the solution to a circle with two segments removed in Figure~\ref{fig:overdetermined-solution}. Also, we formulate this as the intersection of a (solid) circle constraint with two half-spaces. The problem is defined officially as 
+\begin{equation}
+    \begin{array}{lll}
+        y \in & \text{argmin}_u & \frac{1}{2} \|u - x\|^2 \\
+        & \text{subject to} & u_1^2 + u_2^2 - 1 \leq 0 \\
+        & & u_1 - u_2 - 1 \leq 0 \\
+        & & u_1 + u_2 - 1 \leq 0
+    \end{array}
+\end{equation}
+From Figure~\ref{fig:overdetermined-solution}, there is only one intersection point among three constraints, where all three constraints are active. We calculate the graident of it using the implicit differentiation of the KKT optimality conditions as discussed in Equation~\ref{equ:solution-ineq} and their corresponding formulas. Figure~\ref{fig:overdetermined-gradient} shows the value of $y$ and the corresponding gradient. Using the solution for inequality constraints problems, we can get
+$$
+\begin{array}{llll}
+    A &= \text{D}_{Y} h(y) &= \begin{bmatrix}
+         2 y_1 & 2 y_2 \\ 1 & -1 \\ 1 & 1
+         \end{bmatrix} & \text{for active $h_i$} \\
+    B &= \text{D}^2_{XY} f(x, y) - \sum_{i=1}^{3} \lambda_i \text{D}^2_{XY} h_i(y) &= -I \\
+    C &= \text{D}_{Y} h(y) &= 0 \\
+    H &= \text{D}^2_{YY} f(x, y) - \sum_{i=1}^{3} \lambda_i \text{D}^2_{YY} h_i(y) &= (1 - 2 \lambda_1) I 
+\end{array}
+$$
+\begin{figure}[t]
+    \label{fig:overdetermined-gradient}
+    \centering
+    \includegraphics[page=1, width=.8\textwidth]{figs/overdetermined-gradient.pdf}
+    \caption{The results and corresponding gradient solution of the overdetermined system}
+\end{figure}
+where inactive constraints, and corresponding Lagrange multipliers, are first removed. Thus, the matrix $A$ may have between zero and three rows, which is not regular. This equation can be solved to give different results: 
+$$
+\text{D} y(x) = \begin{cases}
+        I & \text{if all constraints are inactive} \\
+        0 & \text{if all constraints are active (since $C = 0$)} \\
+        I - A^T (AA^T)^{-1} A & \text{if $h_1$ is inactive} \\
+        \frac{1}{1 - 2 \lambda_1} \left(I - A^T (AA^T)^{-1} A\right) & \text{otherwise.}
+    \end{cases}
+$$
+where we the gradient is zero if all constraints are active. In this scenario, we can not preform back-propagation in our deep declarative network. 
 
-
-\subsection{Rank Deficiency Problem}
+\subsection{Rank Deficiency Problems}
+Contrary to the overdetermined system, rank deficiency means that there are insufficient equations to determine the solution. More generally, we do not have enough information to estimate the desired model in this case. In declarative nodes, if the first-order derivatives of the equality constraints and active inequality constraints are linearly dependent, the solution points are not regular since the KKT conditions may still be satisfied but there are degrees of freedom in the Lagrange multipliers. 
 
 
 

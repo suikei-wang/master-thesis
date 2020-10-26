@@ -12,6 +12,8 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{30}{figure.3.4}% 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{31}{figure.3.5}% 
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The feasible solution set and the results of the overdetermined system}}{36}{figure.4.1}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The results and corresponding gradient solution of the overdetermined system}}{37}{figure.4.2}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
