@@ -1,8 +1,26 @@
 \chapter{An Overview of Regular and Non-regular Solution}
 \label{cha:overviewpart2}
+In PART I, we described the solution for both unconstrained and constrained problems in deep declarative nodes: its theoretical background of numerical optimization, the general solution for unconstrained and constrained optimization problems, and the details of the back-propagation in deep declarative noes. However, the solutions given before are based on the assumption of the existence of the solution and the second-order differentiable objective functions and constraints. In PART II, we will extend the solution for different non-regular solutions which can approximate the gradient of constrained problems. 
+\par In this chapter, we will give an overview of the non-regular point for deep declarative nodes with some related previous works. According to the definition of regular point in Definition~\ref{defn:regular-point}, we focus on the solution which is not regular, which means we cannot use the solutions we proposed in the previous chapter to solve them. 
+\par We first discuss possible non-regular solutions problems in the deep declarative nodes in Section~\ref{sec:problems-in-non-regular}, with corresponding specific examples. Next, we briefly discuss several previous related works in solving non-regular points problems in Section~\ref{sec:relatedworknonreg}. Since we set this chapter as the background information of our solutions in the next chapter, we also provide some comparison between these existed approaches. 
+\par We finally give a summary of the non-regular solution cases and our literature review findings. 
+
 
 \section{Problems in Regular Deep Declarative Nodes}
-\label{sec:problems}
+\label{sec:problems-in-non-regular}
+
+\subsection{Assumptions}
+In Section~\ref{sec:bp}, we provided general solutions for unconstrained and constrained optimization problems in deep declarative nodes. For both problems, we assume that the solution of the problem, $y(x)$ exists in the neighborhood of the point $(x, y(x))$. Also, the objective function is supposed to be second-order differentiable. In particular, for constrained optimization problems, all constraints are also assumed to be second-order differentiable. These assumptions are made to guarantee that the optimal point is regular and strictly minimum. 
+\par However, not all problems have differentiable constraints and the jacobian or hessian matrix of constraints is full-ranked. According to the solution of equality constraints and inequality constraints in Equation~\ref{equ:solution-eq} and Equation~\ref{equ:solution-ineq} with their corresponding representations of matrix $H$, 
+
+\subsection{Overdetermined System}
+
+
+\subsection{Rank Deficiency Problem}
+
+
+
+\subsection{Non-convex Cases}
 
 
 
@@ -11,6 +29,8 @@
 
 
 
+
+\section{Summary}
 
 
 

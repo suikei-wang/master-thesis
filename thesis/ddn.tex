@@ -86,6 +86,7 @@ where $\operatorname{D}_XJ(x,y)$ is the partial derivatives of $J(x,y)$ with res
 where $\operatorname{D}_Yf(x,y) = 0$ since $y$ is the minimum of $f(x,y)$ and $f(x,y)$ is an unconstrained problem, its partial derivative should be zero. 
 \par In addition, for the solution $y$, we should verify its regularity. 
 \begin{defn}[Regular Point]~\citep{SG:19}
+    \label{defn:regular-point}
     A feasible point $u$ is said to be \emph{regular} if the equality constraints gradient $D_Uh_i$ and the active inequality constraints gradients $D_Ug_i$ are linearly independent, or there are no equality constraints and the inequality constraints are all inactive at $u$.
 \end{defn}
 Therefore, in unconstrained problems, we can consider the solution is regular by default. However in constrained problems, especially the inequality constrained problems, we should be aware of the feasible set is continuous or not. 
@@ -152,6 +153,7 @@ where $A$ is the same as the defined above.
 \end{equation}
 
 \begin{equation}
+    \label{equ:solution-eq}
     \operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
 \end{equation}
 which is our result. 
@@ -166,9 +168,10 @@ Lastly, inequality constrained problems are more complicated since we have to co
 \end{equation}
 where $h = [h_1, \dots, h_p]^T$ are still a set of equality constraints, and $g = [g_1, \dots, g_q]^T$ are a set of inequality constraints. 
 \par In declarative nodes, it present a more general result based on activity of all inequality constraints at the optimal point $y(x)$. Also, assumptions of the existence of the optimal point $y(x)$ and second-order differentiation of $f$, $g$, $h$ remain true. We combine the equality constraints and inequality constraints together in $\tilde{h} = [h_1, \dots, h_p, g_1, \dots, g_q]$ and the derivative of $\tilde{h}$ with respect to $y$ is a full rank matrix to keep the regularity. We have
-$$
-\operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
-$$
+\begin{equation}
+    \label{equ:solution-ineq}
+    \operatorname{D} y(x)=H^{-1} A^{T}\left(A H^{-1} A^{T}\right)^{-1}\left(A H^{-1} B-C\right)-H^{-1} B
+\end{equation}
 where
 $$
 \begin{aligned} 
@@ -176,7 +179,15 @@ $$
 \end{aligned}
 $$
 and $\lambda \in \mathbb{R}^{p+q}$ satisfies $\lambda ^T A = \operatorname{D}_Yf(x,y)$ with $\lambda_i \leq 0$ for $i = p+1, \dots, p+q$, which is almost the same as the solution of the equality constrained problem. 
-\par However, in inequality constraints, the gradient is discontinuous since the Lagrange multipliers $\lambda$ for active inequality constraints are zero. We separate the solution of inequality constrained declarative nodes into 3 scenarios. For any inequality constraints $g(x, u) \leq 0$, the constraint can be active or inactive at the optimal solution $y$. In the first scenario, the constraint is inactive at the solution $y$, that means $g(x,y) < 0$ and it is completely in the feasible set. Therefore we have $\operatorname{D}_Yf(x,y) = 0$ and we can consider it as an unconstrained problem. In the second scenario, the constraint is active at $y$, but it is orthogonal to the constraint surface. Then we have $\operatorname{D}_Yf(x,y) \neq 0$ and $\lambda \neq 0$. Then we can consider this inequality constraint as an equality one since the solution falls on the boundary of the feasible set, but the gradient of negative and pointing outside the set. The last scenario, the constraint is active and $\operatorname{D}_Yf(x,y) = 0$ when the solution is on the boundary and it is a local minimum. For the backward propagation, in this case, we can choose both solutions of unconstrained or equality constrained gradient. 
+
+\begin{figure}
+    \label{fig:regular-point}
+    \centering
+    \includegraphics[]{figs/non-regular-scenario.pdf}
+    \caption{Different scenarios for the solution to inequality constrained nodes}
+\end{figure}
+
+\par However, in inequality constraints, the gradient is discontinuous since the Lagrange multipliers $\lambda$ for active inequality constraints are zero. We separate the solution of inequality constrained declarative nodes into 3 scenarios, which is illustrated in Figure~\ref{fig:regular-point}. For any inequality constraints $g(x, u) \leq 0$, the constraint can be active or inactive at the optimal solution $y$. In the first scenario, the constraint is inactive at the solution $y$, which means $g(x,y) < 0$ and it is completely in the feasible set ($y_1$). Therefore we have $\operatorname{D}_Yf(x,y) = 0$ and we can consider it as an unconstrained problem. In the second scenario, the constraint is active at $y$, but it is orthogonal to the constraint surface ($y_2$). Then we have $\operatorname{D}_Yf(x,y) \neq 0$ and $\lambda \neq 0$. Then we can consider this inequality constraint as an equality one since the solution falls on the boundary of the feasible set, but the gradient of negative and pointing outside the set. The last scenario, the constraint is active and $\operatorname{D}_Yf(x,y) = 0$ when the solution is on the boundary and it is a local minimum ($y_3$). For the backward propagation, in this case, we can choose both solutions of unconstrained or equality constrained gradient. 
 
 \section{Examples of Declarative Nodes}
 \label{sec:example}
