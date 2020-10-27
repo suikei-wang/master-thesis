@@ -45,7 +45,7 @@
 \BOOKMARK [2][-]{subsection.5.1.1}{Least-Squared Method}{section.5.1}% 45
 \BOOKMARK [2][-]{subsection.5.1.2}{Conjugate Gradient and Preconditioning}{section.5.1}% 46
 \BOOKMARK [1][-]{section.5.2}{Rank Deficiency}{chapter.5}% 47
-\BOOKMARK [2][-]{subsection.5.2.1}{Singular Value Decomposition Method}{section.5.2}% 48
+\BOOKMARK [2][-]{subsection.5.2.1}{Orthogonal Matching Pursuit Algorithm}{section.5.2}% 48
 \BOOKMARK [2][-]{subsection.5.2.2}{Strategies in Applications}{section.5.2}% 49
 \BOOKMARK [1][-]{section.5.3}{Non-convex Problems}{chapter.5}% 50
 \BOOKMARK [2][-]{subsection.5.3.1}{Augumented Lagrange Method}{section.5.3}% 51

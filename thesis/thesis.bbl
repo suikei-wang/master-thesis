@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -25,16 +25,33 @@
 \newblock The differentiable cross-entropy method.
 \newblock \emph{arXiv preprint arXiv:1909.12830},  (2019).
 
+\bibitem[{Anton and Rorres(2013)}]{AH:13}
+\textsc{Anton, H. and Rorres, C.}, 2013.
+\newblock \emph{Elementary linear algebra: applications version}.
+\newblock John Wiley \& Sons.
+
 \bibitem[{Bard(1998)}]{BJ:98}
 \textsc{Bard, J.~F.}, 1998.
 \newblock \emph{Practical Bilevel Optimization: Algorithms and Applications},
   vol.~30.
 \newblock Springer Science \& Business Media.
 
+\bibitem[{Barrodale and Roberts(1974)}]{BI:74}
+\textsc{Barrodale, I. and Roberts, F.}, 1974.
+\newblock Solution of an overdetermined system of equations in the l 1 norm
+  [f4].
+\newblock \emph{Communications of the ACM}, 17, 6  (1974), 319--320.
+
 \bibitem[{Bertsekas(2014)}]{BD:14}
 \textsc{Bertsekas, D.~P.}, 2014.
 \newblock \emph{Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press.
+
+\bibitem[{Borrodale and Phillips(1975)}]{BI:75}
+\textsc{Borrodale, I. and Phillips, C.}, 1975.
+\newblock Solution of an overdetermined system of linear equations in the
+  chebyshev norm [f4](algorithm 495).
+\newblock \emph{ACM Trans. Math. Software}, 1, 3  (1975), 264--270.
 
 \bibitem[{Boyd et~al.(2004)Boyd, Boyd, and Vandenberghe}]{BS:04}
 \textsc{Boyd, S.; Boyd, S.~P.; and Vandenberghe, L.}, 2004.
@@ -70,6 +87,20 @@
 \textsc{Dennis, J.~E., Jr and Mor{\'e}, J.~J.}, 1977.
 \newblock Quasi-newton methods, motivation and theory.
 \newblock \emph{SIAM review}, 19, 1  (1977), 46--89.
+
+\bibitem[{Donoho(2005)}]{DD:05}
+\textsc{Donoho, D.~L.}, 2005.
+\newblock Neighborly polytopes and sparse solutions of underdetermined linear
+  equations.
+\newblock  (2005).
+
+\bibitem[{Donoho(2006)}]{DD:06}
+\textsc{Donoho, D.~L.}, 2006.
+\newblock For most large underdetermined systems of linear equations the
+  minimal 𝓁1-norm solution is also the sparsest solution.
+\newblock \emph{Communications on Pure and Applied Mathematics: A Journal
+  Issued by the Courant Institute of Mathematical Sciences}, 59, 6  (2006),
+  797--829.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio}]{GI:16}
@@ -151,11 +182,22 @@
   algorithm for inequality constrained optimization.
 \newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
 
+\bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
+\textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.
+\newblock \emph{Numerical linear algebra}, vol.~50.
+\newblock Siam.
+
 \bibitem[{Wang et~al.(2019)Wang, Donti, Wilder, and Kolter}]{WP:19}
 \textsc{Wang, P.-W.; Donti, P.~L.; Wilder, B.; and Kolter, Z.}, 2019.
 \newblock Satnet: Bridging deep learning and logical reasoning using a
   differentiable satisfiability solver.
 \newblock \emph{arXiv preprint arXiv:1905.12149},  (2019).
+
+\bibitem[{Watson(1979)}]{WG:79}
+\textsc{Watson, G.~A.}, 1979.
+\newblock The minimax solution of an overdetermined system of non-linear
+  equations.
+\newblock \emph{IMA Journal of Applied Mathematics}, 23, 2  (1979), 167--180.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

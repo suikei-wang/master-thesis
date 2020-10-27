@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  26 OCT 2020 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  27 OCT 2020 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -856,7 +856,11 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 7.
  [11
 
-])
+]
+
+Package natbib Warning: Citation `SG:19' on page xii undefined on input line 64.
+
+)
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
@@ -874,6 +878,9 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 4.
+
+Package natbib Warning: Citation `SG:19' on page 1 undefined on input line 16.
+
 [1
 
 ]) [2] [3
@@ -885,13 +892,33 @@ LaTeX Font Info:    Try loading font information for U+fplmbb on input line 15.
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [5
 
-] [6] [7]
-<figs/contour_21.pdf, id=546, page=1, 462.52798pt x 346.89601pt>
+]
+
+Package natbib Warning: Citation `OG:17' on page 6 undefined on input line 23.
+
+
+Package natbib Warning: Citation `JS:06' on page 6 undefined on input line 28.
+
+
+Package natbib Warning: Citation `JS:06' on page 6 undefined on input line 29.
+
+
+Package natbib Warning: Citation `JS:06' on page 6 undefined on input line 34.
+
+
+Package natbib Warning: Citation `JS:06' on page 6 undefined on input line 44.
+
+[6]
+
+Package natbib Warning: Citation `JS:06' on page 7 undefined on input line 67.
+
+[7]
+<figs/contour_21.pdf, id=536, page=1, 462.52798pt x 346.89601pt>
 File: figs/contour_21.pdf Graphic file (type pdf)
 <use figs/contour_21.pdf, page 1>
 Package pdftex.def Info: figs/contour_21.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-<figs/solution_21.pdf, id=547, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_21.pdf, id=537, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_21.pdf Graphic file (type pdf)
 <use figs/solution_21.pdf, page 1>
 Package pdftex.def Info: figs/solution_21.pdf , page1 used on input line 109.
@@ -910,7 +937,7 @@ Underfull \vbox (badness 1067) has occurred while \output is active []
                                                   
 l.132 $$
          </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [10]
-<figs/solution_22.pdf, id=623, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_22.pdf, id=613, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_22.pdf Graphic file (type pdf)
 <use figs/solution_22.pdf, page 1>
 Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 168.
@@ -921,6 +948,10 @@ Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 168.
                                                   
 l.187     $$
              </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf>]
+
+Package natbib Warning: Citation `BD:14' on page 12 undefined on input line 203.
+
+
 Underfull \vbox (badness 4846) has occurred while \output is active []
 
  [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
@@ -928,8 +959,28 @@ Underfull \vbox (badness 4846) has occurred while \output is active []
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.290 $$
-        ] [13] [14]
-<figs/constrained_22.pdf, id=686, page=1, 462.52798pt x 346.89601pt>
+        ]
+
+Package natbib Warning: Citation `SG:16' on page 13 undefined on input line 298.
+
+
+Package natbib Warning: Citation `AB:17' on page 13 undefined on input line 298.
+
+[13]
+
+Package natbib Warning: Citation `NT:36' on page 14 undefined on input line 338.
+
+
+Package natbib Warning: Citation `DP:09' on page 14 undefined on input line 338.
+
+
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+ [14]
+
+Package natbib Warning: Citation `BD:14' on page 15 undefined on input line 354.
+
+<figs/constrained_22.pdf, id=659, page=1, 462.52798pt x 346.89601pt>
 File: figs/constrained_22.pdf Graphic file (type pdf)
 <use figs/constrained_22.pdf, page 1>
 Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
@@ -938,6 +989,10 @@ Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
  [15]
+
+Package natbib Warning: Citation `YO:05' on page 16 undefined on input line 393.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
@@ -946,58 +1001,129 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   
 l.398 $$
          </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>]
-Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [17] [18]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [19] [20
+Package natbib Warning: Citation `PE:88' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `DJ:77' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `QH:00' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `JH:99' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `BD:14' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `PM:69' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `HM:69' on page 17 undefined on input line 402.
+
+
+Package natbib Warning: Citation `SG:16' on page 17 undefined on input line 407.
+
+
+Package natbib Warning: Citation `BS:04' on page 17 undefined on input line 407.
+
+[17]
+
+Package natbib Warning: Citation `GI:16' on page 18 undefined on input line 421.
+
+
+Package natbib Warning: Citation `AB:17' on page 18 undefined on input line 422.
+
+
+Package natbib Warning: Citation `WP:19' on page 18 undefined on input line 422.
+
+
+Package natbib Warning: Citation `AA:19' on page 18 undefined on input line 422.
+
+
+Package natbib Warning: Citation `CB:20' on page 18 undefined on input line 423.
+
+
+Package natbib Warning: Citation `CD:20' on page 18 undefined on input line 423.
+
+
+Package natbib Warning: Citation `AB:19' on page 18 undefined on input line 424.
+
+
+Package natbib Warning: Citation `NM:20' on page 18 undefined on input line 424.
+
+
+Package natbib Warning: Citation `CR:19' on page 18 undefined on input line 424.
+
+[18]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [19] [20
 
 ]
 Chapter 3.
-[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+
+Package natbib Warning: Citation `SG:19' on page 21 undefined on input line 4.
+
+[21]
+
+Package natbib Warning: Citation `BJ:98' on page 22 undefined on input line 71.
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.78 \end{equation}
-                   ] [23]
+                   ]
+
+Package natbib Warning: Citation `SG:19' on page 23 undefined on input line 88.
+
+[23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24] [25]
-<figs/non-regular-scenario.pdf, id=872, 257.12401pt x 189.68307pt>
+ [24]
+
+Package natbib Warning: Citation `BD:14' on page 25 undefined on input line 139.
+
+
+Package natbib Warning: Citation `BS:04' on page 25 undefined on input line 150.
+
+[25]
+<figs/non-regular-scenario.pdf, id=777, 257.12401pt x 189.68307pt>
 File: figs/non-regular-scenario.pdf Graphic file (type pdf)
 <use figs/non-regular-scenario.pdf>
 Package pdftex.def Info: figs/non-regular-scenario.pdf  used on input line 186.
 (pdftex.def)             Requested size: 257.12337pt x 189.6826pt.
- [26] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+ [26]
+
+Package natbib Warning: Citation `MD:15' on page 27 undefined on input line 195.
+
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.201 \par
            \textbf{Optimality checking.} For constrained optimization proble... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/non-regular-scenario.pdf>]
-<figs/linear_equality_example.pdf, id=892, page=1, 462.52798pt x 346.89601pt>
+<figs/linear_equality_example.pdf, id=795, page=1, 462.52798pt x 346.89601pt>
 File: figs/linear_equality_example.pdf Graphic file (type pdf)
 <use figs/linear_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/linear_equality_example.pdf , page1 used on input line 218.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
  [28]
-<figs/multiple_equality_example.pdf, id=899, page=1, 462.52798pt x 346.89601pt>
+<figs/multiple_equality_example.pdf, id=802, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_equality_example.pdf Graphic file (type pdf)
 <use figs/multiple_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_equality_example.pdf , page1 used on input line 238.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.251 \end{equation}
-                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>]
-<figs/multiple_inequality_example.pdf, id=931, page=1, 462.52798pt x 346.89601pt>
+<figs/multiple_inequality_example.pdf, id=804, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_inequality_example.pdf Graphic file (type pdf)
 <use figs/multiple_inequality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on input line 255.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.258 \par
+           The deep declarative node is the instantiation of inequality cons... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>] [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -1006,15 +1132,15 @@ l.263 \par
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.130 
-       </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf>] [32] [33
+l.131 \part
+           {Deep Declarative Nodes: Non-regular Solution} </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf>] [32
 
-] [34] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
+] [33] [34] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
 Chapter 4.
 [35
 
 ]
-<figs/overdetermined.pdf, id=1014, page=1, 462.52798pt x 346.89601pt>
+<figs/overdetermined.pdf, id=916, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined.pdf Graphic file (type pdf)
 <use figs/overdetermined.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined.pdf , page1 used on input line 22.
@@ -1025,7 +1151,7 @@ Package pdftex.def Info: figs/overdetermined.pdf , page1 used on input line 22.
                                                   
 l.33 \end{equation}
                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf>]
-<figs/overdetermined-gradient.pdf, id=1043, page=1, 462.52798pt x 346.89601pt>
+<figs/overdetermined-gradient.pdf, id=946, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined-gradient.pdf Graphic file (type pdf)
 <use figs/overdetermined-gradient.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined-gradient.pdf , page1 used on input line 48.
@@ -1038,25 +1164,114 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.59 $$
-        </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf>]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [38]
-Chapter 5.
-) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [39
+        </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf>]
+<figs/rankdeficient.pdf, id=973, page=1, 462.52798pt x 346.89601pt>
+File: figs/rankdeficient.pdf Graphic file (type pdf)
+<use figs/rankdeficient.pdf, page 1>
+Package pdftex.def Info: figs/rankdeficient.pdf , page1 used on input line 68.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+ [38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 
-] [40
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.78 \end{equation}
+                    </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf>]
+<figs/gradient-rank-deficient.pdf, id=1001, page=1, 462.52798pt x 346.89601pt>
+File: figs/gradient-rank-deficient.pdf Graphic file (type pdf)
+<use figs/gradient-rank-deficient.pdf, page 1>
+Package pdftex.def Info: figs/gradient-rank-deficient.pdf , page1 used on input line 99.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+
+Underfull \vbox (badness 1270) has occurred while \output is active []
+
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.103 
+       </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf>]
+<figs/nonconvex.pdf, id=1030, page=1, 462.52798pt x 346.89601pt>
+File: figs/nonconvex.pdf Graphic file (type pdf)
+<use figs/nonconvex.pdf, page 1>
+Package pdftex.def Info: figs/nonconvex.pdf , page1 used on input line 118.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+<figs/gradient-non-convex.pdf, id=1033, page=1, 462.52798pt x 346.89601pt>
+File: figs/gradient-non-convex.pdf Graphic file (type pdf)
+<use figs/gradient-non-convex.pdf, page 1>
+Package pdftex.def Info: figs/gradient-non-convex.pdf , page1 used on input line 125.
+(pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.141 $$
+         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf>]
+
+Package natbib Warning: Citation `AH:13' on page 41 undefined on input line 148.
+
+
+Package natbib Warning: Citation `TL:97' on page 41 undefined on input line 148.
+
+
+Package natbib Warning: Citation `BI:74' on page 41 undefined on input line 148.
+
+
+Package natbib Warning: Citation `BI:75' on page 41 undefined on input line 148.
+
+
+Package natbib Warning: Citation `WG:79' on page 41 undefined on input line 148.
+
+[41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.149 \par
+           \textbf{Rank deficiency problems.} As an underdetermined system, ... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf>]
+
+Package natbib Warning: Citation `DD:05' on page 42 undefined on input line 149.
+
+
+Package natbib Warning: Citation `DD:06' on page 42 undefined on input line 149.
+
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [42]
+Chapter 5.
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [43
+
+] [44
 
 ]
 Chapter 6.
-) [41] [42
+) [45] [46
 
 ] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
 \tf@brf=\write8
 \openout8 = `thesis.brf'.
 
- [43
+ [47
 
-] [44]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [45] [46
+]
 
-] [47] [48] [49]
+/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl:104: Package inputenc Error: Unicode character 𝓁 (U+1D4C1)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 
+      
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[48]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [49] [50
+
+] [51] [52] [53]
+
+Package natbib Warning: Citation `SG:19' on page 54 undefined on input line 148.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 148.
@@ -1088,35 +1303,60 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [50]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [51]
+ [54]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind)
+
+Package natbib Warning: There were undefined citations.
+
+[55]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
+ (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 71C47BA18CFC738D70C0988D3826D07C;5077.
-Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: DFE421F8093269C0599C707419B55D76;2460.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: A9F0E8C1A90853719E523142F8143375;4983
+(rerunfilecheck)             After:  9175E30708719A9CCFF99C15649F2499;5079.
+
+Package rerunfilecheck Warning: File `thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `thesis.brf':
+(rerunfilecheck)             Before: 6384267F622CDE021829C1F786C349CA;2859
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 151.
  ) 
 Here is how much of TeX's memory you used:
- 32693 strings out of 492616
- 748576 string characters out of 6129480
+ 32793 strings out of 492616
+ 750151 string characters out of 6129480
  1076814 words of memory out of 5000000
- 35689 multiletter control sequences out of 15000+600000
+ 35767 multiletter control sequences out of 15000+600000
  79035 words of font info for 133 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,96p,1416b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{appendix*.5} has been referenced but does not exist, replaced by a fixed one
+
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (65 pages, 413442 bytes).
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (69 pages, 456581 bytes).
 PDF statistics:
- 1281 PDF objects out of 1440 (max. 8388607)
- 1025 compressed objects within 11 object streams
- 213 named destinations out of 1000 (max. 500000)
- 679 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1342 PDF objects out of 1440 (max. 8388607)
+ 1033 compressed objects within 11 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 699 words of extra memory for PDF output out of 10000 (max. 10000000)
 

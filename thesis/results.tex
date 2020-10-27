@@ -11,13 +11,15 @@
 \subsection{Conjugate Gradient and Preconditioning}
 
 \section{Rank Deficiency}
-\subsection{Singular Value Decomposition Method}
+\subsection{Orthogonal Matching Pursuit Algorithm}
+In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. 
+
+
 \subsection{Strategies in Applications}
 
 \section{Non-convex Problems}
 \subsection{Augumented Lagrange Method}
 \subsection{Non-linear Lagrangian Duality}
-
 
 
 % \begin{figure*}
