@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -14,6 +14,11 @@
 \newblock Differentiable convex optimization layers.
 \newblock In \emph{Advances in neural information processing systems},
   9562--9574.
+
+\bibitem[{Allen-Zhu and Hazan(2016)}]{AZ:16}
+\textsc{Allen-Zhu, Z. and Hazan, E.}, 2016.
+\newblock Variance reduction for faster non-convex optimization.
+\newblock In \emph{International conference on machine learning}, 699--707.
 
 \bibitem[{Amos and Kolter(2017)}]{AB:17}
 \textsc{Amos, B. and Kolter, J.~Z.}, 2017.
@@ -76,6 +81,12 @@
 \newblock Neural networks with cheap differential operators.
 \newblock In \emph{Advances in Neural Information Processing Systems},
   9961--9971.
+
+\bibitem[{Darvishi and Khosro-Aghdam(2006)}]{DM:06}
+\textsc{Darvishi, M. and Khosro-Aghdam, R.}, 2006.
+\newblock Symmetric successive overrelaxation methods for rank deficient linear
+  systems.
+\newblock \emph{Applied mathematics and computation}, 173, 1  (2006), 404--420.
 
 \bibitem[{Debye(1909)}]{DP:09}
 \textsc{Debye, P.}, 1909.
@@ -182,10 +193,27 @@
   algorithm for inequality constrained optimization.
 \newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
 
+\bibitem[{Reddi et~al.(2016)Reddi, Hefny, Sra, Poczos, and Smola}]{RS:16}
+\textsc{Reddi, S.~J.; Hefny, A.; Sra, S.; Poczos, B.; and Smola, A.}, 2016.
+\newblock Stochastic variance reduction for nonconvex optimization.
+\newblock In \emph{International conference on machine learning}, 314--323.
+
+\bibitem[{Robbins and Monro(1951)}]{RH:51}
+\textsc{Robbins, H. and Monro, S.}, 1951.
+\newblock A stochastic approximation method.
+\newblock \emph{The annals of mathematical statistics},  (1951), 400--407.
+
 \bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
 \textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.
 \newblock \emph{Numerical linear algebra}, vol.~50.
 \newblock Siam.
+
+\bibitem[{Wang(1997)}]{WJ:97}
+\textsc{Wang, J.}, 1997.
+\newblock Recurrent neural networks for computing pseudoinverses of
+  rank-deficient matrices.
+\newblock \emph{SIAM Journal on Scientific Computing}, 18, 5  (1997),
+  1479--1493.
 
 \bibitem[{Wang et~al.(2019)Wang, Donti, Wilder, and Kolter}]{WP:19}
 \textsc{Wang, P.-W.; Donti, P.~L.; Wilder, B.; and Kolter, Z.}, 2019.
@@ -198,6 +226,11 @@
 \newblock The minimax solution of an overdetermined system of non-linear
   equations.
 \newblock \emph{IMA Journal of Applied Mathematics}, 23, 2  (1979), 167--180.
+
+\bibitem[{Wu et~al.(2004)Wu, Silva, and Yuan}]{WX:04}
+\textsc{Wu, X.; Silva, B.; and Yuan, J.}, 2004.
+\newblock Conjugate gradient method for rank deficient saddle point problems.
+\newblock \emph{Numerical Algorithms}, 35, 2-4  (2004), 139--154.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

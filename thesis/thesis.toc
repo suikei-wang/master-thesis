@@ -39,26 +39,27 @@
 \contentsline {subsection}{\numberline {4.1.4}Non-convex Cases}{40}{subsection.4.1.4}% 
 \contentsline {section}{\numberline {4.2}Related Work in Non-regular Solution}{41}{section.4.2}% 
 \contentsline {section}{\numberline {4.3}Summary}{42}{section.4.3}% 
-\contentsline {chapter}{\numberline {5}Solutions of Non-regular Point}{43}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Overdetermined System}{43}{section.5.1}% 
-\contentsline {subsection}{\numberline {5.1.1}Least-Squared Method}{43}{subsection.5.1.1}% 
-\contentsline {subsection}{\numberline {5.1.2}Conjugate Gradient and Preconditioning}{43}{subsection.5.1.2}% 
-\contentsline {section}{\numberline {5.2}Rank Deficiency}{43}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}Orthogonal Matching Pursuit Algorithm}{43}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Strategies in Applications}{43}{subsection.5.2.2}% 
-\contentsline {section}{\numberline {5.3}Non-convex Problems}{43}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Augumented Lagrange Method}{43}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Non-linear Lagrangian Duality}{43}{subsection.5.3.2}% 
-\contentsline {section}{\numberline {5.4}Summary}{43}{section.5.4}% 
-\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}% 
-\contentsline {chapter}{Appendix}{51}{appendix*.6}% 
-\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{51}{section.Alph0.1}% 
-\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{51}{subsection.Alph0.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{51}{subsubsection.Alph0.1.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{51}{subsubsection.Alph0.1.1.2}% 
-\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{52}{subsubsection.Alph0.1.1.3}% 
-\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{52}{subsubsection.Alph0.1.1.4}% 
-\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{53}{subsubsection.Alph0.1.1.5}% 
-\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{54}{subsection.Alph0.1.2}% 
-\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{54}{subsubsection.Alph0.1.2.1}% 
-\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{54}{subsubsection.Alph0.1.2.2}% 
+\contentsline {chapter}{\numberline {5}Solutions of Non-regular Point}{45}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Overdetermined System}{45}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Least-Squared Method}{45}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Conjugate Gradient and Preconditioning}{45}{subsection.5.1.2}% 
+\contentsline {section}{\numberline {5.2}Rank Deficiency}{45}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Orthogonal Matching Pursuit Algorithm}{45}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Strategies in Applications}{46}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Non-convex Problems}{46}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Augumented Lagrange Method}{46}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Non-linear Lagrangian Duality}{46}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Future Work of the Solution for Non-regular Points}{46}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Summary}{46}{section.5.5}% 
+\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}% 
+\contentsline {chapter}{Appendix}{53}{appendix*.6}% 
+\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{53}{section.Alph0.1}% 
+\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{53}{subsection.Alph0.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{53}{subsubsection.Alph0.1.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{53}{subsubsection.Alph0.1.1.2}% 
+\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{54}{subsubsection.Alph0.1.1.3}% 
+\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{54}{subsubsection.Alph0.1.1.4}% 
+\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{55}{subsubsection.Alph0.1.1.5}% 
+\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{56}{subsection.Alph0.1.2}% 
+\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{56}{subsubsection.Alph0.1.2.1}% 
+\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{56}{subsubsection.Alph0.1.2.2}% 

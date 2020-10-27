@@ -12,7 +12,8 @@
 
 \section{Rank Deficiency}
 \subsection{Orthogonal Matching Pursuit Algorithm}
-In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. 
+In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
+\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery. 
 
 
 \subsection{Strategies in Applications}
@@ -28,6 +29,8 @@ In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The
 %   \subfigure[BytesZeroed / BytesBurstTransactionsTransferred\label{fig:zerobus}]{\includegraphics[width=1.0\columnwidth]{figs/zerobus_core.pdf}}
 %   \caption{The cost of zero initialization}
 % \end{figure*}
+
+\section{Future Work of the Solution for Non-regular Points}
 
 
 \section{Summary}
