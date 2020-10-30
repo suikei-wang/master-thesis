@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -15,11 +15,6 @@
 \newblock In \emph{Advances in neural information processing systems},
   9562--9574.
 
-\bibitem[{Allen-Zhu and Hazan(2016)}]{AZ:16}
-\textsc{Allen-Zhu, Z. and Hazan, E.}, 2016.
-\newblock Variance reduction for faster non-convex optimization.
-\newblock In \emph{International conference on machine learning}, 699--707.
-
 \bibitem[{Amos and Kolter(2017)}]{AB:17}
 \textsc{Amos, B. and Kolter, J.~Z.}, 2017.
 \newblock Optnet: Differentiable optimization as a layer in neural networks.
@@ -30,33 +25,16 @@
 \newblock The differentiable cross-entropy method.
 \newblock \emph{arXiv preprint arXiv:1909.12830},  (2019).
 
-\bibitem[{Anton and Rorres(2013)}]{AH:13}
-\textsc{Anton, H. and Rorres, C.}, 2013.
-\newblock \emph{Elementary linear algebra: applications version}.
-\newblock John Wiley \& Sons.
-
 \bibitem[{Bard(1998)}]{BJ:98}
 \textsc{Bard, J.~F.}, 1998.
 \newblock \emph{Practical Bilevel Optimization: Algorithms and Applications},
   vol.~30.
 \newblock Springer Science \& Business Media.
 
-\bibitem[{Barrodale and Roberts(1974)}]{BI:74}
-\textsc{Barrodale, I. and Roberts, F.}, 1974.
-\newblock Solution of an overdetermined system of equations in the l 1 norm
-  [f4].
-\newblock \emph{Communications of the ACM}, 17, 6  (1974), 319--320.
-
 \bibitem[{Bertsekas(2014)}]{BD:14}
 \textsc{Bertsekas, D.~P.}, 2014.
 \newblock \emph{Constrained optimization and Lagrange multiplier methods}.
 \newblock Academic press.
-
-\bibitem[{Borrodale and Phillips(1975)}]{BI:75}
-\textsc{Borrodale, I. and Phillips, C.}, 1975.
-\newblock Solution of an overdetermined system of linear equations in the
-  chebyshev norm [f4](algorithm 495).
-\newblock \emph{ACM Trans. Math. Software}, 1, 3  (1975), 264--270.
 
 \bibitem[{Boyd et~al.(2004)Boyd, Boyd, and Vandenberghe}]{BS:04}
 \textsc{Boyd, S.; Boyd, S.~P.; and Vandenberghe, L.}, 2004.
@@ -82,11 +60,10 @@
 \newblock In \emph{Advances in Neural Information Processing Systems},
   9961--9971.
 
-\bibitem[{Darvishi and Khosro-Aghdam(2006)}]{DM:06}
-\textsc{Darvishi, M. and Khosro-Aghdam, R.}, 2006.
-\newblock Symmetric successive overrelaxation methods for rank deficient linear
-  systems.
-\newblock \emph{Applied mathematics and computation}, 173, 1  (2006), 404--420.
+\bibitem[{Datta(2010)}]{DB:10}
+\textsc{Datta, B.~N.}, 2010.
+\newblock \emph{Numerical linear algebra and applications}, vol. 116.
+\newblock Siam.
 
 \bibitem[{Debye(1909)}]{DP:09}
 \textsc{Debye, P.}, 1909.
@@ -98,20 +75,6 @@
 \textsc{Dennis, J.~E., Jr and Mor{\'e}, J.~J.}, 1977.
 \newblock Quasi-newton methods, motivation and theory.
 \newblock \emph{SIAM review}, 19, 1  (1977), 46--89.
-
-\bibitem[{Donoho(2005)}]{DD:05}
-\textsc{Donoho, D.~L.}, 2005.
-\newblock Neighborly polytopes and sparse solutions of underdetermined linear
-  equations.
-\newblock  (2005).
-
-\bibitem[{Donoho(2006)}]{DD:06}
-\textsc{Donoho, D.~L.}, 2006.
-\newblock For most large underdetermined systems of linear equations the
-  minimal 𝓁1-norm solution is also the sparsest solution.
-\newblock \emph{Communications on Pure and Applied Mathematics: A Journal
-  Issued by the Courant Institute of Mathematical Sciences}, 59, 6  (2006),
-  797--829.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio}]{GI:16}
@@ -193,44 +156,11 @@
   algorithm for inequality constrained optimization.
 \newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
 
-\bibitem[{Reddi et~al.(2016)Reddi, Hefny, Sra, Poczos, and Smola}]{RS:16}
-\textsc{Reddi, S.~J.; Hefny, A.; Sra, S.; Poczos, B.; and Smola, A.}, 2016.
-\newblock Stochastic variance reduction for nonconvex optimization.
-\newblock In \emph{International conference on machine learning}, 314--323.
-
-\bibitem[{Robbins and Monro(1951)}]{RH:51}
-\textsc{Robbins, H. and Monro, S.}, 1951.
-\newblock A stochastic approximation method.
-\newblock \emph{The annals of mathematical statistics},  (1951), 400--407.
-
-\bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
-\textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.
-\newblock \emph{Numerical linear algebra}, vol.~50.
-\newblock Siam.
-
-\bibitem[{Wang(1997)}]{WJ:97}
-\textsc{Wang, J.}, 1997.
-\newblock Recurrent neural networks for computing pseudoinverses of
-  rank-deficient matrices.
-\newblock \emph{SIAM Journal on Scientific Computing}, 18, 5  (1997),
-  1479--1493.
-
 \bibitem[{Wang et~al.(2019)Wang, Donti, Wilder, and Kolter}]{WP:19}
 \textsc{Wang, P.-W.; Donti, P.~L.; Wilder, B.; and Kolter, Z.}, 2019.
 \newblock Satnet: Bridging deep learning and logical reasoning using a
   differentiable satisfiability solver.
 \newblock \emph{arXiv preprint arXiv:1905.12149},  (2019).
-
-\bibitem[{Watson(1979)}]{WG:79}
-\textsc{Watson, G.~A.}, 1979.
-\newblock The minimax solution of an overdetermined system of non-linear
-  equations.
-\newblock \emph{IMA Journal of Applied Mathematics}, 23, 2  (1979), 167--180.
-
-\bibitem[{Wu et~al.(2004)Wu, Silva, and Yuan}]{WX:04}
-\textsc{Wu, X.; Silva, B.; and Yuan, J.}, 2004.
-\newblock Conjugate gradient method for rank deficient saddle point problems.
-\newblock \emph{Numerical Algorithms}, 35, 2-4  (2004), 139--154.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

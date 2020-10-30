@@ -1,17 +1,15 @@
 PWD /Users/sukays/Desktop/Research Project/master-thesis/thesis
-INPUT /usr/local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.tex
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.log
-INPUT /usr/local/texlive/2019/texmf-dist/tex/luatex/lualibs/lualibs-basic.lua
-INPUT /usr/local/texlive/2019/texmf-dist/tex/luatex/lualibs/lualibs-basic-merged.lua
-INPUT /usr/local/texlive/2019/texmf-dist/tex/luatex/lualibs/lualibs-compat.lua
-INPUT /usr/local/texlive/2019/texmf-dist/tex/luatex/lualibs/lualibs-extended.lua
-INPUT /usr/local/texlive/2019/texmf-dist/tex/luatex/lualibs/lualibs-extended-merged.lua
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/bk11.clo
-INPUT /Users/sukays/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/svn-multi/svn-multi.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/svn-multi/svn-multi.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
@@ -39,7 +37,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.st
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-INPUT /usr/local/texlive/2019/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
@@ -54,8 +51,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hluatex.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hluatex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/hypcap.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/hypcap.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/anuthesis.sty
@@ -64,7 +61,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/mathpazo.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/mathpazo.sty
-INPUT /Users/sukays/Library/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/setspace/setspace.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/afterpage.sty
@@ -77,8 +74,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/luatex.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/luatex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
@@ -110,9 +107,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/lm/ec-lmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecrm1095.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/bera/beramono.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/bera/beramono.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
@@ -144,8 +139,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
@@ -220,9 +215,6 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgflibraryfpu.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfmathfloat.code.tex
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/luamath/pgflibraryluamath.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex
@@ -234,8 +226,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinar
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-luatex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex
@@ -283,8 +275,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/ppluatex.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/ppluatex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
@@ -327,13 +319,12 @@ OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplx.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplx.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
@@ -354,165 +345,113 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/titlepage.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/frontmatter.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/frontmatter.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/dedication.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/dedication.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ack.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ack.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplj.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/t1pplj.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9d.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9d.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9d.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/abstract.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/abstract.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.toc
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.toc
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlzplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omszplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxzplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9d.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9d.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9d.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/intro.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/intro.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9d.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9d.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart1.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart1.tex
@@ -521,100 +460,75 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9d.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9d.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9d.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9d.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplrc8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_22.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9t.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7m.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7m.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7m.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7m.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7y.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7y.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/non-regular-scenario.pdf
@@ -631,30 +545,16 @@ INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf
-INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmb7t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
 OUTPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
@@ -663,9 +563,15 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplrc9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9t.vf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.out
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb

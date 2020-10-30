@@ -1,16 +1,31 @@
 \chapter{Solutions of Non-regular Point}
 \label{cha:result}
-
-
-
+In the last chapter, we discussed various previous works in solving the non-regular point problem. However, not all these approaches are suitable for deep declarative nodes and they may not be able to optimize each parameter in the node. In this chapter, we set out to tackle solving this problem efficiently in the extension of the deep declarative network. 
+\par For each scenario, we provide two practical solutions in Section~\ref{sec:overdet-sol} (overdetermined system), Section~\ref{sec:rankdf-sol} (rank deficiency problems) and Section~\ref{sec:non-convex-sol} (non-convex cases) separately. More specifically, we introduce the least-squares method and conjugate gradient preconditioning approach for the overdetermined system, which are practical and classical approximation algorithms. For rank deficient problems, we firstly propose a greedy strategy, the orthogonal matching pursuit algorithms to recover the matrix as a full rank one. We also present that in the application of the deep declarative network, how to avoid the non-regular point and minimize the approximation error. In the last scenario, we provide two theoretical methods based on the optimality conditions of the optimization problem, which are extensions of the traditional Lagrange multipliers approach. We finally prospect some future improvements for the non-regular solution in the optimization problem in Section~\ref{sec:futurework-non}. The summary of this chapter is given in the end. 
 
 \section{Overdetermined System}
+\label{sec:overdet-sol}
 \subsection{Least-Squared Method}
+As a classical approach to approximate the solution of the overdetermined system in linear analysis, the least-squares method is powerful and empirical in many prediction problems by minimizing the sum of the squares of the residuals.~\citep{DB:10} 
+\par We begin with the linear system of equations. Supposed we have such a linear system
+\begin{equation}
+    \mathbf{A}\mathbf{x} = \mathbf{b}
+\end{equation}
+where $\mathbf{A} \in \mathbb{R}^{m \times n}$ with $m > n$, $\mathbf{x} \in \mathbb{R}^n$ and $\mathbf{b} \in \mathbb{R}^{m}$. Therefore, there are more equations than unknowns, which is an overdetermined system and there is no solution making $\mathbf{A}\mathbf{x} = \mathbf{b}$ for all $\mathbf{x}$. $\mathbf{b}$ is also not in the column subspace of $\mathbf{A}$, hence $\mathbf{b}$ is actually not a linear combination of the column vectors of $\mathbf{A}$. With the least-square method, we want to find an $\mathbf{x}$ which makes the residual vector $\mathbf{r} \in \mathbb{R}^m$ approaching zero:
+\begin{equation}
+    \label{equ:residual}
+    \mathbf{r} = \mathbf{b} - \mathbf{A}\mathbf{x}, \text{for each element in } \mathbf{r}:  r_i = b_i - \sum_{j=1}^{n} a_{i j} x_{j}, \quad i = 1, \dots, m
+\end{equation}
+\par The solution $\mathbf{x}$ in Equation~\ref{equ:residual} given be the least squares method minimizes $\|\mathbf{r}\|_2 = \|\mathbf{b} - \mathbf{A}\mathbf{x}\|_2$, which is also the sum of errors:
+\begin{equation}
+    \|\mathbf{r}\|_2 = \mathbf{r}^{T} \mathbf{r}=(\mathbf{b}-\mathbf{A} \mathbf{x})^{T}(\mathbf{b}-\mathbf{A} \mathbf{x})=\mathbf{b}^{T} \mathbf{b}-\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{b}-\mathbf{b}^{T} \mathbf{A} \mathbf{x}+\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{A} \mathbf{x}
+\end{equation}
 
 
 \subsection{Conjugate Gradient and Preconditioning}
 
 \section{Rank Deficiency}
+\label{sec:rankdf-sol}
 \subsection{Orthogonal Matching Pursuit Algorithm}
 In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
 \par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery. 
@@ -19,18 +34,14 @@ In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The
 \subsection{Strategies in Applications}
 
 \section{Non-convex Problems}
+\label{sec:non-convex-sol}
 \subsection{Augumented Lagrange Method}
 \subsection{Non-linear Lagrangian Duality}
 
 
-% \begin{figure*}
-%   \label{fig:cost}
-%   \subfigure[Fraction of cycles spent on zeroing\label{fig:zerocost}]{\includegraphics[width=\columnwidth]{figs/zerocost_intel.pdf}}
-%   \subfigure[BytesZeroed / BytesBurstTransactionsTransferred\label{fig:zerobus}]{\includegraphics[width=1.0\columnwidth]{figs/zerobus_core.pdf}}
-%   \caption{The cost of zero initialization}
-% \end{figure*}
 
 \section{Future Work of the Solution for Non-regular Points}
+\label{sec:futurework-non}
 
 
 \section{Summary}
