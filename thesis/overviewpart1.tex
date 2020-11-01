@@ -335,7 +335,7 @@ $$
     which is a contradiction. 
     \par Overall, the minimization problem defined above has a unique minimizer. 
 \end{proof}
-\par There are many different methods to solve the unconstrained optimization problem. There are two most classical methods, Newton method~\citep{NT:36} and the Method of Steepest Descent~\citep{DP:09}. The former one, the Newton method starts from an initial guess $x_0$ and defines a sequence $\{x_k\}$
+\par There are two most classical methods to solve the unconstrained optimization problem: Newton method~\citep{NT:36} and the Method of Steepest Descent~\citep{DP:09}. The former one, the Newton method starts from an initial guess $x_0$ and defines a sequence $\{x_k\}$
 iteratively according to some rules. It uses the tangent line of the objective function $f$ at $x_k$ to replace $f$ and uses the root of $L(x) = 0$, where $L(x)$ is the updated $f(x)$ as the next iterate $x_{k+1}$. Finally, the iteration is terminated as long as the difference between $x_k$ and $x_{k+1}$ less than a preassigned small number. The later one, steepest descent is a basic gradient method, which decreases the value of the objective function in a direction of most rapid change. The change rate of a function $f$ at $x$ in the direction $u$, a unit vector in $\mathbb{R}$ is determined by the directional derivative. Therefore, at $x$ the value of $f$ decrease fastest in the direction $u=-\nabla f(x)/\|\nabla f(x)\|$, which leads to the gradient method: we update the $x$ through the direction with the step length. 
 
 
