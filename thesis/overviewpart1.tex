@@ -1,8 +1,8 @@
 \chapter{An Overview of Numerical Optimization}
 \label{cha:overviewpart1}
-In this chapter, we aim to provide readers with an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. As the theoretical background of optimization, this field provides a solid solution for the algorithm. 
+In this chapter, we aim to provide readers an overview of numerical optimization. We begin with the theory of optimization (Section~\ref{sec:theory}), from the existence of optimizers, to the optimality conditions for both unconstrained and constrained problems with duality. This theoretical background of optimization provides a solid base for algorithm development. 
 \par We then formally define the optimization of unconstrained and constrained problems in Section~\ref{sec:consopt} and describe the general regular solution for these problems based on the gradient calculation. 
-\par Next, we discuss briefly the differentiable optimization in the neural network, which is a novel end-to-end network structure involving optimization problems in each layer with and without constraints. (Section~\ref{sec:differentiable}). Finally, we give a summary of the numerical optimization for solving unconstrained and constrained problems in Section~\ref{sec:2summary}.
+\par Next, we briefly discuss the differentiable optimization in the neural network, which is a novel end-to-end network structure involving optimization problems in each layer with and without constraints. (Section~\ref{sec:differentiable}). Finally, we give a summary of the numerical optimization for solving unconstrained and constrained problems in Section~\ref{sec:2summary}.
 
 
 
@@ -10,8 +10,8 @@ In this chapter, we aim to provide readers with an overview of numerical optimiz
 \section{Theory of Optimization}
 \label{sec:theory}
 \subsection{Existence of Optimizers}
-In optimization, a basic question is to determine the existence of a global minimizer for a given function $f$. There are several sufficient conditions on $f$ to guarantee the existence, and the optimizer falls in the feasible set of solutions. For a feasible set, some related definitions are following: 
-\begin{defn}
+In optimization, a basic question is to determine the existence of a global optimizer. In this thesis, we focus on the optimizer in general minimization problems. Supposed we want to find the minimizer for a given function $f$. There are several sufficient conditions on $f$ to guarantee the existence, and the optimizer falls in the feasible set of solutions. For a feasible set, some related definitions are following: 
+\begin{defn}~\citep{JS:06}
     A subset $\Omega \in \mathbb{R}^n$ is called
     \begin{itemize}
         \item \emph{bounded} if there is a constant $R > 0$ such that $\|x\| \leq R$ for all $x \in \Omega$
@@ -19,13 +19,13 @@ In optimization, a basic question is to determine the existence of a global mini
         \item \emph{compact} if any sequence $\left\{x_{k}\right\}$ in $\Omega$ contains a subsequence that converges to a point in $\Omega$
     \end{itemize}
 \end{defn}
-\par The following result gives a characterization of compact sets in $\mathbb{R}$. When we find the minimum or maximum solution for the problem, there exists a lower bound or upper bound but not necessarily an optimal solution. Therefore, we have some additional requirements. 
+\par The following result gives a characterization of compact sets in $\mathbb{R}$. When we find the minimum or maximum solution for the problem, there exist a lower or upper bound but not necessarily an optimal solution. Therefore, we have some additional requirements. 
 \par Firstly, we give the definition of compact sets in Lemma~\ref{lemma:bw}. ~\citep{OG:17} gives a brief proof.
 \begin{lemma}[Bolzano-Weierstrass theorem]
     \label{lemma:bw}
     A subset $\Omega$ in $\mathbb{R}^n$ is \emph{compact} if and only if it is bounded and closed.
 \end{lemma}
-\par We also assume that the function $f$ is continuous and "$+\infty$ at infinity". More precisely, $f(x) \rightarrow+\infty$ if $|x| \rightarrow+\infty$. Such a function is called \emph{inf-compact} or \emph{coercive}.~\citep{JS:06} Then the problem can be restricted to a bounded set and existence of a global minimum $x^{*}$ is guaranteed: a continuous function has a minimum on a compact set. This theorem is defined as follows and the proof is given in Appendix~\ref{appendix:trm23}.
+\par We also assume that the function $f$ is continuous and \emph{coercive}, where \emph{coercive} means "$+\infty$ at infinity". More precisely, $f(x) \rightarrow+\infty$ if $|x| \rightarrow+\infty$.~\citep{JS:06} Then the problem can be restricted to a bounded set and existence of a global minimum $x^{*}$ is guaranteed: a continuous function has a minimum on a compact set. This theorem is defined as follows and the proof is given in Appendix~\ref{appendix:trm23}.
 \begin{thm}~\citep{JS:06}
     \label{thm:23}
     If $f$ is a continuous function defined on a compact set $\Omega$ in $\mathbb{R}$, then $f$ has a global minimizer $x^{*}$ on $\Omega$ i.e. there exists $x^{*} \in \Omega$ such that $f\left(x^{*}\right) \leq f(x)$ for all $x \in \Omega$.
@@ -35,18 +35,18 @@ More general, based on the definition of coercive function $f$, we can give foll
     \label{thm:24}
     If $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ is a continuous coercive function, then $f$ has at least one global minimizer.
 \end{thm}
-Theorem~\ref{thm:24} requires the continuity of $f$ which is somewhat restrictive for applications. However, we can replace it by the lower semi-continuity of $f$ which is a rather weaker condition. 
-\begin{defn}
+Theorem~\ref{thm:24} requires the continuity of $f$ which is slightly restrictive for applications. However, we can replace it by the lower semi-continuity of $f$ which is a rather weaker condition. 
+\begin{defn}~\citep{JS:06}
     Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R} \cup\{\pm \infty\}$. Then $f$ is called \emph{lower semi-continuous} at a point $x_0 \in \mathbb{R}^n$ if for any sequence $f\left(x_{k}\right)$ converging to $x_0$ here holds $f\left(x_{0}\right) \leq \lim _{k \rightarrow \infty} f\left(x_{k}\right)$. $f$ is called \emph{lower semi-continuous} if $f$ is lower semi-continuous at every point.
 \end{defn}
-Recall our assumptions on function $f$, it is a continuous function, which is always lower semi-continuous. However, lower semi-continuous functions are not necessarily continuous. For instance, a binary function equals to 0 when $x \leq 0$ and equals to 1 when $x > 0$ is not continuous at $x_0 = 0$. However, since it is greater than 0 for all $x$ and $f(0) = 0$, we have $f(0)=0 \leq \liminf _{x \rightarrow 0} f(x)$ and it is lower semi-continuous at $x_0 = 0$.
+Recall our assumptions on function $f$, it is a continuous function, which is always lower semi-continuous. Notably, lower semi-continuous functions are not necessarily continuous. For instance, a binary function equals to 0 when $x \leq 0$ and equals to 1 when $x > 0$ is not continuous at $x_0 = 0$. However, since it is greater than 0 for all $x$ and $f(0) = 0$, we have $f(0)=0 \leq \liminf _{x \rightarrow 0} f(x)$ and it is lower semi-continuous at $x_0 = 0$.
 \par The theorem of the existence of the optimizer of lower semi-continuous function is given as follows and the proof is given in Appendix~\ref{appendix:thm25}
 \begin{thm}~\citep{JS:06}
     \label{thm:25}
     Let $f: \mathbb{R}^{n} \rightarrow \mathbb{R}$ be a lower semi-continuous function. If $f$ has a nonempty, compact sublevel set $D:=\left\{x \in \mathbb{R}^{n}: f(x) \leq \alpha\right\}$, then $f$ achieves a global minimizer on $\mathbb{R}$.
 \end{thm}
 Also, we introduce the definition of convex function and convex set which are important in regular optimization problems.
-\begin{defn}
+\begin{defn}~\citep{JS:06}
     A function $f$ is convex when 
     $$
         f(\alpha x+(1-\alpha) y) \leq \alpha f(x)+(1-\alpha) f(y) \quad \textrm{for all } x, y, \textrm{ and } \alpha \in ]0,1[
@@ -56,15 +56,15 @@ Also, we introduce the definition of convex function and convex set which are im
     \alpha x+(1-\alpha) y \in C \quad \textrm { for all } x, y \textrm { in } C, \textrm{ and } \alpha \in ] 0,1[
     $$
 \end{defn}
-The problem we are going to discuss in this part is convex and regular, which means its gradient can be computed and the solution exists. However, although the existence of the optimizer is sufficient, for different problems, the optimality conditions are different. In the next two sections, we will give necessary and sufficient conditions for both unconstrained and constrained problems.
+The objective function of the optimization problem we discussed in this part is convex and regular, which means its gradient can be computed and the solution exists. However, although the existence of the optimizer is sufficient, for unconstrained and constrained problems, the optimality conditions are different. In the next two sections, we will give necessary and sufficient conditions for both these cases. 
 
 \subsection{Optimality Conditions for Unconstrained Problems}
 Firstly, we consider the unconstrained minimization problem
 \begin{equation}
     \min _{\mathbf{x} \in \mathbb{R}^{n}} f(x),
 \end{equation}
-where $f$ is given function on $\mathbb{R}^n$. 
-\par In order to determine the minimizer, it is important to understand what can happen at a minimizer, and at what condition a point must be a minimizer. Now we have to recognize the optimum point. There are two necessary conditions and one sufficient condition given below~\citep{JS:06}. The proof is given in Appendix~\ref{appendix:thm28}.
+where $f$ is the objective function on $\mathbb{R}^n$. 
+\par In order to determine the minimizer, it is important to understand what can happen at a minimizer, and at what conditions a point must be a minimizer. Now we have to recognize the optimal point. There are two necessary conditions and one sufficient condition given below~\citep{JS:06}. The proof is given in Appendix~\ref{appendix:thm28}.
 \begin{thm}{Necessary and Sufficient Conditions.}
     \label{thm28}
     Let $f:\Omega \rightarrow \mathbb{R}$ be a funcion defined on a set $\Omega \subset \mathbb{R}^n$ and let $x^*$ be an interior point of $\Omega$ that is a local minimizer of $f$. \\
@@ -75,16 +75,16 @@ where $f$ is given function on $\mathbb{R}^n$.
     \end{itemize}
     Sufficient condition (SC1): if $x^*$ is such that $\nabla f\left(x^{*}\right)=0$ and $\nabla^2 f\left(x^{*}\right)$ is positive definite, then $x^*$ is a local minimum. (i.e. $f(x) \geq f(x^*)$ for $x$ close to $x^*$)
 \end{thm}
-\par Any point satisfying (NC1) as the minimizer of $f$ is called a \emph{critical} or \emph{stationary} point of $f$. In the objective function $f$ is convex, (NC1) is also the sufficient condition for the global minimum of the solution. 
-\par Let us see an example of unconstrained minimization problem. Supposed we have to determine the minimization of function
+\par Any point satisfying (NC1) as the minimizer of $f$ is called a \emph{critical} or \emph{stationary} point of $f$. If the objective function $f$ is convex, (NC1) is also the sufficient condition for the global minimum of the solution. 
+\par Below is an example of unconstrained minimization problem. Supposed we have to determine the minimum of function
 $$
 f(x, y)=x^{4}-4 x y+y^{4}
 $$
-\par From the definition of function $f$, it is clear that $f$ is continuous. Then we can expand $f$ by writing
+\par From the definition of function $f$, it is clear that $f$ is continuous, then we can expand $f$ by writing
 $$
 f(x, y)=\left(x^{4}+y^{4}\right)\left(1-\frac{4 x y}{x^{4}+y^{4}}\right)
 $$
-\par we can see $f$ is coercive. Also, we give the contour graph of function $f$ in Figure~\ref{fig:unconseg}. Therefore $f$ has global minimizers which are critical points. Now according to (NC1), we can find the global minimizer through solving the derivative of $f$ equaling to zero:
+\par we can see $f$ is coercive. Also, we show the contour graph of function $f$ in Figure~\ref{fig:unconseg}. Therefore $f$ has global minimizers which are critical points. According to (NC1), we can find the global minimizer through solving the derivative of $f$ equaling to zero:
 $$
 0=\nabla f(x, y)=\left(\begin{array}{c}4 x^{3}-4 y \\ -4 x+4 y^{3}\end{array}\right)
 $$
@@ -110,8 +110,8 @@ $$
   \caption{Function $f(x,y)$ at $x = 0$, $x=-1$ and $x=1$ }
  \end{figure}
 
-\par From this example, we verify that through (NC1), we can find the global minimizer. However, not all continuous functions with critical points have any maximizer or minimizer. If the function goes to infinity along its axes or a line, it does not have any maximizer or minimizer although it has a critical point. The condition of the minimizer as the critical point is that the function $f$ should be a convex function with continuous first partial derivatives.
-\par Let us move to the sufficient condition (SC1). The result obtained under this theorem is best possible for general functions. Specifically, for a convex function $f$ is defined on a convex set $\Omega \subset \mathbb{R}^n$, any local minimizer of f is also a global minimizer. Moreover, if a function $f$ is strictly convex, it has at most one global minimizer. 
+\par From this example, we verify that we can find the global minimizer through (NC1). However, not all continuous functions with critical points have a global maximizer or minimizer. If the function goes to infinity along its axes or a line, it does not have any maximizer or minimizer although it has a critical point, such as the cubic function. The condition of the minimizer as the critical point is that the function $f$ should be a convex function with continuous first partial derivatives.
+\par Let us move to the sufficient condition (SC1). The result obtained under this theorem is best possible for general functions. Specifically, for a convex function $f$ that is defined on a convex set $\Omega \subset \mathbb{R}^n$, any local minimizer of $f$ is also a global minimizer. Moreover, if a function $f$ is strictly convex, it has at most one global minimizer. 
 
 \subsection{Optimality Conditions for Constrained Problems}
 \label{sec:opt-con-constrained}
@@ -132,11 +132,11 @@ $$
 $$
 \par Any point $x \in \mathscr{F}$ is called a feasible point of (\ref{equ:2.2}) and we call (\ref{equ:2.2}) infeasible if $\mathscr{F} = 0$. Also, in this feasible set, a feasible point $x^* \in \mathscr{F}$ is called a local minimizer of (\ref{equ:2.2}) if it is the minimum solution in a neighborhood (strict local minimizer if it is the only one minimum solution). The definition of the global minimizer and strict global minimizer is similar, whose neighborhood is the whole feasible set. 
 \par Let us move to the constraints in this problem. For equality constraints, they are strictly equivalent. However, for inequality constraints, there are some exceptions. Let $x^*$ be a local minimizer of (\ref{equ:2.2}). If there is an index $i \in \mathscr{I}$ such that $c_i(x^*) < 0$, then, $x^*$ is still the local minimizer of the problem obtained by deleting $i$-th constraint. In this situation, we say that the $i$-th constraint is inactive at $x^*$ since it does not have any effect on the solution. A general definition of active and inactive inequality constraints is as follows:
-\begin{defn}
+\begin{defn}~\citep{JS:06}
     At a feasible point $x \in \mathscr{F}$, the index $i \in \mathscr{I}$ is said to be \emph{active} if $\mathscr(x) = 0$ and \emph{inactive} if $c_i(x) < 0$.  
 \end{defn}
 \par In the next chapter, we will give different processes for different cases of active or inactive inequality constraints in the deep declarative nodes. In this chapter, we only focus on the necessary and sufficient conditions for a feasible point $x$ to be a local minimizer of (\ref{equ:2.2}). These conditions will be derived by considering the change of $f$ on the feasible set along with certain directions. We give the lemma for the condition of local minimizer $x^* \in \mathscr{F}$ as follows, which can be proved through Taylor’s formula in Appendix~\ref{appendix:lemma210}.
-\begin{lemma}
+\begin{lemma}~\citep{JS:06}
     \label{lemma:210}
     If $x^* \in \mathscr{F}$ is a local minimizer of (\ref{equ:2.2}), then
     $$
@@ -145,7 +145,7 @@ $$
     where $T_{x^{*}} \mathscr{F}$ is the set of all vectors tangent to $\mathscr{F}$. 
 \end{lemma}
 \par However, we may not be able to extract useful results from this lemma, since $T_{x^{*}} \mathscr{F}$ depends only on the geometry of $\mathscr{F}$ but not on the constraints functions $c_i$. Not all local minimum falls on the boundary of the constraint function, which is a part of $T_{x^{*}} \mathscr{F}$. Therefore, it is necessary to introduce linearized feasible directions to give a characterization of $T_{x^{*}} \mathscr{F}$ in terms of $c_i$. 
-\begin{defn}
+\begin{defn}~\citep{JS:06}
     \label{defn:lfd}
     Given $x \in \mathscr{F}$, we define
     $$
@@ -177,9 +177,9 @@ $$
 $$
 \begin{aligned} \operatorname{LFD}(0) &=\left\{d \in \mathbb{R}^{2}: d^{T} \nabla c_{2}(0) \leq 0 \text { and } d^{T} \nabla c_{3}(0) \leq 0\right\} \\ &=\left\{d \in \mathbb{R}^{2}: d \geq 0\right\} \end{aligned}
 $$
-which equals to the set of all vectors tangent to the feasible set $T_{0} \mathscr{F}$. 
+which equals the set of all vectors tangent to the feasible set $T_{0} \mathscr{F}$. 
 \par Unlike the unconstrained optimization problem, the first order necessary condition of the existence of the optimizer is different since we should consider its linearized feasible directions and constraints feasibility. This is so-called the Karush-Kuhn-Tucker theorem: 
-\begin{thm}[Karush-Kuhn-Tucker Theorem]
+\begin{thm}[Karush-Kuhn-Tucker Theorem]~\citep{JS:06}
     \label{thm:kkt}
     Let $x^* \in \mathscr{F}$ be a local minimizer of problem (\ref{equ:2.2}). If
     $$
@@ -295,7 +295,7 @@ $$
 
 \section{Solution of Unconstrained and Constrained Optimization Problems}
 \label{sec:consopt}
-According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimality through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collected both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. ~\cite{AB:17} also present a solution for exact, constrained optimization within a neural network. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
+According to the sufficient conditions for unconstrained optimization problems, we can easily compute the optimal solution through the first and second derivative of the objective function. For equality and inequality constrained problems, the introduction of Lagrangian $\mathcal{L}$ is useful for their closed-form solution. ~\cite{SG:16} collected both argmin and argmax bi-level optimization results with and without constraints, which also provide insightful examples of these cases. ~\cite{AB:17} also presents a solution for exact, constrained optimization within a neural network. In this thesis, we only focus on argmin problems, but the argmax problems have similar results. 
 \par In this section, we are going to provide some background for the solution of both unconstrained and constrained optimization problems, which is based on the gradient of the regular point. 
 \subsection{Unconstrained Optimization}
 For unconstrained optimization problems, the solution is easy to obtain since we only need to focus on the optimality of the objective function. We consider an objective function $f: \mathbb{R}^{n} \times \mathbb{R}^m \rightarrow \mathbb{R}$:
@@ -335,8 +335,8 @@ $$
     which is a contradiction. 
     \par Overall, the minimization problem defined above has a unique minimizer. 
 \end{proof}
-\par There are many different methods to solve the unconstrained optimization problem since generally, we treat this kind of problem as basic one. There are two most classical methods, Newton method~\citep{NT:36} and the Method of Steepest Descent~\citep{DP:09}. The former one, Newton method starts from an initial guess $x_0$ and defines a sequence $\{x_k\}$
-iteratively according to some rule. It uses the tangent line of the objective function $f$ at $x_k$ to replace $f$ and uses the root of $L(x) = 0$, where $L(x)$ is the updated $f(x)$ as the next iterate $x_{k+1}$. Finally, the iteration is terminted as long as the difference between $x_k$ and $x_{k+1}$ less than a preassigned small number. The later one, steepest descent is a basic gradient method, which decreases the value of the objective function in a direction of most rapid change. The change rate of a function $f$ at $x$ in the direction $u$, a unit vector in $\mathbb{R}$ is determined by the directional derivative. Therefore, at $x$ the value of $f$ decrease fastest in the direction $u=-\nabla f(x)/\|\nabla f(x)\|$, which leads to the gradient method: we update the $x$ through the direction with the step length. 
+\par There are many different methods to solve the unconstrained optimization problem. There are two most classical methods, Newton method~\citep{NT:36} and the Method of Steepest Descent~\citep{DP:09}. The former one, the Newton method starts from an initial guess $x_0$ and defines a sequence $\{x_k\}$
+iteratively according to some rules. It uses the tangent line of the objective function $f$ at $x_k$ to replace $f$ and uses the root of $L(x) = 0$, where $L(x)$ is the updated $f(x)$ as the next iterate $x_{k+1}$. Finally, the iteration is terminated as long as the difference between $x_k$ and $x_{k+1}$ less than a preassigned small number. The later one, steepest descent is a basic gradient method, which decreases the value of the objective function in a direction of most rapid change. The change rate of a function $f$ at $x$ in the direction $u$, a unit vector in $\mathbb{R}$ is determined by the directional derivative. Therefore, at $x$ the value of $f$ decrease fastest in the direction $u=-\nabla f(x)/\|\nabla f(x)\|$, which leads to the gradient method: we update the $x$ through the direction with the step length. 
 
 
 \subsection{Equality Constrained Optimization}
