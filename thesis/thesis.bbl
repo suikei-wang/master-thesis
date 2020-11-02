@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{41}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -154,6 +154,12 @@
 \textsc{Maclaurin, D.; Duvenaud, D.; and Adams, R.~P.}, 2015.
 \newblock Autograd: Effortless gradients in numpy.
 \newblock In \emph{ICML 2015 AutoML Workshop}, vol. 238, 5.
+
+\bibitem[{Mallat and Zhang(1993)}]{MS:93}
+\textsc{Mallat, S.~G. and Zhang, Z.}, 1993.
+\newblock Matching pursuits with time-frequency dictionaries.
+\newblock \emph{IEEE Transactions on signal processing}, 41, 12  (1993),
+  3397--3415.
 
 \bibitem[{Newton and Colson(1736)}]{NT:36}
 \textsc{Newton, I. and Colson, J.}, 1736.

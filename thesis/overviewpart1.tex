@@ -356,7 +356,7 @@ More generally, constraints can be non-linear. That means we cannot use $A$ as a
 $$
 \begin{array}{rl}y(x) \in \arg \min _{y \in \mathbb{R}^{m}} & f(x, y) \\ \textrm { subject to } & c_i(x, y) = 0, \quad i = 1, \dots, m \end{array}
 $$
-\par Solution for general multiple non-linear equality constraints is discussed in the chapter of deep declarative network nodes. Here, we are giving a simple example of non-linear equality constrained optimization problem. 
+\par Solution for general multiple non-linear equality constraints is discussed in the chapter of deep declarative network nodes. Here, we give a simple example of non-linear equality constrained optimization problem. 
 \par For any given nonzero vector $y \in \mathbb{R}^n$, we define the minimization problem as follows:
 $$
 \begin{array}{cc}\textrm { minimize } & -x^{T} y \\ \textrm { subject to } & \|x\|_{2}^{2}=1\end{array}
@@ -369,7 +369,7 @@ $$
   \caption{Constrained function $c(x) = \|x\|_{2}^{2} - 1$}
  \end{figure}
 
-\par From the constraint defined above, we can write the constraint function as $c(x) = \|x\|_{2}^{2} - 1$ and illustrate it in Fig~\ref{fig:example23_cons}.  Differentiating $c(x)$ with respect to $x$, we get $\nabla c(x) = x \neq 0$. Therefore, it follows the definition of LFD~\ref{defn:lfd} and the theorem of KKT~\ref{thm:kkt}, which means that every local minimizer of this problem is a KKT point. Now we can write the Lagrangian function:
+\par From the constraint defined above, we can write the constraint function as $c(x) = \|x\|_{2}^{2} - 1$ as illustrated it in Fig~\ref{fig:example23_cons}.  Differentiating $c(x)$ with respect to $x$, we get $\nabla c(x) = x \neq 0$. Therefore, it follows the definition of LFD~\ref{defn:lfd} and the theorem of KKT~\ref{thm:kkt}, which means that every local minimizer of this problem is a KKT point. Now we can write the Lagrangian function:
 $$
 \mathcal{L}(x, \lambda)=-x^{T} y+\lambda\left(\|x\|_{2}^{2}-1\right)
 $$
@@ -381,14 +381,14 @@ From $-y+2\lambda x = 0$ and $y \neq 0$ defined in the question, we must have $\
 $$ 
 4 \lambda^{2}=\|y\|_{2}^{2} \Leftrightarrow \lambda=\pm \frac{\|y\|_{2}}{2}
 $$
-\par Therefore, consequently, we have $x = \pm \frac{y}{\|y\|_{2}}$. For each $x$, we can compute its corresponding value of the objective function:
+\par Consequently, we have $x = \pm \frac{y}{\|y\|_{2}}$. For each $x$, we can compute its corresponding value of the objective function:
 $$
 x = \frac{y}{\|y\|_{2}}, -x^{T} y=-\|y\|_{2}
 $$
 $$
 x = -\frac{y}{\|y\|_{2}}, -x^{T} y=\|y\|_{2}
 $$ 
-\par Obviously, the minimum is achieved $-\|y\|_{2}$ at $x = \frac{y}{\|y\|_{2}}$. 
+\par Obviously, the minimum is achieved with $f = -\|y\|_{2}$ at $x = \frac{y}{\|y\|_{2}}$. 
 \par Algorithms for solving constrained problems are various. For basic linear programming, which means that all functions involved are linear, we can transform it into standard form with matrix $A$, then solve the problem using Lagrangian function based on the KKT condition. 
 \par Penalty method\citep{YO:05}, a function determining when a point $x$ is feasible or not, is used to replace the constrained problem with an unconstrained one. For a minimization problem $f(x)$, the penalty function $P(x)$ associated with a penalty parameter are introduced to combine with $f(x)$ and now we are going to solve a series of unconstrained problems. These problems have converged solutions of the original constrained problem. 
 
@@ -418,15 +418,15 @@ Equation~\ref{equ:log-barrier} is the log-barrier function, which takes the sum 
 
 \section{Differentiable Neural Network}
 \label{sec:differentiable}
-If a problem is differentiable, that means the solution of this problem can be back-propagated. In neural networks, back-propagation~\citep{GI:16} is widely used to train the feedforward neural network, especially for supervised learning. Therefore, in deep neural networks, we can treat constrained optimization as an individual layer. Recently, there are several works on end-to-end differentiable convex optimization in the neural network, since this type of layer provides inductive bias for different problems, which is very practical. 
+If a problem is differentiable, then the solution of this problem can be back-propagated. In neural networks, back-propagation~\citep{GI:16} is widely used to train the feedforward neural network, especially for supervised learning. Therefore, in deep neural networks, we can treat constrained optimization as an individual layer. Recently, there are several works on end-to-end differentiable convex optimization in the neural network, since this type of layer provides inductive bias for different problems, which is very practical. 
 \par OptNet~\citep{AB:17} is a very classical differentiable layer neural network. Each layer in the end-to-end deep neural network is intergraded into optimization problems, which can capture and encode complex dependencies and constraints between hidden variables. It specifically considers the quadratic programs, which are general convex optimization problems. Similarly, SATNet~\citep{WP:19}, a differentiable maximum satisfiability solver, is also intergraded into end-to-end deep learning systems. Besides, it combines the solver with the traditional convolutional network. Both OptNet and SATNet are applied to solving the Sudoku puzzles, which is a very basic constrained logical problem. To make it more general and efficient, \cite{AA:19} demonstrate an approach based on disciplined convex programs, which is a subclass of the classical convex optimization problems. The affine map introduced in this paper represents the disciplined parametrized program. 
-\par A fashion application in the differentiable network is the Perspective-n-Points (PnP) solver. \cite{CB:20} present BPnP based on PnP solver, performing geometric optimization in computer vision tasks. It back-propagates gradient through PnP accurately and effectively since there is a differentiable function in the optimizer block. Besides, for blind PnP problems in the 3D computer vision task, \cite{CD:20} propose an end-to-end network based on the differentiating optimization solutions, which is robust and outperforming.  
+\par A popular application in the differentiable network is the Perspective-n-Points (PnP) solver. \cite{CB:20} present BPnP based on PnP solver, performing geometric optimization in computer vision tasks. It back-propagates gradient through PnP accurately and effectively since there is a differentiable function in the optimizer block. Besides, for blind PnP problems in the 3D computer vision task, \cite{CD:20} propose an end-to-end network based on the differentiating optimization solutions, which is robust and outperforming.  
 \par Apart from the above, the differentiable neural network has many practical and powerful applications. \cite{AB:19} introduce a differentiable variant cross-entropy method for non-convex optimization objective function. Again, due to the differentiable feature of the network, the output of the cross-entropy method is differentiable with respect to the parameters in the objective function, even it is non-convex. In 3D reconstruction tasks, some implicit shape and texture are difficult to represent. Hence, \cite{NM:20} introduce a differentiable rendering formulation, which makes the network learn them from input images directly since implicit differentiation can learn the depth gradients. Also, some research has been done to simplify the differentiable neural network since the computational cost and complexity of the differential operators can be very high in different tasks. The architecture proposed by \cite{CR:19} is cheap and efficient, which sets the Jacobian matrix into diagonal and hollow. It also changes the backward progress into automatic differentiation, which is more effective and lightweight. 
 
 
 \section{Summary}
 \label{sec:2summary}
-In Chapter~\ref{cha:overviewpart1}, firstly, we introduce the numerical optimization briefly with some necessary conditions and theorems. For the general convex optimization problem, the existence of the local or global optimizers can be determined by the feasible set. Next, the optimality of both unconstrained and constrained problems are discussed. For unconstrained problems, we only need to follow the necessary and sufficient conditions to find the global minimum of the solution. For constrained problems, it should also satisfy the KKT condition. Then we compare existing algorithms on the solution to these problems. Here, for constrained optimization problems, we have to consider the linearity of constraints. Specifically, the activity of inequality constraints can also be solved with different algorithms. Finally, since this thesis is based on the end-to-end differentiable network, some related works of the application are described since these works inspire the deep declarative network in the next chapter. In the next chapter, we are going to describe the deep declarative network in detail with examples. 
+In Chapter~\ref{cha:overviewpart1}, we first briefly introduce the numerical optimization with some necessary conditions and theorems. For the general convex optimization problem, the existence of the local or global optimizers can be determined by the feasible set. Next, the optimality of both unconstrained and constrained problems are discussed. For unconstrained problems, we only need to follow the necessary and sufficient conditions to find the global minimum of the solution. For constrained problems, it should also satisfy the KKT condition. Then we compare existing algorithms on the solution to these problems. Here, for constrained optimization problems, we have to consider the linearity of constraints. Specifically, the activity of inequality constraints can also be solved with different algorithms. Finally, since this thesis is based on the end-to-end differentiable network, some related works of the application are described since these works inspire the deep declarative network in the next chapter. In the next chapter, we are going to describe the deep declarative network in detail with examples. 
 
 
 

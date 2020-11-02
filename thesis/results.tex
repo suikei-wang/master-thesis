@@ -18,8 +18,28 @@ where $\mathbf{A} \in \mathbb{R}^{m \times n}$ with $m > n$, $\mathbf{x} \in \ma
 \end{equation}
 \par The solution $\mathbf{x}$ in Equation~\ref{equ:residual} given be the least squares method minimizes $\|\mathbf{r}\|_2 = \|\mathbf{b} - \mathbf{A}\mathbf{x}\|_2$, which is also the sum of errors:
 \begin{equation}
+    \label{equ:lstsq}
     \|\mathbf{r}\|_2 = \mathbf{r}^{T} \mathbf{r}=(\mathbf{b}-\mathbf{A} \mathbf{x})^{T}(\mathbf{b}-\mathbf{A} \mathbf{x})=\mathbf{b}^{T} \mathbf{b}-\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{b}-\mathbf{b}^{T} \mathbf{A} \mathbf{x}+\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{A} \mathbf{x}
 \end{equation}
+\par We aim to find the optimal approximation $\mathbf{x}$ that minimize the $\|\mathbf{r}\|_2$ in Equation~\ref{equ:lstsq}. Therefore, we compute the derivative of Equation~\ref{equ:lstsq} with respect to $x_k, k = 1, \dots, n$ and set it equal to zero
+\begin{equation}
+    \label{equ:lstsq-gradient}
+    \frac{\partial \|\mathbf{r}\|}{\partial x_{k}}=\frac{\partial}{\partial x_{k}}\left[\sum_{i=1}^{m}\left(b_{i}-\sum_{j=1}^{n} a_{i j} x_{j}\right)^{2}\right]=2 \sum_{i=1}^{m}\left(b_{i}-\sum_{j=1}^{n} a_{i j} x_{j}\right)\left(-a_{i k}\right)=0)
+\end{equation}
+where $a_{ij}$ are elements in $\mathbf{A}$. 
+\par From Equation~\ref{equ:lstsq-gradient}, we can find
+\begin{equation}
+    \sum_{i=1}^{m} \sum_{j=1}^{n} a_{i j} a_{i k} x_{j}=\sum_{j=1}^{n}\left[\sum_{i=1}^{m} a_{i j} a_{i k}\right] x_{j}=\sum_{i=1}^{m} b_{i} a_{i k}
+\end{equation}
+which is equivalent to
+\begin{equation}
+    \mathbf{A}^{T} \mathbf{A} \mathbf{x}=\mathbf{A}^{T} \mathbf{b}
+\end{equation}
+\par Consequently, we can solve $\mathbf{x}$
+\begin{equation}
+    \mathbf{x}=\left(\mathbf{A}^{T} \mathbf{A}\right)^{-1} \mathbf{A}^{T} \mathbf{b}=\mathbf{A}^{-} \mathbf{b}
+\end{equation}
+where $\mathbf{A}^{-}$ is the pseudoinverses of $\mathbf{A}$ and $\mathbf{A}^{T} \mathbf{A}$ is supposed to be invertible since $\operatorname{rank}\mathbf{A} < \operatorname{min}(m, n)$. 
 
 
 \subsection{Conjugate Gradient and Preconditioning}
@@ -28,7 +48,7 @@ where $\mathbf{A} \in \mathbb{R}^{m \times n}$ with $m > n$, $\mathbf{x} \in \ma
 \label{sec:rankdf-sol}
 \subsection{Orthogonal Matching Pursuit Algorithm}
 In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
-\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery. 
+\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}.  
 
 
 \subsection{Strategies in Applications}

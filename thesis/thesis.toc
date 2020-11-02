@@ -45,21 +45,21 @@
 \contentsline {subsection}{\numberline {5.1.2}Conjugate Gradient and Preconditioning}{46}{subsection.5.1.2}% 
 \contentsline {section}{\numberline {5.2}Rank Deficiency}{46}{section.5.2}% 
 \contentsline {subsection}{\numberline {5.2.1}Orthogonal Matching Pursuit Algorithm}{46}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}Strategies in Applications}{46}{subsection.5.2.2}% 
-\contentsline {section}{\numberline {5.3}Non-convex Problems}{46}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Augumented Lagrange Method}{46}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}Non-linear Lagrangian Duality}{46}{subsection.5.3.2}% 
-\contentsline {section}{\numberline {5.4}Future Work of the Solution for Non-regular Points}{46}{section.5.4}% 
-\contentsline {section}{\numberline {5.5}Summary}{46}{section.5.5}% 
-\contentsline {chapter}{\numberline {6}Conclusion}{47}{chapter.6}% 
-\contentsline {chapter}{Appendix}{53}{appendix*.6}% 
-\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{53}{section.Alph0.1}% 
-\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{53}{subsection.Alph0.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{53}{subsubsection.Alph0.1.1.1}% 
-\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{53}{subsubsection.Alph0.1.1.2}% 
-\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{54}{subsubsection.Alph0.1.1.3}% 
-\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{54}{subsubsection.Alph0.1.1.4}% 
-\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{55}{subsubsection.Alph0.1.1.5}% 
-\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{56}{subsection.Alph0.1.2}% 
-\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{56}{subsubsection.Alph0.1.2.1}% 
-\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{56}{subsubsection.Alph0.1.2.2}% 
+\contentsline {subsection}{\numberline {5.2.2}Strategies in Applications}{47}{subsection.5.2.2}% 
+\contentsline {section}{\numberline {5.3}Non-convex Problems}{47}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Augumented Lagrange Method}{47}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Non-linear Lagrangian Duality}{47}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Future Work of the Solution for Non-regular Points}{47}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Summary}{47}{section.5.5}% 
+\contentsline {chapter}{\numberline {6}Conclusion}{49}{chapter.6}% 
+\contentsline {chapter}{Appendix}{55}{appendix*.6}% 
+\contentsline {section}{\numberline {A}An Overview of Numerical Optimization}{55}{section.Alph0.1}% 
+\contentsline {subsection}{\numberline {A.1}Theory of Optimization}{55}{subsection.Alph0.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.1}Proof of Theorem\nobreakspace {}\ref {thm:23}}{55}{subsubsection.Alph0.1.1.1}% 
+\contentsline {subsubsection}{\numberline {A.1.2}Proof of Theorem\nobreakspace {}\ref {thm:24}}{55}{subsubsection.Alph0.1.1.2}% 
+\contentsline {subsubsection}{\numberline {A.1.3}Proof of Theorem\nobreakspace {}\ref {thm:25}}{56}{subsubsection.Alph0.1.1.3}% 
+\contentsline {subsubsection}{\numberline {A.1.4}Proof of Theorem\nobreakspace {}\ref {thm28}}{56}{subsubsection.Alph0.1.1.4}% 
+\contentsline {subsubsection}{\numberline {A.1.5}Proof of Lemma\nobreakspace {}\ref {lemma:210}}{57}{subsubsection.Alph0.1.1.5}% 
+\contentsline {subsection}{\numberline {A.2}Solution of Unconstrained and Constrained Optimization Problems}{58}{subsection.Alph0.1.2}% 
+\contentsline {subsubsection}{\numberline {A.2.1}Proof of Equation\nobreakspace {}\ref {equ:2.3}}{58}{subsubsection.Alph0.1.2.1}% 
+\contentsline {subsubsection}{\numberline {A.2.2}Proof of Equation\nobreakspace {}\ref {equ:2.4} \citep {SG:19}}{58}{subsubsection.Alph0.1.2.2}% 
