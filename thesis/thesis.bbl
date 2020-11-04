@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -143,6 +143,12 @@
 \newblock \emph{Journal of optimization theory and applications}, 4, 5  (1969),
   303--320.
 
+\bibitem[{Hestenes et~al.(1952)Hestenes, Stiefel et~al.}]{HM:52}
+\textsc{Hestenes, M.~R.; Stiefel, E.; et~al.}, 1952.
+\newblock Methods of conjugate gradients for solving linear systems.
+\newblock \emph{Journal of research of the National Bureau of Standards}, 49, 6
+   (1952), 409--436.
+
 \bibitem[{Jiang(1999)}]{JH:99}
 \textsc{Jiang, H.}, 1999.
 \newblock Global convergence analysis of the generalized newton and
@@ -213,6 +219,11 @@
 \textsc{Robbins, H. and Monro, S.}, 1951.
 \newblock A stochastic approximation method.
 \newblock \emph{The annals of mathematical statistics},  (1951), 400--407.
+
+\bibitem[{Shewchuk et~al.(1994)}]{SJ:94}
+\textsc{Shewchuk, J.~R. et~al.}, 1994.
+\newblock An introduction to the conjugate gradient method without the
+  agonizing pain.
 
 \bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
 \textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.

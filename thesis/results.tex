@@ -39,10 +39,88 @@ which is equivalent to
 \begin{equation}
     \mathbf{x}=\left(\mathbf{A}^{T} \mathbf{A}\right)^{-1} \mathbf{A}^{T} \mathbf{b}=\mathbf{A}^{-} \mathbf{b}
 \end{equation}
-where $\mathbf{A}^{-}$ is the pseudoinverses of $\mathbf{A}$ and $\mathbf{A}^{T} \mathbf{A}$ is supposed to be invertible since $\operatorname{rank}\mathbf{A} < \operatorname{min}(m, n)$. 
-
+where $\mathbf{A}^{-}$ is the pseudoinverses of $\mathbf{A}$ and $\mathbf{A}^{T} \mathbf{A}$ is supposed to be invertible since $\operatorname{rank}\mathbf{A} < \operatorname{min}(m, n)$.
+\begin{figure}[t]
+    \label{fig:least-square}
+    \centering
+    \includegraphics[page=1, width=.8\textwidth]{figs/least-square.pdf}
+    \caption{Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant with the least-squares method}
+\end{figure}
+\par In deep declarative nodes, if constraints are not second-order differentiable, matrix $B=\mathrm{D}_{X Y}^{2} f(x, y)-\sum_{i=1}^{p+q} \lambda_{i} \mathrm{D}_{X Y}^{2} \tilde{h}_{i}(x, y) \in \mathbb{R}^{m \times n}$ and matrix $H=\mathrm{D}_{Y Y}^{2} f(x, y)-\sum_{i=1}^{p+q} \lambda_{i} \mathrm{D}_{Y Y}^{2} \tilde{h}_{i}(x, y) \in \mathbb{R}^{m \times m}$ are undefined. Therefore, there is no exact solution for the linear system $Hx_1 = A^T$ and $Hx_2 = B$ since it is overdetermined. In this circumstance, using the least-squares method to approximate the solution of the linear system is a classical approach. Figure~\ref{fig:least-square} shows an example of overdetermined system using the least-squares method to approximate the solution of the gradient, where the gradient in one of three variables converges to zero and others are almost zero. 
+\par The least-squares method is very basic and practical since the residual between the ground truth and approximation is minimized, which usually leads the optimal solution. Many methods are based on this in solving different non-regular solution problems, which will be discussed in Section~\ref{sec:rankdf-sol} and Section~\ref{sec:non-convex-sol}. 
 
 \subsection{Conjugate Gradient and Preconditioning}
+We mentioned the steepest method in solving unconstrained optimization problems in Section~\ref{sec:consopt}. In general, the steepest gradient descent takes several steps in the same direction. In the conjugate gradient method, it only takes one step in each direction from a set of orthogonal search directions~\citep{HM:52}.
+\par Supposed we have such a set of orthogonal search directions $\mathbf{d}_{(0)}, \mathbf{d}_{(1)}, \cdots, \mathbf{d}_{(n-1)}$, and we update the gradient $\mathbf{x}$ $n$ steps
+\begin{equation}
+    \label{equ:update-graident}
+    \mathbf{x}_{(i+1)}=\mathbf{x}_{(i)}+\alpha_{(i)} \mathbf{d}_{(i)}
+\end{equation}
+
+where $\alpha_i$ is the step size. To determine the value of $alpha_i$ for each movement under the orthogonal relation between the residual $\mathbf{e}_{(i+1)}$ and the gradient direction $\mathbf{d}_{(i)}$, we take different direction for each update
+\begin{equation}
+    \begin{aligned} 
+        \mathbf{d}_{(i)}^{T} \mathbf{e}_{(i+1)} &=0 \\ \mathbf{d}_{(i)}^{T}\left(\mathbf{e}_{(i)}+\alpha_{(i)} \mathbf{d}_{(i)}\right) &=0 \\ \alpha_{(i)} &=-\frac{\mathbf{d}_{(i)}^{T} \mathbf{e}_{(i)}}{\mathbf{d}_{(i)}^{T} \mathbf{d}_{(i)}} 
+    \end{aligned}
+\end{equation}
+where the residual $\mathbf{e}_{(i+1)}$ is the difference between the ground truth $x$ and the current updated $\mathbf{x}_{i+1}$. 
+\begin{figure}[t]
+    \label{fig:ortho-gradient}
+    \centering
+    \includegraphics[page=1, width=.8\textwidth]{figs/orthogonal-gradient.pdf}
+    \caption{Directions of the orthogonal gradient method}
+\end{figure}
+\par Figure~\ref{fig:ortho-gradient} shows the gradient update from $x_{(0)}$ to $x_{1}$ using the orthogonal gradient method, where $x$ is the ground truth and $x_{(1)}$ is the updated gradient. From this figure, it is clear that the direction of vector $d_{(0)}$ and the residual vector $e_{(1)}$ are orthogonal. However, we cannot decide the $\mathbf{e}_{(i)}$, so we used to make these two vectors $\mathbf{A}$-orothogonal, which means
+\begin{equation}
+    \left\langle\mathbf{d}_{(i)}, \mathbf{e}_{(i+1)}\right\rangle_{A}:=\mathbf{d}_{(i)}^{T} \mathbf{A} \mathbf{e}_{(i+1)}=0
+\end{equation}
+From the Equation above, we get the step size
+\begin{equation}
+    \label{equ:ini-stepsize}
+    \alpha_{(i)}=\frac{\mathbf{d}_{(i)}^{T} \mathbf{r}_{(i)}}{\mathbf{d}_{(i)}^{T} \mathbf{A} \mathbf{d}_{(i)}}
+\end{equation}
+where in this case, the two vectors are not absolutely orthogonal and it depends on the matrix $\mathbf{A}$. This $\mathbf{A}$-orthogonality is applied to the direction set $\left\{\mathbf{d}_{(i)}\right\}$. We decide the search directions through $n$ linearly independent vectors $\mathbf{u}$
+\begin{equation}
+    \mathbf{d}_{(i)}=\mathbf{u}_{i}+\sum_{k=0}^{i-1} \beta_{i, k} \mathbf{d}_{(k)}, \quad i>0
+\end{equation}
+where 
+\begin{equation}
+    \label{equ:update-beta}
+    \beta_{i, j}=\frac{-\mathbf{u}_{i}^{T} \mathbf{A} \mathbf{d}_{(j)}}{\mathbf{d}_{(j)}^{T} \mathbf{A} \mathbf{d}_{(j)}}
+\end{equation}
+which the second direction based on the $\mathbf{A}$-orthogonality. 
+\par Now from above theorems, we can choose the conjugate directions which are constructed by conjugation of the residuals. Since the residuals are orthogonal to the previous search directions, it is graranteed to produce a new linearly independent search direction, until the residual is zero. Therefore, we only need to keep the previous search direction each time to update the gradient. 
+\begin{figure}[t]
+    \label{fig:conj-gradient}
+    \centering
+    \includegraphics[page=1, width=.8\textwidth]{figs/conjugate-gradient.pdf}
+    \caption{Conjugate gradient method}
+\end{figure}
+\par The completed conjugate gradient method can be concluded as follows:
+\begin{itemize}
+    \item Decide first conjugate direction $\mathbf{d}_{(0)}:=\mathbf{u}_{(0)}=\mathbf{b}-\mathbf{A} \mathbf{x}_{(0)}$ from the linear system.
+    \item Calculate the step size based on the $\mathbf{A}$-orthogonality from Equation~\ref{equ:ini-stepsize}.
+    \item Update the gradient from Equation~\ref{equ:update-graident}.
+    \item Update the set of linearly independent vectors $\mathbf{u}_{(i+1)}:=\mathbf{u}_{(i)}-\alpha_{(i)} \mathbf{A} \mathbf{d}_{(i)}$
+    \item Calculate the current step size $\beta$ based on the previous one $\alpha$ through Equation~\ref{equ:update-beta}. 
+    \item Calculate the next conjugate direction based on the new linearly independent vectors, the current step size, and the previous conjugate direction:
+    $$
+    \mathbf{d}_{(i+1)}:=\mathbf{u}_{(i+1)}+\beta_{(i+1)} \mathbf{d}_{(i)}
+    $$
+\end{itemize}
+\par Figure~\ref{fig:conj-gradient} shows a simple example of the conjugate gradient method, which achieves the ground truth with two steps. 
+\par Obviously, for overdetermined linear systems, the traditional conjugate gradient method does not work. We introduce the method of preconditioning~\cite{SJ:94} to solve $\mathbf{A}\mathbf{x}=\mathbf{b}$ indirectly. In the preconditioning method, it demonstrates a positive definite invertible preconditioner $\mathbf{M}$ as the approximation of $\mathbf{A}$, which can convert the problem to solving 
+\begin{equation}
+    \mathbf{M}^{-1} \mathbf{A} \mathbf{x}=\mathbf{M}^{-1} \mathbf{b}
+\end{equation}
+where $\mathbf{M}^{-1} \mathbf{A}$ is usually not symmetric. Hence, matrix decomposition $\mathbf{E} \mathbf{E}^{T}=\mathbf{M}$ is performed to transform the problem as $\mathbf{M}^{-1} \mathbf{A}$ and $\mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T}$ share the same eigenvalues
+\begin{equation}
+    \label{equ:pre-conj-linear-sys}
+    \mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T} \hat{\mathbf{x}}=\mathbf{E}^{-1} \mathbf{b} \quad \hat{\mathbf{x}}=\mathbf{E}^{T} \mathbf{x}
+\end{equation}
+\par Combining the result of the linear system in Equation~\ref{equ:pre-conj-linear-sys} and the conjugate gradient method, we get this transformed conjugate gradient method~\citep{SJ:94}. The choice of the preconditioner 
+
+
 
 \section{Rank Deficiency}
 \label{sec:rankdf-sol}
