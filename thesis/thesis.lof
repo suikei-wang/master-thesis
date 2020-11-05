@@ -21,6 +21,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant with the least-squares method}}{47}{figure.5.1}% 
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Directions of the orthogonal gradient method}}{48}{figure.5.2}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Conjugate gradient method}}{49}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces $A$-orthogonality between two vectors}}{49}{figure.5.3}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Conjugate gradient method}}{50}{figure.5.4}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

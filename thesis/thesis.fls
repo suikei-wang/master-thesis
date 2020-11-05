@@ -573,6 +573,9 @@ INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/least-squ
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/a-orthogonal-example.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/a-orthogonal-example.pdf
+INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/a-orthogonal-example.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/conjugate-gradient.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/conjugate-gradient.pdf
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/conjugate-gradient.pdf
@@ -604,6 +607,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb

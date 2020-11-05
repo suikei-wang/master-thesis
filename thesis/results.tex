@@ -72,9 +72,17 @@ where the residual $\mathbf{e}_{(i+1)}$ is the difference between the ground tru
 \end{figure}
 \par Figure~\ref{fig:ortho-gradient} shows the gradient update from $x_{(0)}$ to $x_{1}$ using the orthogonal gradient method, where $x$ is the ground truth and $x_{(1)}$ is the updated gradient. From this figure, it is clear that the direction of vector $d_{(0)}$ and the residual vector $e_{(1)}$ are orthogonal. However, we cannot decide the $\mathbf{e}_{(i)}$, so we used to make these two vectors $\mathbf{A}$-orothogonal, which means
 \begin{equation}
+    \label{equ:a-otho}
     \left\langle\mathbf{d}_{(i)}, \mathbf{e}_{(i+1)}\right\rangle_{A}:=\mathbf{d}_{(i)}^{T} \mathbf{A} \mathbf{e}_{(i+1)}=0
 \end{equation}
-From the Equation above, we get the step size
+\begin{figure}[t]
+    \label{fig:a-ortho}
+    \centering
+    \includegraphics[page=1, width=.6\textwidth]{figs/a-orthogonal-example.pdf}
+    \caption{$A$-orthogonality between two vectors}
+\end{figure}
+\par Figure~\ref{fig:a-ortho} is an example of the $A$-orthogonality between two vectors. They are not exactly orthogonal, but $A$-orthogonal. 
+\par From the Equation~\ref{equ:a-otho}, we get the step size
 \begin{equation}
     \label{equ:ini-stepsize}
     \alpha_{(i)}=\frac{\mathbf{d}_{(i)}^{T} \mathbf{r}_{(i)}}{\mathbf{d}_{(i)}^{T} \mathbf{A} \mathbf{d}_{(i)}}
@@ -93,7 +101,7 @@ which the second direction based on the $\mathbf{A}$-orthogonality.
 \begin{figure}[t]
     \label{fig:conj-gradient}
     \centering
-    \includegraphics[page=1, width=.8\textwidth]{figs/conjugate-gradient.pdf}
+    \includegraphics[page=1, width=.6\textwidth]{figs/conjugate-gradient.pdf}
     \caption{Conjugate gradient method}
 \end{figure}
 \par The completed conjugate gradient method can be concluded as follows:
@@ -118,15 +126,25 @@ where $\mathbf{M}^{-1} \mathbf{A}$ is usually not symmetric. Hence, matrix decom
     \label{equ:pre-conj-linear-sys}
     \mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T} \hat{\mathbf{x}}=\mathbf{E}^{-1} \mathbf{b} \quad \hat{\mathbf{x}}=\mathbf{E}^{T} \mathbf{x}
 \end{equation}
-\par Combining the result of the linear system in Equation~\ref{equ:pre-conj-linear-sys} and the conjugate gradient method, we get this transformed conjugate gradient method~\citep{SJ:94}. The choice of the preconditioner 
-
+\par Combining the result of the linear system in Equation~\ref{equ:pre-conj-linear-sys} and the conjugate gradient method, we get this transformed conjugate gradient method~\citep{SJ:94}. The choices of the preconditioner are various. The perfect one is that $\mathbf{M} := \mathbf{A}$ but it is not anymore useful. The diagonal preconditioner, which is easy to calculate in finding a solution, is also a reasonable choice. Another preconditioner is the incomplete Cholesky factor, turning $\mathbf{A} = \mathbf{L}\mathbf{L}^T$ with partial Gaussian elimination. 
+\par Using the transformed conjugate gradient method to solve linear systems helps to approximate the solution of the overdetermined system. In deep declarative nodes, we can adopt this approach to solve the linear system $Hx_1 = A^T$ and $Hx_2 = B$ iteratively. Comparing with the least-squares method, the preconditioned conjugate gradient method is not so direct since it takes iterations to converge. However, it can be more stable to get the ideal approximation. 
 
 
 \section{Rank Deficiency}
 \label{sec:rankdf-sol}
 \subsection{Orthogonal Matching Pursuit Algorithm}
-In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
-\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}.  
+Rank deficiency is also known as the underdetermined system, which means the system has less equations than the unknowns. In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
+\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}. The goal of this algorithm is to recover the sparse signal vectors from a small number of measurements. Supposed we consider a $K$-sparse signal vector $\mathbf{x}$, which is an $n$-dimensional vector with at most $K$ non-zero elements, transformed into a smaller $m$-dimensional $\mathbf{y}$ based on matrix $\mathbf{\Phi}$
+\begin{equation}
+    \label{equ:signal-recover}
+    \mathbf{y}=\mathbf{\Phi} \mathbf{x}
+\end{equation}
+\par In compressive sensing, we use to set $n > m$. Therefore, the system of Equation~\ref{equ:signal-recover} is underdetermined and the matrix $\mathbf{\Phi}$ is rank deficient. Also, there is no exact solution can be obtained. The OMP algorithm provides a simple but competitive solution for solving this underdetermined system by selecting the best fitting column of the sensing matrix iteratively. Besides, a least-squares optimization is performed in the subspace spanned by all previously picked columns. 
+\par We give the details of the OMP algorithm with the classical linear system $Ax = b$ where $A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^{m}$. An optional operation before the OMP iteration is the normalization of columns in the matrix $A$, which transforms them into unit vectors
+\begin{equation}
+    a_{i} \leftarrow \frac{a_{i}}{\left\|a_{i}\right\|_{2}}
+\end{equation}
+where $a_i$ are the columns of $A$. This normalization step is to make sure any correlations between two columns of $A$ within the range $[-1, 1]$, which also bound the absolute value within 1. 
 
 
 \subsection{Strategies in Applications}
