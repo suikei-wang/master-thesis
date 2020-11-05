@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Contour of a constrained problem}}{12}{figure.2.4}% 
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Constrained function $c(x) = \delimiter "026B30D x\delimiter "026B30D _{2}^{2} - 1$}}{16}{figure.2.5}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-end learnable declarative node}}{22}{figure.3.1}% 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-end learnable declarative node\nobreakspace {}\citep {SG:19}}}{22}{figure.3.1}% 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Different scenarios for the solution to inequality constrained nodes}}{27}{figure.3.2}% 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{29}{figure.3.3}% 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{30}{figure.3.4}% 

@@ -166,14 +166,14 @@ which minimizes the error between the selected important columns of $A$ and $b$.
     }
     \caption{The OMP algorithm}
 \end{algorithm}
-After a fixed number of iterations, the algorithm stops and is converged to the optimality. 
+\par After a fixed number of iterations, the algorithm stops and is converged to the optimality. In deep declarative nodes, when we get the underdetermined system we can apply this effective algorithm to approximate the gradient. Moreover, a more stable and faster extension proposed by \cite{DD:58} allows more than one coefficients and takes a fixed number of stages to converge. Both algorithms perform well in solving the underdetermined system theoretically. 
 
 \subsection{Strategies in Applications}
+Rank deficiency problems occur when the constraints are not all second-order differentiable or we do not have enough constraints to determine the solution. Hence in the application of the deep declarative network, it is essential to 
 
 \section{Non-convex Problems}
 \label{sec:non-convex-sol}
-
-\subsection{Non-linear Lagrangian Duality}
+Non-convex problems are usually NP-hard to solve due to the potentially various local minima, saddle points, very flat regions and widely varying curvature. 
 
 
 

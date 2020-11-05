@@ -62,7 +62,7 @@ where $f$ is the objective function $f: \mathbb{R}^n \times \mathbb{R}^m \righta
     \draw (332,55) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle \operatorname{D} J( \theta )$};
     \end{tikzpicture}
 
-    \caption{End-to-end learnable declarative node}
+    \caption{End-to-end learnable declarative node~\citep{SG:19}}
 \end{figure}
 \par Figure~\ref{fig:ddn} shows the forward and backward pass of the declarative node. In the forward evaluation pass, the output of the declarative $y$ is computed as the solution of some minimization problem $f(x, u; \theta)$. We use $\operatorname{D}$ to denote the total derivative with respect to the independent variables. Therefore, in the backward pass, the gradient of the global objective function with respect to the output $\operatorname{D}J(y)$ is back-propagated. Its value is computed through the chain rule based on the gradients with respect to the input $\operatorname{D}J(x)$ and parameters $\operatorname{D}J(\theta)$.
 \par Since the definition of deep declarative nodes is very general, it can be embedded within another network for solving subproblems such as robust fitting. However, we may not be able to find the gradient when the feasible set is discrete, or the declarative node is low efficiency to evaluate. As non-regular solution cases, the nonexistent gradient problem will be discussed in the next part. In the next subsection, the learning details of the deep declarative network are described. 

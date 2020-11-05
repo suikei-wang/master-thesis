@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -117,6 +117,13 @@
 \newblock \emph{Communications on Pure and Applied Mathematics: A Journal
   Issued by the Courant Institute of Mathematical Sciences}, 59, 6  (2006),
   797--829.
+
+\bibitem[{Donoho et~al.(2012)Donoho, Tsaig, Drori, and Starck}]{DD:58}
+\textsc{Donoho, D.~L.; Tsaig, Y.; Drori, I.; and Starck, J.-L.}, 2012.
+\newblock Sparse solution of underdetermined systems of linear equations by
+  stagewise orthogonal matching pursuit.
+\newblock \emph{IEEE transactions on Information Theory}, 58, 2  (2012),
+  1094--1121.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio}]{GI:16}
