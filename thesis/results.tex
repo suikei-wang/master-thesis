@@ -1,7 +1,7 @@
-\chapter{Solutions of Non-regular Point}
+\chapter{Solutions of Non-regular Points}
 \label{cha:result}
 In the last chapter, we discussed various previous works in solving the non-regular point problem. However, not all these approaches are suitable for deep declarative nodes and they may not be able to optimize each parameter in the node. In this chapter, we set out to tackle solving this problem efficiently in the extension of the deep declarative network. 
-\par For each scenario, we provide two practical solutions in Section~\ref{sec:overdet-sol} (overdetermined system), Section~\ref{sec:rankdf-sol} (rank deficiency problems) and Section~\ref{sec:non-convex-sol} (non-convex cases) separately. More specifically, we introduce the least-squares method and conjugate gradient preconditioning approach for the overdetermined system, which are practical and classical approximation algorithms. For rank deficient problems, we firstly propose a greedy strategy, the orthogonal matching pursuit algorithms to recover the matrix as a full rank one. We also present that in the application of the deep declarative network, how to avoid the non-regular point and minimize the approximation error. In the last scenario, we provide two theoretical methods based on the optimality conditions of the optimization problem, which are extensions of the traditional Lagrange multipliers approach. We finally prospect some future improvements for the non-regular solution in the optimization problem in Section~\ref{sec:futurework-non}. The summary of this chapter is given in the end. 
+\par For each scenario, we provide two practical solutions in Section~\ref{sec:overdet-sol} (overdetermined system), Section~\ref{sec:rankdf-sol} (rank deficiency problems) and Section~\ref{sec:non-convex-sol} (non-convex cases) separately. More specifically, we introduce the least-squares method and conjugate gradient preconditioning approach for the overdetermined system, which are practical and classical approximation algorithms. For rank deficient problems, we firstly propose a greedy strategy, the orthogonal matching pursuit algorithms to recover the matrix as a full rank one. We also present that in the application of the deep declarative network, how to avoid the non-regular point and minimize the approximation error. In the last scenario, we provide a theoretical method based on the optimality conditions of the optimization problem, which is the extension of the traditional Lagrange multipliers approach. We finally prospect some future improvements for the non-regular solution in the optimization problem in Section~\ref{sec:futurework-non}. The summary of this chapter is given at the end. 
 
 \section{Overdetermined System}
 \label{sec:overdet-sol}
@@ -134,7 +134,7 @@ where $\mathbf{M}^{-1} \mathbf{A}$ is usually not symmetric. Hence, matrix decom
 \label{sec:rankdf-sol}
 \subsection{Orthogonal Matching Pursuit Algorithm}
 Rank deficiency is also known as the underdetermined system, which means the system has less equations than the unknowns. In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
-\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}. The goal of this algorithm is to recover the sparse signal vectors from a small number of measurements. Supposed we consider a $K$-sparse signal vector $\mathbf{x}$, which is an $n$-dimensional vector with at most $K$ non-zero elements, transformed into a smaller $m$-dimensional $\mathbf{y}$ based on matrix $\mathbf{\Phi}$
+\par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}. The goal of this algorithm is to recover the sparse signal vectors from a small number of noisy linear measurements. Supposed we consider a $K$-sparse signal vector $\mathbf{x}$, which is an $n$-dimensional vector with at most $K$ non-zero elements, transformed into a smaller $m$-dimensional $\mathbf{y}$ based on matrix $\mathbf{\Phi}$
 \begin{equation}
     \label{equ:signal-recover}
     \mathbf{y}=\mathbf{\Phi} \mathbf{x}
@@ -144,14 +144,35 @@ Rank deficiency is also known as the underdetermined system, which means the sys
 \begin{equation}
     a_{i} \leftarrow \frac{a_{i}}{\left\|a_{i}\right\|_{2}}
 \end{equation}
-where $a_i$ are the columns of $A$. This normalization step is to make sure any correlations between two columns of $A$ within the range $[-1, 1]$, which also bound the absolute value within 1. 
+where $a_i$ are the columns of $A$. This normalization step is to make sure any correlations between two columns of $A$ within the range $[-1, 1]$, which also bound the absolute value within 1. In the official OMP algorithm, the first step is the initialization. We set the iteration counter $k$ which keeps track of the number of times, i.e. the "column extraction" has occurred. The residual $r_k$ is set as $b$ which is the key in extracting the "important columns" of $A$. Important columns are defined as the column in $A$ that has the largest absolute value of correlation with the residue vector ${r_k}$. We also define the index set $\Lambda_1$ at this stage as $\varnothing$. Secondly, we complete the iteration in the main loop. The important column is extracted through $\lambda_{k}=\arg \max _{j}\left|\left\langle a_{j}, r_{k}\right\rangle\right|$ for general $k$, where $\lambda$ is the column index of $A$ and $a_j$ is the $j$-column of $A$. Since it can produce multiple results due to duplicate columns in $A$, some extra preprocessing steps have to be taken before the main loop. Meanwhile, the index set is augmented with the newly selected column. Now the estimation $x_i$ is obtained by solving the least-squares problem
+\begin{equation}
+    x_{k}=\underset{x}{\arg \min }\left\|A_{\Lambda_{k}} x-b\right\|_{2}
+\end{equation}
+which minimizes the error between the selected important columns of $A$ and $b$. Next we update the residual $r_{k+1}$ by $r_k - \hat{b}_{k}$, where $\hat{b}_{k} = A_{\lambda_{k}} x_{k}$ is the approximation of the given $b$ using the basis $A_{\lambda_{k}}$ and the coefficients $x_{k}$. In this step, we aim make sure that the extracted columns are not be selected again in the next iteration. 
+\par Overall, the completed OMP algorithm can be represented as follows:
 
+\begin{algorithm}[H]
+    \SetAlgoLined
+    \KwResult{$\mathbf{x}_{k_{\operatorname{Max}}}$}
+    Initialization: $\mathbf{r}_{1}=\mathbf{b}, \Lambda_{0}=\varnothing$\;
+    Remove duplicate columns in $\mathbf{A}$ (make $\mathbf{A}$ full rank) \;
+    normalize all columns of $\mathbf{A}$ to unit $L_2$ norm\;
+    \For(){$k=1$ to $k_{Max}$}{
+      $\lambda_{k}=\arg \max _{i}\left|\left\langle\mathbf{a}_{j}, \mathbf{r}_{k}\right\rangle\right|$\; 
+      $\Lambda_{k}=\Lambda_{k-1} \cup\left\{\lambda_{k}\right\}$\;
+      $\mathbf{x}_{k}=\arg \min _{\mathbf{x}}\left\|\mathbf{A}_{\Lambda_{k}} \mathbf{x}-\mathbf{b}\right\|_{2}$\; 
+      $\hat{\mathbf{b}}_{k}=\mathbf{A}_{\lambda_{k}} \mathbf{x}_{k}$\; 
+      $\mathbf{r}_{k+1}=\mathbf{r}_{k}-\hat{\mathbf{b}}_{k}$
+    }
+    \caption{The OMP algorithm}
+\end{algorithm}
+After a fixed number of iterations, the algorithm stops and is converged to the optimality. 
 
 \subsection{Strategies in Applications}
 
 \section{Non-convex Problems}
 \label{sec:non-convex-sol}
-\subsection{Augumented Lagrange Method}
+
 \subsection{Non-linear Lagrangian Duality}
 
 

@@ -257,6 +257,10 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplo
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -279,12 +283,16 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /Users/sukays/Desktop/Research Project/master-thesis/thesis/macros.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
-INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/relsize/relsize.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg
@@ -413,6 +421,12 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
@@ -508,6 +522,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7y.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7v.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/zplmr7t.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/rsfs/rsfs5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
@@ -612,6 +628,7 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb
