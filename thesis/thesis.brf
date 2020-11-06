@@ -2,6 +2,9 @@
 \backcite {SG:19}{{xiii}{(document)}{Doc-Start}}
 \backcite {SG:19}{{xiii}{(document)}{Doc-Start}}
 \backcite {wiki:sudoku}{{xiii}{(document)}{Doc-Start}}
+\backcite {SK:14}{{1}{[section][1][1]1.1}{section.1.1}}
+\backcite {HK:16}{{1}{[section][1][1]1.1}{section.1.1}}
+\backcite {SM:18}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {SG:19}{{1}{[section][2][1]1.2}{section.1.2}}
 \backcite {JS:06}{{5}{[thm][1][2]2.1}{thm.2.1}}
 \backcite {OG:17}{{6}{[subsection][1][2.1]2.1.1}{thm.2.1}}
@@ -80,4 +83,5 @@
 \backcite {XZ:97}{{54}{[section][3][5]5.3}{section.5.3}}
 \backcite {GC:97}{{54}{[section][3][5]5.3}{section.5.3}}
 \backcite {CC:00}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {GC:97}{{54}{[thm][1][5]5.1}{thm.5.1}}
 \backcite {SG:19}{{68}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}

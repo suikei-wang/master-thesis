@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {3.2}Back-propagation Through Declarative Nodes}{23}{section.3.2}% 
 \contentsline {subsection}{\numberline {3.2.1}Unconstrained}{23}{subsection.3.2.1}% 
 \contentsline {subsection}{\numberline {3.2.2}Equality Constrained}{24}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Inequatlity Constrained}{26}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.3}Inequatlity Constrained}{25}{subsection.3.2.3}% 
 \contentsline {section}{\numberline {3.3}Examples of Declarative Nodes}{27}{section.3.3}% 
 \contentsline {subsection}{\numberline {3.3.1}Implementation Details}{27}{subsection.3.3.1}% 
 \contentsline {subsection}{\numberline {3.3.2}Equality Constrained}{28}{subsection.3.3.2}% 

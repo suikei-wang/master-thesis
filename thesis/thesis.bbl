@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -178,6 +178,12 @@
 \newblock Deep declarative networks: A new hope.
 \newblock \emph{arXiv preprint arXiv:1909.04866},  (2019).
 
+\bibitem[{He et~al.(2016)He, Zhang, Ren, and Sun}]{HK:16}
+\textsc{He, K.; Zhang, X.; Ren, S.; and Sun, J.}, 2016.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 770--778.
+
 \bibitem[{Hestenes(1969)}]{HM:69}
 \textsc{Hestenes, M.~R.}, 1969.
 \newblock Multiplier and gradient methods.
@@ -273,6 +279,14 @@
 \newblock A stochastic approximation method.
 \newblock \emph{The annals of mathematical statistics},  (1951), 400--407.
 
+\bibitem[{Sandler et~al.(2018)Sandler, Howard, Zhu, Zhmoginov, and
+  Chen}]{SM:18}
+\textsc{Sandler, M.; Howard, A.; Zhu, M.; Zhmoginov, A.; and Chen, L.-C.},
+  2018.
+\newblock Mobilenetv2: Inverted residuals and linear bottlenecks.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and
+  pattern recognition}, 4510--4520.
+
 \bibitem[{Shewchuk et~al.(1994)}]{SJ:94}
 \textsc{Shewchuk, J.~R. et~al.}, 1994.
 \newblock An introduction to the conjugate gradient method without the
@@ -283,6 +297,11 @@
 \newblock Sudoku as a constraint problem.
 \newblock In \emph{CP Workshop on modeling and reformulating Constraint
   Satisfaction Problems}, vol.~12, 13--27. Citeseer.
+
+\bibitem[{Simonyan and Zisserman(2014)}]{SK:14}
+\textsc{Simonyan, K. and Zisserman, A.}, 2014.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock \emph{arXiv preprint arXiv:1409.1556},  (2014).
 
 \bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
 \textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.
