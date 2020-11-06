@@ -207,9 +207,7 @@ where $\mathbf{f}(\mathbf{x})$ is the set of both the objective function and con
 
 \section{Future Work of the Solution for Non-regular Points}
 \label{sec:futurework-non}
-
-
-
-
-
+It is obvious that there are still many different non-regular solution scenarios, and not all of them can be solved perfectly through the approximation. In our scenarios above, the intersection of constraints is a single point. Therefore, we can easily find various approximations around this point as our solution. However, if the intersection of constraints is a flat region that is filled with non-regular points, it is difficult to select an appropriate approximation under this circumstance since the closest regular solution may still have a large residual error. Future work can explore various possibilities of the intersection and consider algorithms for the exact solution.
+\par There is still no general approach for all these non-regular cases, but in the construction of the network, we need to fit different scenarios with a regularization representation. We hope that a general but efficient algorithm can be addressed in the future. 
 \section{Summary}
+In Chapter~\ref{cha:result}, we discuss the solution for different non-regular solution scenarios. We can separate these methods into two classes: approximation results and exact solutions. The former focuses on transferring the problem into a regular one with the solution which approximates the original one based on the least-squares method. The later defines a new type of non-linear Lagrangian for solving the gradient regardless of the convexity and changes the optimality conditions. Both classes are useful and effective in solving the non-regular solutions and there are many insightful future work can be extended based on them. 
