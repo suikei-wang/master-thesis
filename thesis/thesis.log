@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  5 NOV 2020 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  6 NOV 2020 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,7 +924,12 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [12] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof)
+ [12] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof
+Overfull \hbox (15.43645pt too wide) in paragraph at lines 10--10
+ [][] [][]\T1/pplx/m/n/10.95 Different sce-nar-ios for the so-lu-tion to in-equal-ity con-strained nodes [[][]Gould 
+ []
+
+)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
@@ -950,12 +955,12 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ) [5
 
 ] [6] [7]
-<figs/contour_21.pdf, id=569, page=1, 462.52798pt x 346.89601pt>
+<figs/contour_21.pdf, id=578, page=1, 462.52798pt x 346.89601pt>
 File: figs/contour_21.pdf Graphic file (type pdf)
 <use figs/contour_21.pdf, page 1>
 Package pdftex.def Info: figs/contour_21.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-<figs/solution_21.pdf, id=570, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_21.pdf, id=579, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_21.pdf Graphic file (type pdf)
 <use figs/solution_21.pdf, page 1>
 Package pdftex.def Info: figs/solution_21.pdf , page1 used on input line 109.
@@ -971,7 +976,7 @@ l.114 \par
                                                   
 l.132 $$
          </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [10]
-<figs/solution_22.pdf, id=653, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_22.pdf, id=662, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_22.pdf Graphic file (type pdf)
 <use figs/solution_22.pdf, page 1>
 Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 168.
@@ -995,7 +1000,7 @@ l.290 $$
 Underfull \vbox (badness 4441) has occurred while \output is active []
 
  [14]
-<figs/constrained_22.pdf, id=717, page=1, 462.52798pt x 346.89601pt>
+<figs/constrained_22.pdf, id=726, page=1, 462.52798pt x 346.89601pt>
 File: figs/constrained_22.pdf Graphic file (type pdf)
 <use figs/constrained_22.pdf, page 1>
 Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
@@ -1032,7 +1037,7 @@ l.78 \end{equation}
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24] [25]
-<figs/non-regular-scenario.pdf, id=905, 257.12401pt x 189.68307pt>
+<figs/non-regular-scenario.pdf, id=915, 257.12401pt x 189.68307pt>
 File: figs/non-regular-scenario.pdf Graphic file (type pdf)
 <use figs/non-regular-scenario.pdf>
 Package pdftex.def Info: figs/non-regular-scenario.pdf  used on input line 186.
@@ -1043,13 +1048,13 @@ Package pdftex.def Info: figs/non-regular-scenario.pdf  used on input line 186.
                                                   
 l.201 \par
            \textbf{Optimality checking.} For constrained optimization proble... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/non-regular-scenario.pdf>]
-<figs/linear_equality_example.pdf, id=926, page=1, 462.52798pt x 346.89601pt>
+<figs/linear_equality_example.pdf, id=940, page=1, 462.52798pt x 346.89601pt>
 File: figs/linear_equality_example.pdf Graphic file (type pdf)
 <use figs/linear_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/linear_equality_example.pdf , page1 used on input line 218.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
  [28]
-<figs/multiple_equality_example.pdf, id=933, page=1, 462.52798pt x 346.89601pt>
+<figs/multiple_equality_example.pdf, id=947, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_equality_example.pdf Graphic file (type pdf)
 <use figs/multiple_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_equality_example.pdf , page1 used on input line 238.
@@ -1063,7 +1068,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   
 l.251 \end{equation}
                      </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>]
-<figs/multiple_inequality_example.pdf, id=964, page=1, 462.52798pt x 346.89601pt>
+<figs/multiple_inequality_example.pdf, id=978, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_inequality_example.pdf Graphic file (type pdf)
 <use figs/multiple_inequality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on input line 255.
@@ -1073,7 +1078,7 @@ Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on in
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.263 \par
-           In solving the real computer vision tasks, comparing to other dif... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_equality_example.pdf>]) [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+           In solving the real computer vision tasks, compared to other diff... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_equality_example.pdf>]) [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -1085,7 +1090,7 @@ Chapter 4.
 [35
 
 ]
-<figs/overdetermined.pdf, id=1047, page=1, 462.52798pt x 346.89601pt>
+<figs/overdetermined.pdf, id=1062, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined.pdf Graphic file (type pdf)
 <use figs/overdetermined.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined.pdf , page1 used on input line 22.
@@ -1096,7 +1101,7 @@ Package pdftex.def Info: figs/overdetermined.pdf , page1 used on input line 22.
                                                   
 l.33 \end{equation}
                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf>]
-<figs/overdetermined-gradient.pdf, id=1077, page=1, 462.52798pt x 346.89601pt>
+<figs/overdetermined-gradient.pdf, id=1091, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined-gradient.pdf Graphic file (type pdf)
 <use figs/overdetermined-gradient.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined-gradient.pdf , page1 used on input line 48.
@@ -1110,7 +1115,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   
 l.59 $$
         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf>]
-<figs/rankdeficient.pdf, id=1104, page=1, 462.52798pt x 346.89601pt>
+<figs/rankdeficient.pdf, id=1118, page=1, 462.52798pt x 346.89601pt>
 File: figs/rankdeficient.pdf Graphic file (type pdf)
 <use figs/rankdeficient.pdf, page 1>
 Package pdftex.def Info: figs/rankdeficient.pdf , page1 used on input line 68.
@@ -1121,7 +1126,7 @@ Package pdftex.def Info: figs/rankdeficient.pdf , page1 used on input line 68.
                                                   
 l.78 \end{equation}
                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf>]
-<figs/gradient-rank-deficient.pdf, id=1132, page=1, 462.52798pt x 346.89601pt>
+<figs/gradient-rank-deficient.pdf, id=1146, page=1, 462.52798pt x 346.89601pt>
 File: figs/gradient-rank-deficient.pdf Graphic file (type pdf)
 <use figs/gradient-rank-deficient.pdf, page 1>
 Package pdftex.def Info: figs/gradient-rank-deficient.pdf , page1 used on input line 99.
@@ -1135,12 +1140,12 @@ Underfull \vbox (badness 1270) has occurred while \output is active []
                                                   
 l.103 
        </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf>]
-<figs/nonconvex.pdf, id=1161, page=1, 462.52798pt x 346.89601pt>
+<figs/nonconvex.pdf, id=1175, page=1, 462.52798pt x 346.89601pt>
 File: figs/nonconvex.pdf Graphic file (type pdf)
 <use figs/nonconvex.pdf, page 1>
 Package pdftex.def Info: figs/nonconvex.pdf , page1 used on input line 118.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
-<figs/gradient-non-convex.pdf, id=1164, page=1, 462.52798pt x 346.89601pt>
+<figs/gradient-non-convex.pdf, id=1178, page=1, 462.52798pt x 346.89601pt>
 File: figs/gradient-non-convex.pdf Graphic file (type pdf)
 <use figs/gradient-non-convex.pdf, page 1>
 Package pdftex.def Info: figs/gradient-non-convex.pdf , page1 used on input line 125.
@@ -1163,7 +1168,7 @@ l.148 \par
 ]
 Chapter 5.
 [45]
-<figs/least-square.pdf, id=1288, page=1, 462.52798pt x 346.89601pt>
+<figs/least-square.pdf, id=1302, page=1, 462.52798pt x 346.89601pt>
 File: figs/least-square.pdf Graphic file (type pdf)
 <use figs/least-square.pdf, page 1>
 Package pdftex.def Info: figs/least-square.pdf , page1 used on input line 46.
@@ -1177,12 +1182,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   
 l.65 \end{equation}
                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/least-square.pdf>]
-<figs/orthogonal-gradient.pdf, id=1336, page=1, 498.36188pt x 227.34938pt>
+<figs/orthogonal-gradient.pdf, id=1350, page=1, 498.36188pt x 227.34938pt>
 File: figs/orthogonal-gradient.pdf Graphic file (type pdf)
 <use figs/orthogonal-gradient.pdf, page 1>
 Package pdftex.def Info: figs/orthogonal-gradient.pdf , page1 used on input line 70.
 (pdftex.def)             Requested size: 329.14275pt x 150.15512pt.
-<figs/a-orthogonal-example.pdf, id=1338, page=1, 433.62pt x 433.62pt>
+<figs/a-orthogonal-example.pdf, id=1352, page=1, 433.62pt x 433.62pt>
 File: figs/a-orthogonal-example.pdf Graphic file (type pdf)
 <use figs/a-orthogonal-example.pdf, page 1>
 Package pdftex.def Info: figs/a-orthogonal-example.pdf , page1 used on input line 81.
@@ -1196,7 +1201,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
                                                   
 l.93 \end{equation}
                     </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf>]
-<figs/conjugate-gradient.pdf, id=1351, page=1, 433.62pt x 433.62pt>
+<figs/conjugate-gradient.pdf, id=1366, page=1, 433.62pt x 433.62pt>
 File: figs/conjugate-gradient.pdf Graphic file (type pdf)
 <use figs/conjugate-gradient.pdf, page 1>
 Package pdftex.def Info: figs/conjugate-gradient.pdf , page1 used on input line 104.
@@ -1219,21 +1224,44 @@ Underfull \vbox (badness 1122) has occurred while \output is active []
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.171 \subsection
-                 {Strategies in Applications}]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [53] [54
+                 {Strategies in Applications}]
+<figs/sudoku.pdf, id=1446, page=1, 365.365pt x 365.365pt>
+File: figs/sudoku.pdf Graphic file (type pdf)
+<use figs/sudoku.pdf, page 1>
+Package pdftex.def Info: figs/sudoku.pdf , page1 used on input line 176.
+(pdftex.def)             Requested size: 164.56822pt x 164.56883pt.
+ [53pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.185 \par
+           There are multiple efficient solution algorithms for constrained ... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/sudoku.pdf>]
+Overfull \hbox (1.37119pt too wide) in paragraph at lines 185--186
+[]\T1/pplx/m/n/10.95 There are mul-ti-ple ef-fi-cient so-lu-tion al-go-rithms for con-strained op-ti-miza-tion prob-
+ []
+
+[54]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [55] [56
 
 ]
 Chapter 6.
-) [55] [56
-
-] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
+[57]) [58] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
 \tf@brf=\write8
 \openout8 = `thesis.brf'.
 
- [57
+ [59
 
-] [58] [59]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [60] [61
 
-] [62] [63]
+]
+LaTeX Font Info:    Try loading font information for T1+uop on input line 102.
+LaTeX Font Info:    No file T1uop.fd. on input line 102.
+
+
+LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
+(Font)              using `T1/cmr/m/n' instead on input line 102.
+
+[60] [61] [62]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [63] [64
+
+] [65] [66] [67]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 148.
@@ -1265,7 +1293,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [64]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [65]
+ [68]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [69]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
@@ -1274,7 +1302,7 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 6F1EC1AB608211159E362B2416D4483D;5014.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 3134A7DAC00A97F00A99AADE30B6D363;4052.
+(rerunfilecheck)             Checksum: 5B4FF5445BB364C5A65043696D3B7827;4903.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1282,18 +1310,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 34079 strings out of 492616
- 769364 string characters out of 6129480
+ 34189 strings out of 492616
+ 770639 string characters out of 6129480
  1100992 words of memory out of 5000000
- 36989 multiletter control sequences out of 15000+600000
+ 37078 multiletter control sequences out of 15000+600000
  80975 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,96p,1416b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (79 pages, 525321 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (83 pages, 573419 bytes).
 PDF statistics:
- 1684 PDF objects out of 1728 (max. 8388607)
- 1320 compressed objects within 14 object streams
- 274 named destinations out of 1000 (max. 500000)
- 711 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1788 PDF objects out of 2073 (max. 8388607)
+ 1414 compressed objects within 15 object streams
+ 292 named destinations out of 1000 (max. 500000)
+ 716 words of extra memory for PDF output out of 10000 (max. 10000000)
 

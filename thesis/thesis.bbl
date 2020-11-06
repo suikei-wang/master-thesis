@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -63,11 +63,21 @@
 \newblock \emph{Convex optimization}.
 \newblock Cambridge university press.
 
+\bibitem[{Boyd et~al.(2007)Boyd, Kim, Vandenberghe, and Hassibi}]{BS:07}
+\textsc{Boyd, S.; Kim, S.-J.; Vandenberghe, L.; and Hassibi, A.}, 2007.
+\newblock A tutorial on geometric programming.
+\newblock \emph{Optimization and engineering}, 8, 1  (2007), 67.
+
 \bibitem[{Campbell et~al.(2020)Campbell, Liu, and Gould}]{CD:20}
 \textsc{Campbell, D.; Liu, L.; and Gould, S.}, 2020.
 \newblock Solving the blind perspective-n-point problem end-to-end with robust
   differentiable geometric optimization.
 \newblock \emph{arXiv preprint arXiv:2007.14628},  (2020).
+
+\bibitem[{Cantrell(2000)}]{CC:00}
+\textsc{Cantrell, C.~D.}, 2000.
+\newblock \emph{Modern mathematical methods for physicists and engineers}.
+\newblock Cambridge University Press.
 
 \bibitem[{Chen et~al.(2020)Chen, Parra, Cao, Li, and Chin}]{CB:20}
 \textsc{Chen, B.; Parra, A.; Cao, J.; Li, N.; and Chin, T.-J.}, 2020.
@@ -82,6 +92,20 @@
 \newblock In \emph{Advances in Neural Information Processing Systems},
   9961--9971.
 
+\bibitem[{Commons(2020)}]{wiki:sudoku}
+\textsc{Commons, W.}, 2020.
+\newblock File:sudoku-by-l2g-20050714.svg --- wikimedia commons{,} the free
+  media repository.
+\newblock
+  \urlprefix\url{https://commons.wikimedia.org/w/index.php?title=File:Sudoku-by-L2G-20050714.svg&oldid=473124111}.
+\newblock [Online; accessed 6-November-2020].
+
+\bibitem[{Courant(1962)}]{CR:62}
+\textsc{Courant, R.}, 1962.
+\newblock \emph{Calculus of Variations: With Supplementary Notes and Exercises,
+  1945-1946}.
+\newblock Courant Institute of Mathematical Sciences, New York University.
+
 \bibitem[{Darvishi and Khosro-Aghdam(2006)}]{DM:06}
 \textsc{Darvishi, M. and Khosro-Aghdam, R.}, 2006.
 \newblock Symmetric successive overrelaxation methods for rank deficient linear
@@ -92,6 +116,10 @@
 \textsc{Datta, B.~N.}, 2010.
 \newblock \emph{Numerical linear algebra and applications}, vol. 116.
 \newblock Siam.
+
+\bibitem[{De(2017)}]{DS:17}
+\textsc{De, S.~C.}, 2017.
+\newblock Lecture notes in advanced machine learning systems.
 
 \bibitem[{Debye(1909)}]{DP:09}
 \textsc{Debye, P.}, 1909.
@@ -124,6 +152,12 @@
   stagewise orthogonal matching pursuit.
 \newblock \emph{IEEE transactions on Information Theory}, 58, 2  (2012),
   1094--1121.
+
+\bibitem[{Goh and Yang(1997)}]{GC:97}
+\textsc{Goh, C. and Yang, X.}, 1997.
+\newblock A sufficient and necessary condition for nonconvex constrained
+  optimization.
+\newblock \emph{Applied Mathematics Letters}, 10, 5  (1997), 9--12.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio, Courville, and
   Bengio}]{GI:16}
@@ -162,6 +196,18 @@
   gauss-newton methods of the fischer-burmeister equation for the
   complementarity problem.
 \newblock \emph{Mathematics of Operations Research}, 24, 3  (1999), 529--543.
+
+\bibitem[{Li(1995)}]{LD:95}
+\textsc{Li, D.}, 1995.
+\newblock Zero duality gap for a class of nonconvex optimization problems.
+\newblock \emph{Journal of Optimization Theory and Applications}, 85, 2
+  (1995), 309--324.
+
+\bibitem[{Li(1997)}]{LD:97}
+\textsc{Li, D.}, 1997.
+\newblock Saddle point generation in nonlinear nonconvex optimization.
+\newblock \emph{Nonlinear Analysis: Theory, Methods \& Applications}, 30, 7
+  (1997), 4339--4344.
 
 \bibitem[{Maclaurin et~al.(2015)Maclaurin, Duvenaud, and Adams}]{MD:15}
 \textsc{Maclaurin, D.; Duvenaud, D.; and Adams, R.~P.}, 2015.
@@ -232,6 +278,12 @@
 \newblock An introduction to the conjugate gradient method without the
   agonizing pain.
 
+\bibitem[{Simonis(2005)}]{SH:05}
+\textsc{Simonis, H.}, 2005.
+\newblock Sudoku as a constraint problem.
+\newblock In \emph{CP Workshop on modeling and reformulating Constraint
+  Satisfaction Problems}, vol.~12, 13--27. Citeseer.
+
 \bibitem[{Trefethen and Bau~III(1997)}]{TL:97}
 \textsc{Trefethen, L.~N. and Bau~III, D.}, 1997.
 \newblock \emph{Numerical linear algebra}, vol.~50.
@@ -260,6 +312,13 @@
 \textsc{Wu, X.; Silva, B.; and Yuan, J.}, 2004.
 \newblock Conjugate gradient method for rank deficient saddle point problems.
 \newblock \emph{Numerical Algorithms}, 35, 2-4  (2004), 139--154.
+
+\bibitem[{Xu(1997)}]{XZ:97}
+\textsc{Xu, Z.}, 1997.
+\newblock Local saddle points and convexification for nonconvex optimization
+  problems.
+\newblock \emph{Journal of Optimization Theory and Applications}, 94, 3
+  (1997), 739--746.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

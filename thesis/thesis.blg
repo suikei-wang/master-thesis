@@ -6,45 +6,45 @@ Database file #1: thesis.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty journal in DD:05
 Warning--missing publisher in NT:36
-You've used 44 entries,
+You've used 54 entries,
             3096 wiz_defined-function locations,
-            881 strings with 11326 characters,
-and the built_in function-call counts, 25903 in all, are:
-= -- 2026
-> -- 980
-< -- 34
-+ -- 374
-- -- 312
-* -- 1912
-:= -- 3858
-add.period$ -- 130
-call.type$ -- 44
-change.case$ -- 327
-chr.to.int$ -- 44
-cite$ -- 46
-duplicate$ -- 1994
-empty$ -- 2116
-format.name$ -- 449
-if$ -- 5169
+            943 strings with 12751 characters,
+and the built_in function-call counts, 30922 in all, are:
+= -- 2426
+> -- 1116
+< -- 44
++ -- 430
+- -- 354
+* -- 2236
+:= -- 4627
+add.period$ -- 161
+call.type$ -- 54
+change.case$ -- 392
+chr.to.int$ -- 54
+cite$ -- 56
+duplicate$ -- 2404
+empty$ -- 2562
+format.name$ -- 507
+if$ -- 6174
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 428
-newline$ -- 227
-num.names$ -- 176
-pop$ -- 893
+missing$ -- 514
+newline$ -- 277
+num.names$ -- 216
+pop$ -- 1058
 preamble$ -- 1
-purify$ -- 278
+purify$ -- 332
 quote$ -- 0
-skip$ -- 745
+skip$ -- 896
 stack$ -- 0
-substring$ -- 1209
-swap$ -- 994
-text.length$ -- 5
+substring$ -- 1452
+swap$ -- 1187
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 369
+type$ -- 453
 warning$ -- 2
-while$ -- 189
+while$ -- 231
 width$ -- 0
-write$ -- 570
+write$ -- 698
 (There were 2 warnings)

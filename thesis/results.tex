@@ -169,16 +169,47 @@ which minimizes the error between the selected important columns of $A$ and $b$.
 \par After a fixed number of iterations, the algorithm stops and is converged to the optimality. In deep declarative nodes, when we get the underdetermined system we can apply this effective algorithm to approximate the gradient. Moreover, a more stable and faster extension proposed by \cite{DD:58} allows more than one coefficients and takes a fixed number of stages to converge. Both algorithms perform well in solving the underdetermined system theoretically. 
 
 \subsection{Strategies in Applications}
-Rank deficiency problems occur when the constraints are not all second-order differentiable or we do not have enough constraints to determine the solution. Hence in the application of the deep declarative network, it is essential to 
+Rank deficiency problems occur when the constraints are not all second-order differentiable or we do not have enough constraints to determine the solution. Hence in the application of the deep declarative network, it is essential to build the nodes with sufficient constraints from the problem.
+\begin{figure}[t]
+    \label{fig:sudoku}
+    \centering
+    \includegraphics[page=1, width=.4\textwidth]{figs/sudoku.pdf}
+    \caption{An example of the Sudoku puzzle~\citep{wiki:sudoku}}
+\end{figure}
+
+\par A very classical constrained task is the traditional Sudoku problem, which involves multiple rules as constraints. Figure~\ref{fig:sudoku} is a simple example of the 9 $\times$ 9 Sudoku puzzle. In general, the model treats the puzzle as a matrix and constraints between rows and columns, which are represented as rows and columns interactions. Also, some rules in each 3 $\times$ 3 block are defined as blocks interactions. \cite{SH:05} provides an understanding of the Sudoku puzzle from constraint problems, which constructs a constraint model with the extension of redundant constraints for better performance. Therefore, building an approximate constraint model with sufficient constraints is important. Adding extra redundant constraints may help the model produce more accurate results. However, we still need to trade off the constraints between overdetermined and underdetermined solutions. 
 
 \section{Non-convex Problems}
 \label{sec:non-convex-sol}
-Non-convex problems are usually NP-hard to solve due to the potentially various local minima, saddle points, very flat regions and widely varying curvature. 
-
-
+Non-convex problems are usually NP-hard to solve due to the potentially various local minima, saddle points, very flat regions and widely varying curvature~\citep{DS:17}. Generally, non-convex problems have multiple local minima, but we aim to find the global optimal solution. There are plenty of methods are proposed based on different non-convex cases. For example, if the problem is non-convex but quasiconvex, it can be solved by transforming it as an equivalent convex problem using geometric programming~\citep{BS:07}. Otherwise, a dual problem with guaranteed convexity will be demonstrated to solve the original non-convex problem indirectly. The essence of these methods is solving a convex problem which is equivalent to the non-convex one. Apart from this, we introduce the method based on the optimality conditions of the optimization, the non-linear Lagrangian.  
+\par There are multiple efficient solution algorithms for constrained optimization problems based on the optimality conditions we mentioned in Section~\ref{sec:opt-con-constrained}. We usually use the classic Lagrange multipliers method~\citep{BD:14} and the penalty function methods~\citep{CR:62}, which are under the assumption of convex situation. For non-convex problems, several extensions on non-linear Lagrangian theory are proposed~\cite{LD:95, LD:97, GC:97, XZ:97}. In this section, we represent the fundamental properties of non-linear Lagrangian in solving non-convex constrained optimization problems.
+\par In non-linear Lagrangian, the Lagrange function makes the duality gap is always zero regardless of convexity and it is defined based on the weighted Chebyshev norm~\citep{GC:97}. Chebyshev distance is a metric based on the  uniform norm, which is also known as the $L_\infty$ metric~\citep{CC:00}. In the weighted version, a weight vector is introduced and the whole function is a mapping from $\mathbb{R}^{m+1}$ to $\mathbb{R}_{+}$. For a vector $\mathbf{z} \in \mathbb{R}^{m+1}$, the weighted Chebyshev norm can be represented as
+\begin{equation}
+    \xi_{\mathbf{e}}(\mathbf{z})=\max _{0 \leq i \leq m}\left\{\frac{z_{i}}{e_{i}}\right\}
+\end{equation}
+where $\mathbf{e}$ is the weight vector. 
+\par Now the Lagrangian of the constrained optimization problem defined in Equation~\ref{equ:2.2} can be represented as
+\begin{equation}
+    \label{equ:non-linear-lag}
+    \mathcal{L}(\mathbf{x}, \mathbf{e})=\xi_{\mathbf{e}}(\mathbf{f}(\mathbf{x}))=\max _{0 \leq i \leq m}\left\{\frac{f_{i}(\mathbf{x})}{e_{i}}\right\}
+\end{equation}
+where $\mathbf{f}(\mathbf{x})$ is the set of both the objective function and constraints. 
+\par Same as the traditional Lagrangian, we transfer the constrained optimization problems to unconstrained. Also, we present the equivalent optimality conditions in terms of the unconstrained problems, which leads to the algorithm handling both convex and non-convex constrained optimization problems. 
+\begin{defn}{(Sufficient and Necessary condition for optimality without convexity)}
+    \\
+    Let $x^*$ be the global optimal solution of the constrained optimization problems defined in the form of Equation~\ref{equ:2.2}, and let the weight vector $\theta_0 = f(x^*) > 0$. Then the solution $x^0$ solves the problem if and only if it solves the unconstrained problem
+    $$
+        \operatorname{minimize} \mathcal{L}(\mathbf{x}, \hat{\boldsymbol{\theta}}) = \operatorname{minimize} \max _{0 \leq i \leq m}\left\{\frac{f_{i}(\mathbf{x})}{\theta_{i}}\right\}
+    $$
+    where $\hat{\boldsymbol{\theta}}=\left[\theta_{0}, \theta_{1}, \cdots, \theta_{m}\right]$
+\end{defn}
+\par The above definition can be proved through the properties of the Chebyshev norm, which has the minimum value 1. In deep declarative nodes, applying this new non-linear Lagrangian in solving the gradient for constrained optimization problems can avoid the non-regular points in the solution. Apart from the solutions of other non-regular points scenarios, the non-linear Lagrangian solves the gradient exactly instead of approaching an approximation. 
 
 \section{Future Work of the Solution for Non-regular Points}
 \label{sec:futurework-non}
+
+
+
 
 
 \section{Summary}

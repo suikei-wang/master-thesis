@@ -7,7 +7,7 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Constrained function $c(x) = \delimiter "026B30D x\delimiter "026B30D _{2}^{2} - 1$}}{16}{figure.2.5}% 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces End-to-end learnable declarative node\nobreakspace {}\citep {SG:19}}}{22}{figure.3.1}% 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Different scenarios for the solution to inequality constrained nodes}}{27}{figure.3.2}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Different scenarios for the solution to inequality constrained nodes\nobreakspace {}\citep {SG:19}}}{27}{figure.3.2}% 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{29}{figure.3.3}% 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{30}{figure.3.4}% 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Plots of the function $y$ (top) and the gradient (bottom) sweeping the first component of the input $x_1$ while holding the other elements of $x$ constant}}{31}{figure.3.5}% 
@@ -23,5 +23,6 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Directions of the orthogonal gradient method}}{48}{figure.5.2}% 
 \contentsline {figure}{\numberline {5.3}{\ignorespaces $A$-orthogonality between two vectors}}{49}{figure.5.3}% 
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Conjugate gradient method}}{50}{figure.5.4}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces An example of the Sudoku puzzle\nobreakspace {}\citep {wiki:sudoku}}}{53}{figure.5.5}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }

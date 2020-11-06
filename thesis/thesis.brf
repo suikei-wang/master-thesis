@@ -1,5 +1,7 @@
 \backcite {SG:19}{{xii}{(document)}{Doc-Start}}
 \backcite {SG:19}{{xiii}{(document)}{Doc-Start}}
+\backcite {SG:19}{{xiii}{(document)}{Doc-Start}}
+\backcite {wiki:sudoku}{{xiii}{(document)}{Doc-Start}}
 \backcite {SG:19}{{1}{[section][2][1]1.2}{section.1.2}}
 \backcite {JS:06}{{5}{[thm][1][2]2.1}{thm.2.1}}
 \backcite {OG:17}{{6}{[subsection][1][2.1]2.1.1}{thm.2.1}}
@@ -45,6 +47,7 @@
 \backcite {SG:19}{{23}{[thm][1][3]3.1}{thm.3.1}}
 \backcite {BD:14}{{25}{[subsection][2][3.2]3.2.2}{equation.3.2.8}}
 \backcite {BS:04}{{25}{[subsection][2][3.2]3.2.2}{equation.3.2.10}}
+\backcite {SG:19}{{27}{[figure][2][]3.2}{figure.3.2}}
 \backcite {MD:15}{{27}{[subsection][1][3.3]3.3.1}{subsection.3.3.1}}
 \backcite {AH:13}{{42}{[section][2][4]4.2}{section.4.2}}
 \backcite {TL:97}{{42}{[section][2][4]4.2}{section.4.2}}
@@ -65,4 +68,16 @@
 \backcite {SJ:94}{{50}{[subsection][2][5.1]5.1.2}{equation.5.1.15}}
 \backcite {MS:93}{{51}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
 \backcite {DD:58}{{52}{[subsection][1][5.2]5.2.1}{algocf.1}}
-\backcite {SG:19}{{64}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}
+\backcite {wiki:sudoku}{{53}{[figure][5][]5.5}{figure.5.5}}
+\backcite {SH:05}{{53}{[subsection][2][5.2]5.2.2}{figure.5.5}}
+\backcite {DS:17}{{53}{[section][3][5]5.3}{section.5.3}}
+\backcite {BS:07}{{53}{[section][3][5]5.3}{section.5.3}}
+\backcite {BD:14}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {CR:62}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {LD:95}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {LD:97}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {GC:97}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {XZ:97}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {GC:97}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {CC:00}{{54}{[section][3][5]5.3}{section.5.3}}
+\backcite {SG:19}{{68}{[subsubsection][2][A.2]A.2.2}{subsubsection.Alph0.1.2.2}}
