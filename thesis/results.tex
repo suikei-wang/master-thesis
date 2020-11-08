@@ -1,6 +1,6 @@
 \chapter{Solutions of Non-regular Points}
 \label{cha:result}
-In the last chapter, we discussed various previous works in solving the non-regular point problem. However, not all these approaches are suitable for deep declarative nodes and they may not be able to optimize each parameter in the node. In this chapter, we set out to tackle solving this problem efficiently in the extension of the deep declarative network. 
+In last chapter, we discussed various previous works in solving the non-regular point problem. However, not all these approaches are suitable for deep declarative nodes and they may not be able to optimize each parameter in the node. In this chapter, we set out to solve this problem efficiently in the extension of the deep declarative network. 
 \par For each scenario, we provide two practical solutions in Section~\ref{sec:overdet-sol} (overdetermined system), Section~\ref{sec:rankdf-sol} (rank deficiency problems) and Section~\ref{sec:non-convex-sol} (non-convex cases) separately. More specifically, we introduce the least-squares method and conjugate gradient preconditioning approach for the overdetermined system, which are practical and classical approximation algorithms. For rank deficient problems, we firstly propose a greedy strategy, the orthogonal matching pursuit algorithms to recover the matrix as a full rank one. We also present that in the application of the deep declarative network, how to avoid the non-regular point and minimize the approximation error. In the last scenario, we provide a theoretical method based on the optimality conditions of the optimization problem, which is the extension of the traditional Lagrange multipliers approach. We finally prospect some future improvements for the non-regular solution in the optimization problem in Section~\ref{sec:futurework-non}. The summary of this chapter is given at the end. 
 
 \section{Overdetermined System}
@@ -11,17 +11,17 @@ As a classical approach to approximate the solution of the overdetermined system
 \begin{equation}
     \mathbf{A}\mathbf{x} = \mathbf{b}
 \end{equation}
-where $\mathbf{A} \in \mathbb{R}^{m \times n}$ with $m > n$, $\mathbf{x} \in \mathbb{R}^n$ and $\mathbf{b} \in \mathbb{R}^{m}$. Therefore, there are more equations than unknowns, which is an overdetermined system and there is no solution making $\mathbf{A}\mathbf{x} = \mathbf{b}$ for all $\mathbf{x}$. $\mathbf{b}$ is also not in the column subspace of $\mathbf{A}$, hence $\mathbf{b}$ is actually not a linear combination of the column vectors of $\mathbf{A}$. With the least-square method, we want to find an $\mathbf{x}$ which makes the residual vector $\mathbf{r} \in \mathbb{R}^m$ approaching zero:
+where $\mathbf{A} \in \mathbb{R}^{m \times n}$ with $m > n$, $\mathbf{x} \in \mathbb{R}^n$ and $\mathbf{b} \in \mathbb{R}^{m}$. Therefore, there are more equations than unknowns, which is an overdetermined system and there is no solution making $\mathbf{A}\mathbf{x} = \mathbf{b}$ for all $\mathbf{x}$. $\mathbf{b}$ is also not in the column subspace of $\mathbf{A}$, hence $\mathbf{b}$ is not a linear combination of the column vectors of $\mathbf{A}$. With the least-square method, we want to find an $\mathbf{x}$ which makes the residual vector $\mathbf{r} \in \mathbb{R}^m$ approaching zero:
 \begin{equation}
     \label{equ:residual}
     \mathbf{r} = \mathbf{b} - \mathbf{A}\mathbf{x}, \text{for each element in } \mathbf{r}:  r_i = b_i - \sum_{j=1}^{n} a_{i j} x_{j}, \quad i = 1, \dots, m
 \end{equation}
-\par The solution $\mathbf{x}$ in Equation~\ref{equ:residual} given be the least squares method minimizes $\|\mathbf{r}\|_2 = \|\mathbf{b} - \mathbf{A}\mathbf{x}\|_2$, which is also the sum of errors:
+\par The solution $\mathbf{x}$ in Equation~\ref{equ:residual} is obtained by the least-squares method minimizing $\|\mathbf{r}\|_2 = \|\mathbf{b} - \mathbf{A}\mathbf{x}\|_2$, which is also the sum of errors:
 \begin{equation}
     \label{equ:lstsq}
     \|\mathbf{r}\|_2 = \mathbf{r}^{T} \mathbf{r}=(\mathbf{b}-\mathbf{A} \mathbf{x})^{T}(\mathbf{b}-\mathbf{A} \mathbf{x})=\mathbf{b}^{T} \mathbf{b}-\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{b}-\mathbf{b}^{T} \mathbf{A} \mathbf{x}+\mathbf{x}^{T} \mathbf{A}^{T} \mathbf{A} \mathbf{x}
 \end{equation}
-\par We aim to find the optimal approximation $\mathbf{x}$ that minimize the $\|\mathbf{r}\|_2$ in Equation~\ref{equ:lstsq}. Therefore, we compute the derivative of Equation~\ref{equ:lstsq} with respect to $x_k, k = 1, \dots, n$ and set it equal to zero
+\par We aim to find the optimal approximation $\mathbf{x}$ that minimizes $\|\mathbf{r}\|_2$ in Equation~\ref{equ:lstsq}. Therefore, we compute the derivative of Equation~\ref{equ:lstsq} with respect to $x_k, k = 1, \dots, n$ and set it to zero
 \begin{equation}
     \label{equ:lstsq-gradient}
     \frac{\partial \|\mathbf{r}\|}{\partial x_{k}}=\frac{\partial}{\partial x_{k}}\left[\sum_{i=1}^{m}\left(b_{i}-\sum_{j=1}^{n} a_{i j} x_{j}\right)^{2}\right]=2 \sum_{i=1}^{m}\left(b_{i}-\sum_{j=1}^{n} a_{i j} x_{j}\right)\left(-a_{i k}\right)=0)
@@ -50,20 +50,20 @@ where $\mathbf{A}^{-}$ is the pseudoinverses of $\mathbf{A}$ and $\mathbf{A}^{T}
 \par The least-squares method is very basic and practical since the residual between the ground truth and approximation is minimized, which usually leads the optimal solution. Many methods are based on this in solving different non-regular solution problems, which will be discussed in Section~\ref{sec:rankdf-sol} and Section~\ref{sec:non-convex-sol}. 
 
 \subsection{Conjugate Gradient and Preconditioning}
-We mentioned the steepest method in solving unconstrained optimization problems in Section~\ref{sec:consopt}. In general, the steepest gradient descent takes several steps in the same direction. In the conjugate gradient method, it only takes one step in each direction from a set of orthogonal search directions~\citep{HM:52}.
+We mentioned the steepest descent method in solving unconstrained optimization problems in Section~\ref{sec:consopt}. In general, the steepest gradient descent takes several steps in the same direction. In the conjugate gradient method, it only takes one step in each direction from a set of orthogonal search directions~\citep{HM:52}.
 \par Supposed we have such a set of orthogonal search directions $\mathbf{d}_{(0)}, \mathbf{d}_{(1)}, \cdots, \mathbf{d}_{(n-1)}$, and we update the gradient $\mathbf{x}$ $n$ steps
 \begin{equation}
     \label{equ:update-graident}
     \mathbf{x}_{(i+1)}=\mathbf{x}_{(i)}+\alpha_{(i)} \mathbf{d}_{(i)}
 \end{equation}
 
-where $\alpha_i$ is the step size. To determine the value of $alpha_i$ for each movement under the orthogonal relation between the residual $\mathbf{e}_{(i+1)}$ and the gradient direction $\mathbf{d}_{(i)}$, we take different direction for each update
+where $\alpha_i$ is the step size. To determine the value of $\alpha_i$ for each movement under the orthogonal relation between the residual $\mathbf{e}_{(i+1)}$ and the gradient direction $\mathbf{d}_{(i)}$, we take different direction for each update
 \begin{equation}
     \begin{aligned} 
         \mathbf{d}_{(i)}^{T} \mathbf{e}_{(i+1)} &=0 \\ \mathbf{d}_{(i)}^{T}\left(\mathbf{e}_{(i)}+\alpha_{(i)} \mathbf{d}_{(i)}\right) &=0 \\ \alpha_{(i)} &=-\frac{\mathbf{d}_{(i)}^{T} \mathbf{e}_{(i)}}{\mathbf{d}_{(i)}^{T} \mathbf{d}_{(i)}} 
     \end{aligned}
 \end{equation}
-where the residual $\mathbf{e}_{(i+1)}$ is the difference between the ground truth $x$ and the current updated $\mathbf{x}_{i+1}$. 
+where the residual $\mathbf{e}_{(i+1)}$ is the difference between the ground truth $x$ and the current updated $x_{i+1}$. 
 \begin{figure}[t]
     \label{fig:ortho-gradient}
     \centering
@@ -97,7 +97,7 @@ where
     \beta_{i, j}=\frac{-\mathbf{u}_{i}^{T} \mathbf{A} \mathbf{d}_{(j)}}{\mathbf{d}_{(j)}^{T} \mathbf{A} \mathbf{d}_{(j)}}
 \end{equation}
 which the second direction based on the $\mathbf{A}$-orthogonality. 
-\par Now from above theorems, we can choose the conjugate directions which are constructed by conjugation of the residuals. Since the residuals are orthogonal to the previous search directions, it is graranteed to produce a new linearly independent search direction, until the residual is zero. Therefore, we only need to keep the previous search direction each time to update the gradient. 
+\par Now from above theorems, we can choose the conjugate directions that are constructed by conjugation of the residuals. Since the residuals are orthogonal to the previous search directions, it is graranteed to produce a new linearly independent search direction until the residual is zero. Therefore, the new search direction only depends on the previous one. 
 \begin{figure}[t]
     \label{fig:conj-gradient}
     \centering
@@ -106,22 +106,22 @@ which the second direction based on the $\mathbf{A}$-orthogonality.
 \end{figure}
 \par The completed conjugate gradient method can be concluded as follows:
 \begin{itemize}
-    \item Decide first conjugate direction $\mathbf{d}_{(0)}:=\mathbf{u}_{(0)}=\mathbf{b}-\mathbf{A} \mathbf{x}_{(0)}$ from the linear system.
-    \item Calculate the step size based on the $\mathbf{A}$-orthogonality from Equation~\ref{equ:ini-stepsize}.
+    \item Initialize the conjugate direction $\mathbf{d}_{(0)}:=\mathbf{u}_{(0)}=\mathbf{b}-\mathbf{A} \mathbf{x}_{(0)}$ from the linear system.
+    \item Determine the step size based on the $\mathbf{A}$-orthogonality from Equation~\ref{equ:ini-stepsize}.
     \item Update the gradient from Equation~\ref{equ:update-graident}.
     \item Update the set of linearly independent vectors $\mathbf{u}_{(i+1)}:=\mathbf{u}_{(i)}-\alpha_{(i)} \mathbf{A} \mathbf{d}_{(i)}$
-    \item Calculate the current step size $\beta$ based on the previous one $\alpha$ through Equation~\ref{equ:update-beta}. 
-    \item Calculate the next conjugate direction based on the new linearly independent vectors, the current step size, and the previous conjugate direction:
+    \item Determine the current step size $\beta$ based on the previous one $\alpha$ through Equation~\ref{equ:update-beta}. 
+    \item Determine the next conjugate direction based on the new linearly independent vectors, the current step size, and the previous conjugate direction:
     $$
     \mathbf{d}_{(i+1)}:=\mathbf{u}_{(i+1)}+\beta_{(i+1)} \mathbf{d}_{(i)}
     $$
 \end{itemize}
 \par Figure~\ref{fig:conj-gradient} shows a simple example of the conjugate gradient method, which achieves the ground truth with two steps. 
-\par Obviously, for overdetermined linear systems, the traditional conjugate gradient method does not work. We introduce the method of preconditioning~\cite{SJ:94} to solve $\mathbf{A}\mathbf{x}=\mathbf{b}$ indirectly. In the preconditioning method, it demonstrates a positive definite invertible preconditioner $\mathbf{M}$ as the approximation of $\mathbf{A}$, which can convert the problem to solving 
+\par Obviously, for overdetermined linear systems, the traditional conjugate gradient method does not work. We introduce the method of preconditioning~\citep{SJ:94} to solve $\mathbf{A}\mathbf{x}=\mathbf{b}$ indirectly. In the preconditioning method, it demonstrates a positive definite invertible preconditioner $\mathbf{M}$ as the approximation of $\mathbf{A}$, which can convert the problem to solving 
 \begin{equation}
     \mathbf{M}^{-1} \mathbf{A} \mathbf{x}=\mathbf{M}^{-1} \mathbf{b}
 \end{equation}
-where $\mathbf{M}^{-1} \mathbf{A}$ is usually not symmetric. Hence, matrix decomposition $\mathbf{E} \mathbf{E}^{T}=\mathbf{M}$ is performed to transform the problem as $\mathbf{M}^{-1} \mathbf{A}$ and $\mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T}$ share the same eigenvalues
+where $\mathbf{M}^{-1} \mathbf{A}$ is not necessarily symmetric. Hence, matrix decomposition $\mathbf{E} \mathbf{E}^{T}=\mathbf{M}$ is performed to transform the problem as $\mathbf{M}^{-1} \mathbf{A}$ and $\mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T}$ share the same eigenvalues
 \begin{equation}
     \label{equ:pre-conj-linear-sys}
     \mathbf{E}^{-1} \mathbf{A} \mathbf{E}^{-T} \hat{\mathbf{x}}=\mathbf{E}^{-1} \mathbf{b} \quad \hat{\mathbf{x}}=\mathbf{E}^{T} \mathbf{x}
@@ -133,7 +133,7 @@ where $\mathbf{M}^{-1} \mathbf{A}$ is usually not symmetric. Hence, matrix decom
 \section{Rank Deficiency}
 \label{sec:rankdf-sol}
 \subsection{Orthogonal Matching Pursuit Algorithm}
-Rank deficiency is also known as the underdetermined system, which means the system has less equations than the unknowns. In a linear system $Ax=b$, if $A$ is rank deficient, there are two problems. The first problem is that there is not be an exact solution at all. Since the range of $A$ does not span the entire $\mathbb{R}^n$ (if $A$ has $n$ columns) but only an $(N-1)$-dimensional subspace. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is a 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
+Rank deficiency is also known as the underdetermined system, which means the system has less equations than the unknowns. In a linear system $Ax=b$, there are two problems if $A$ is rank deficient. The first problem is that there may not be an exact solution at all, because the range of $A$ does not span the entire $\mathbb{R}^n$. In this case, we can solve exactly for $x$ only if $b$ is in this subspace. The second problem is that there are actually infinity solutions, since $A$ has a non-empty null space, which means that there is at least an 1-dimensional subspace of vectors $x$ that gives $Ax=0$. If we use the least-squares solution, the pseudoinverses of $A$ multiply by $b$, it provides a solution for both problems. For the first problem, it gives the closest $x$, which is also the one with the smallest $\|b-Ax\|$. At the same time, for the second problem, out of all solutions that share the smallest approximation error and it gives the one with the smallest norm, which is the minimum-norm solution. Therefore, applying the least-squares method to rank deficient may not be able to obtain the best solution for all columns in the matrix. 
 \par We consider the orthogonal matching pursuit algorithm (OMP), which is a greedy compressed approach widely used in signal recovery~\citep{MS:93}. The goal of this algorithm is to recover the sparse signal vectors from a small number of noisy linear measurements. Supposed we consider a $K$-sparse signal vector $\mathbf{x}$, which is an $n$-dimensional vector with at most $K$ non-zero elements, transformed into a smaller $m$-dimensional $\mathbf{y}$ based on matrix $\mathbf{\Phi}$
 \begin{equation}
     \label{equ:signal-recover}
@@ -144,7 +144,7 @@ Rank deficiency is also known as the underdetermined system, which means the sys
 \begin{equation}
     a_{i} \leftarrow \frac{a_{i}}{\left\|a_{i}\right\|_{2}}
 \end{equation}
-where $a_i$ are the columns of $A$. This normalization step is to make sure any correlations between two columns of $A$ within the range $[-1, 1]$, which also bound the absolute value within 1. In the official OMP algorithm, the first step is the initialization. We set the iteration counter $k$ which keeps track of the number of times, i.e. the "column extraction" has occurred. The residual $r_k$ is set as $b$ which is the key in extracting the "important columns" of $A$. Important columns are defined as the column in $A$ that has the largest absolute value of correlation with the residue vector ${r_k}$. We also define the index set $\Lambda_1$ at this stage as $\varnothing$. Secondly, we complete the iteration in the main loop. The important column is extracted through $\lambda_{k}=\arg \max _{j}\left|\left\langle a_{j}, r_{k}\right\rangle\right|$ for general $k$, where $\lambda$ is the column index of $A$ and $a_j$ is the $j$-column of $A$. Since it can produce multiple results due to duplicate columns in $A$, some extra preprocessing steps have to be taken before the main loop. Meanwhile, the index set is augmented with the newly selected column. Now the estimation $x_i$ is obtained by solving the least-squares problem
+where $a_i$ are the columns of $A$. This normalization step is to make sure any correlations between two columns of $A$ is within the range $[-1, 1]$, which also bound the absolute value within 1. In the official OMP algorithm, the first step is the initialization. We set the counter $k$ which keeps track of the number of iterations, i.e. the "column extraction" has occurred. The residual $r_k$ is set as $b$ which is the key in extracting the "important columns" of $A$. Important columns are defined as the column in $A$ that has the largest absolute value of correlation with the residue vector ${r_k}$. We also define the index set $\Lambda_1$ at this stage as $\varnothing$. Secondly, we complete the iteration in the main loop. The important column is extracted through $\lambda_{k}=\arg \max _{j}\left|\left\langle a_{j}, r_{k}\right\rangle\right|$ for general $k$, where $\lambda$ is the column index of $A$ and $a_j$ is the $j$-column of $A$. Since it can produce multiple results due to duplicate columns in $A$, some extra preprocessing steps have to be taken before the main loop. Meanwhile, the index set is augmented with the newly selected column. Now the estimation $x_i$ is obtained by solving the least-squares problem
 \begin{equation}
     x_{k}=\underset{x}{\arg \min }\left\|A_{\Lambda_{k}} x-b\right\|_{2}
 \end{equation}
@@ -166,7 +166,7 @@ which minimizes the error between the selected important columns of $A$ and $b$.
     }
     \caption{The OMP algorithm}
 \end{algorithm}
-\par After a fixed number of iterations, the algorithm stops and is converged to the optimality. In deep declarative nodes, when we get the underdetermined system we can apply this effective algorithm to approximate the gradient. Moreover, a more stable and faster extension proposed by \cite{DD:58} allows more than one coefficients and takes a fixed number of stages to converge. Both algorithms perform well in solving the underdetermined system theoretically. 
+\par After a fixed number of iterations, the algorithm stops and is converged to the optimal solution. In deep declarative nodes, when we get the underdetermined system we can apply this effective algorithm to approximate the gradient. Moreover, a more stable and faster extension proposed by \cite{DD:58} allows more than one coefficients and takes a fixed number of stages to converge. Both algorithms perform well in solving the underdetermined system theoretically. 
 
 \subsection{Strategies in Applications}
 Rank deficiency problems occur when the constraints are not all second-order differentiable or we do not have enough constraints to determine the solution. Hence in the application of the deep declarative network, it is essential to build the nodes with sufficient constraints from the problem.
@@ -177,13 +177,13 @@ Rank deficiency problems occur when the constraints are not all second-order dif
     \caption{An example of the Sudoku puzzle~\citep{wiki:sudoku}}
 \end{figure}
 
-\par A very classical constrained task is the traditional Sudoku problem, which involves multiple rules as constraints. Figure~\ref{fig:sudoku} is a simple example of the 9 $\times$ 9 Sudoku puzzle. In general, the model treats the puzzle as a matrix and constraints between rows and columns, which are represented as rows and columns interactions. Also, some rules in each 3 $\times$ 3 block are defined as blocks interactions. \cite{SH:05} provides an understanding of the Sudoku puzzle from constraint problems, which constructs a constraint model with the extension of redundant constraints for better performance. Therefore, building an approximate constraint model with sufficient constraints is important. Adding extra redundant constraints may help the model produce more accurate results. However, we still need to trade off the constraints between overdetermined and underdetermined solutions. 
+\par A very classical constrained task is the Sudoku problem, which involves multiple rules as constraints. Figure~\ref{fig:sudoku} is a simple example of the 9 $\times$ 9 Sudoku puzzle. In general, the model treats the puzzle as a matrix and constraints between rows and columns, which are represented as rows and columns interactions. Also, some rules in each 3 $\times$ 3 block are defined as blocks interactions. \cite{SH:05} provides an understanding of the Sudoku puzzle from constraint problems, which constructs a constraint model with the extension of redundant constraints for better performance. Therefore, building an approximate constraint model with sufficient constraints is important. Adding extra redundant constraints may help the model produce more accurate results. However, we still need to trade off the constraints between overdetermined and underdetermined solutions. 
 
 \section{Non-convex Problems}
 \label{sec:non-convex-sol}
-Non-convex problems are usually NP-hard to solve due to the potentially various local minima, saddle points, very flat regions and widely varying curvature~\citep{DS:17}. Generally, non-convex problems have multiple local minima, but we aim to find the global optimal solution. There are plenty of methods are proposed based on different non-convex cases. For example, if the problem is non-convex but quasiconvex, it can be solved by transforming it as an equivalent convex problem using geometric programming~\citep{BS:07}. Otherwise, a dual problem with guaranteed convexity will be demonstrated to solve the original non-convex problem indirectly. The essence of these methods is solving a convex problem which is equivalent to the non-convex one. Apart from this, we introduce the method based on the optimality conditions of the optimization, the non-linear Lagrangian.  
+Non-convex problems are usually NP-hard to solve due to the potentially various local minima, saddle points, very flat regions and widely varying curvature~\citep{DS:17}. Generally, non-convex problems have multiple local minima, but we aim to find the global optimal solution. There are plenty of methods are proposed based on different non-convex cases. For example, if the problem is non-convex but quasiconvex, it can be solved by transforming it as an equivalent convex problem using geometric programming~\citep{BS:07}. Otherwise, a dual problem with guaranteed convexity will be demonstrated to indirectly solve the original non-convex problem. The essence of these methods is solving a convex problem which is equivalent to the non-convex one. Apart from this, we introduce the method based on the optimality conditions of the optimization, the non-linear Lagrangian.  
 \par There are multiple efficient solution algorithms for constrained optimization problems based on the optimality conditions we mentioned in Section~\ref{sec:opt-con-constrained}. We usually use the classic Lagrange multipliers method~\citep{BD:14} and the penalty function methods~\citep{CR:62}, which are under the assumption of convex situation. For non-convex problems, several extensions on non-linear Lagrangian theory are proposed~\cite{LD:95, LD:97, GC:97, XZ:97}. In this section, we represent the fundamental properties of non-linear Lagrangian in solving non-convex constrained optimization problems.
-\par In non-linear Lagrangian, the Lagrange function makes the duality gap is always zero regardless of convexity and it is defined based on the weighted Chebyshev norm~\citep{GC:97}. Chebyshev distance is a metric based on the  uniform norm, which is also known as the $L_\infty$ metric~\citep{CC:00}. In the weighted version, a weight vector is introduced and the whole function is a mapping from $\mathbb{R}^{m+1}$ to $\mathbb{R}_{+}$. For a vector $\mathbf{z} \in \mathbb{R}^{m+1}$, the weighted Chebyshev norm can be represented as
+\par In non-linear Lagrangian, the Lagrange function makes the duality gap always zero regardless of convexity and it is defined based on the weighted Chebyshev norm~\citep{GC:97}. Chebyshev distance is a metric based on the  uniform norm, which is also known as the $L_\infty$ metric~\citep{CC:00}. In the weighted version, a weight vector is introduced and the whole function is a mapping from $\mathbb{R}^{m+1}$ to $\mathbb{R}_{+}$. For a vector $\mathbf{z} \in \mathbb{R}^{m+1}$, the weighted Chebyshev norm can be represented as
 \begin{equation}
     \xi_{\mathbf{e}}(\mathbf{z})=\max _{0 \leq i \leq m}\left\{\frac{z_{i}}{e_{i}}\right\}
 \end{equation}
@@ -196,6 +196,7 @@ where $\mathbf{e}$ is the weight vector.
 where $\mathbf{f}(\mathbf{x})$ is the set of both the objective function and constraints. 
 \par Same as the traditional Lagrangian, we transfer the constrained optimization problems to unconstrained. Also, we present the equivalent optimality conditions in terms of the unconstrained problems, which leads to the algorithm handling both convex and non-convex constrained optimization problems. 
 \begin{defn}{(Sufficient and Necessary condition for optimality without convexity)\cite{GC:97}}
+    \label{defn:non-linear-condition}
     \\
     Let $x^*$ be the global optimal solution of the constrained optimization problems defined in the form of Equation~\ref{equ:2.2}, and let the weight vector $\theta_0 = f(x^*) > 0$. Then the solution $x^0$ solves the problem if and only if it solves the unconstrained problem
     $$
@@ -203,11 +204,11 @@ where $\mathbf{f}(\mathbf{x})$ is the set of both the objective function and con
     $$
     where $\hat{\boldsymbol{\theta}}=\left[\theta_{0}, \theta_{1}, \cdots, \theta_{m}\right]$
 \end{defn}
-\par The above definition can be proved through the properties of the Chebyshev norm, which has the minimum value 1. In deep declarative nodes, applying this new non-linear Lagrangian in solving the gradient for constrained optimization problems can avoid the non-regular points in the solution. Apart from the solutions of other non-regular points scenarios, the non-linear Lagrangian solves the gradient exactly instead of approaching an approximation. 
+\par The above definition can be proved through the properties of the Chebyshev norm, which has the minimum value 1 in the Appendix~\ref{appendix:defn5.1}. In deep declarative nodes, applying this new non-linear Lagrangian in solving the gradient for constrained optimization problems can avoid the non-regular points in the solution. Apart from the solutions of other non-regular points scenarios, the non-linear Lagrangian solves the gradient exactly instead of approaching an approximation. 
 
 \section{Future Work of the Solution for Non-regular Points}
 \label{sec:futurework-non}
 It is obvious that there are still many different non-regular solution scenarios, and not all of them can be solved perfectly through the approximation. In our scenarios above, the intersection of constraints is a single point. Therefore, we can easily find various approximations around this point as our solution. However, if the intersection of constraints is a flat region that is filled with non-regular points, it is difficult to select an appropriate approximation under this circumstance since the closest regular solution may still have a large residual error. Future work can explore various possibilities of the intersection and consider algorithms for the exact solution.
 \par There is still no general approach for all these non-regular cases, but in the construction of the network, we need to fit different scenarios with a regularization representation. We hope that a general but efficient algorithm can be addressed in the future. 
 \section{Summary}
-In Chapter~\ref{cha:result}, we discuss the solution for different non-regular solution scenarios. We can separate these methods into two classes: approximation results and exact solutions. The former focuses on transferring the problem into a regular one with the solution which approximates the original one based on the least-squares method. The later defines a new type of non-linear Lagrangian for solving the gradient regardless of the convexity and changes the optimality conditions. Both classes are useful and effective in solving the non-regular solutions and many insightful future works can be extended based on them. 
+In Chapter~\ref{cha:result}, we discuss the solution for different non-regular solution scenarios. We can separate these methods into two classes: heuristic solution and exact solutions. The former focuses on transferring the problem into a regular one with the solution which approximates the original one based on the least-squares method. The later defines a new type of non-linear Lagrangian for solving the gradient regardless of the convexity and changes the optimality conditions. Both classes are useful and effective in solving the non-regular solutions and many insightful future works can be extended based on them. 

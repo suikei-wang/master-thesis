@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -269,6 +269,12 @@
   algorithm for inequality constrained optimization.
 \newblock \emph{SIAM Journal on Optimization}, 11, 1  (2000), 113--132.
 
+\bibitem[{Rao(2019)}]{RR:19}
+\textsc{Rao, R.}, 2019.
+\newblock 9 million sudoku puzzles and solutions.
+\newblock \urlprefix\url{https://www.kaggle.com/rohanrao/sudoku}.
+\newblock [Online; accessed 6-November-2020].
+
 \bibitem[{Reddi et~al.(2016)Reddi, Hefny, Sra, Poczos, and Smola}]{RS:16}
 \textsc{Reddi, S.~J.; Hefny, A.; Sra, S.; Poczos, B.; and Smola, A.}, 2016.
 \newblock Stochastic variance reduction for nonconvex optimization.
@@ -278,6 +284,12 @@
 \textsc{Robbins, H. and Monro, S.}, 1951.
 \newblock A stochastic approximation method.
 \newblock \emph{The annals of mathematical statistics},  (1951), 400--407.
+
+\bibitem[{Rockt{\"a}schel and Riedel(2017)}]{RT:17}
+\textsc{Rockt{\"a}schel, T. and Riedel, S.}, 2017.
+\newblock End-to-end differentiable proving.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  3788--3800.
 
 \bibitem[{Sandler et~al.(2018)Sandler, Howard, Zhu, Zhmoginov, and
   Chen}]{SM:18}
@@ -338,6 +350,13 @@
   problems.
 \newblock \emph{Journal of Optimization Theory and Applications}, 94, 3
   (1997), 739--746.
+
+\bibitem[{Yang et~al.(2017)Yang, Yang, and Cohen}]{YF:17}
+\textsc{Yang, F.; Yang, Z.; and Cohen, W.~W.}, 2017.
+\newblock Differentiable learning of logical rules for knowledge base
+  reasoning.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  2319--2328.
 
 \bibitem[{Yeniay(2005)}]{YO:05}
 \textsc{Yeniay, {\"O}.}, 2005.

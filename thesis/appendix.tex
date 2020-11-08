@@ -186,3 +186,23 @@ for all $x \in B_{r}\left(x^{*}\right)$ with $x \neq x^*$.
     B = \frac{\partial^2}{\partial x \partial y} f(x,y)
     $$
 \end{proof}
+
+\section{Solutions of Non-regular Points}
+\subsection{Proof of Definition~\ref{defn:non-linear-condition}}
+\label{appendix:defn5.1}
+\begin{proof}
+    It is clear that the minimum value of the unconstrained optimization problem in this definition is
+    \begin{equation}
+        \min _{\mathbf{x} \in X} \max _{0 \leq i \leq m}\left\{\frac{f_{i}(\mathbf{x})}{\theta_{i}}\right\}=1
+    \end{equation}
+    If $x^0$ solves the original problem in Equation~\ref{equ:2.2}, it must be in the feasible set and $f(x^0) = f(x^*)$. Hence
+    \begin{equation}
+        \max _{0 \leq i \leq m}\left\{\frac{f_{i}\left(x^{0}\right)}{\theta_{i}}\right\}=1
+    \end{equation}
+    Conversely, if $x^0$ does not solve the original problem in Equation~\ref{equ:2.2}, then either $x^0$ is infeasible, or $x^0$ if feasible and $f(x^0) > f(x^*)$. If $x^0$ is infeasible, then $\exists j \in\{1,2, \ldots, m\}$ such that $f_{j}\left(\mathbf{x}^{0}\right)>\theta_{j}$ where $f_j$ is the $j$-th constraints, implying that
+    \begin{equation}
+        \label{equ:apd:7}
+        \max _{0 \leq i \leq m}\left\{\frac{f_{i}\left(\mathbf{x}^{0}\right)}{\theta_{i}}\right\}>1
+    \end{equation}
+    If $x^0$ is feasible then $f(x^0) > f(x^*)$, and the inequality in Equation~\ref{equ:apd:7} still holds. Thus in both cases, $x^0$ does not solve the unconstrained problem in this definition. 
+\end{proof}

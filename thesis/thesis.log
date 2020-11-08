@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  7 NOV 2020 02:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.11.29)  8 NOV 2020 02:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,19 +925,17 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 \openout6 = `thesis.toc'.
 
  [12] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.lof
-Overfull \hbox (15.43645pt too wide) in paragraph at lines 10--10
+Overfull \hbox (15.43645pt too wide) in paragraph at lines 12--12
  [][] [][]\T1/pplx/m/n/10.95 Different sce-nar-ios for the so-lu-tion to in-equal-ity con-strained nodes [[][]Gould 
  []
 
-)
+[13
+
+])
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [13
-
-] [14
-
-] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/intro.tex
+ [14] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/intro.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 4.
@@ -945,43 +943,65 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 4.
 [1
 
-]) [2] [3
 
-] [4] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart1.tex
+]
+<figs/sudoku-table.pdf, id=555, page=1, 597.26758pt x 378.28828pt>
+File: figs/sudoku-table.pdf Graphic file (type pdf)
+<use figs/sudoku-table.pdf, page 1>
+Package pdftex.def Info: figs/sudoku-table.pdf , page1 used on input line 18.
+(pdftex.def)             Requested size: 411.42686pt x 260.58627pt.
+<figs/chess.pdf, id=571, page=1, 263.48438pt x 263.48438pt>
+File: figs/chess.pdf Graphic file (type pdf)
+<use figs/chess.pdf, page 1>
+Package pdftex.def Info: figs/chess.pdf , page1 used on input line 26.
+(pdftex.def)             Requested size: 205.71342pt x 205.72202pt.
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.29 \par
+          Therefore, in this thesis, we explore two research directions whic... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/sudoku-table.pdf>] [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.41     \item I
+                n Chapter ~\ref{cha:ddn}, which is based on works of \cite{S... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/chess.pdf>]) [4] [5
+
+] [6] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart1.tex
 Chapter 2.
 LaTeX Font Info:    Try loading font information for U+fplmbb on input line 15.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-) [5
+) [7
 
-] [6] [7]
-<figs/contour_21.pdf, id=587, page=1, 462.52798pt x 346.89601pt>
+] [8] [9]
+<figs/contour_21.pdf, id=674, page=1, 462.52798pt x 346.89601pt>
 File: figs/contour_21.pdf Graphic file (type pdf)
 <use figs/contour_21.pdf, page 1>
 Package pdftex.def Info: figs/contour_21.pdf , page1 used on input line 103.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
-<figs/solution_21.pdf, id=588, page=1, 462.52798pt x 346.89601pt>
+<figs/solution_21.pdf, id=675, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_21.pdf Graphic file (type pdf)
 <use figs/solution_21.pdf, page 1>
 Package pdftex.def Info: figs/solution_21.pdf , page1 used on input line 109.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
- [8pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.114 \par
-           Let us move to the sufficient condition (SC1). The result obtaine... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf>] [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
+           Let us move to the sufficient condition (SC1). The result obtaine... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/contour_21.pdf>] [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.132 $$
-         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [10]
-<figs/solution_22.pdf, id=671, page=1, 462.52798pt x 346.89601pt>
+         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/solution_21.pdf>] [12]
+<figs/solution_22.pdf, id=758, page=1, 462.52798pt x 346.89601pt>
 File: figs/solution_22.pdf Graphic file (type pdf)
 <use figs/solution_22.pdf, page 1>
 Package pdftex.def Info: figs/solution_22.pdf , page1 used on input line 168.
 (pdftex.def)             Requested size: 287.99754pt x 216.0102pt.
- [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -991,16 +1011,16 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 272.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 272.
- [12pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.290 $$
-        ] [13]
+        ] [15]
 Underfull \vbox (badness 4441) has occurred while \output is active []
 
- [14]
-<figs/constrained_22.pdf, id=735, page=1, 462.52798pt x 346.89601pt>
+ [16]
+<figs/constrained_22.pdf, id=821, page=1, 462.52798pt x 346.89601pt>
 File: figs/constrained_22.pdf Graphic file (type pdf)
 <use figs/constrained_22.pdf, page 1>
 Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
@@ -1008,10 +1028,10 @@ Package pdftex.def Info: figs/constrained_22.pdf , page1 used on input line 368.
 
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
- [15]
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
@@ -1019,22 +1039,22 @@ l.398 $$
          </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/constrained_22.pdf>]
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [17]
+ [19]
 Overfull \hbox (6.72011pt too wide) in paragraph at lines 421--422
 \T1/pplx/m/n/10.95 If a prob-lem is dif-fer-en-tiable, then the so-lu-tion of this prob-lem can be back-propagated.
  []
 
-[18]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [19] [20
+[20]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/ddn.tex [21] [22
 
 ]
 Chapter 3.
-[21] [22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+[23] [24pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.78 \end{equation}
-                   ] [23] [24] [25]
-<figs/non-regular-scenario.pdf, id=924, 257.12401pt x 189.68307pt>
+                   ] [25] [26] [27]
+<figs/non-regular-scenario.pdf, id=1008, 257.12401pt x 189.68307pt>
 File: figs/non-regular-scenario.pdf Graphic file (type pdf)
 <use figs/non-regular-scenario.pdf>
 Package pdftex.def Info: figs/non-regular-scenario.pdf  used on input line 186.
@@ -1042,24 +1062,24 @@ Package pdftex.def Info: figs/non-regular-scenario.pdf  used on input line 186.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26] [27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+ [28] [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.202 
        </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/non-regular-scenario.pdf>]
-<figs/linear_equality_example.pdf, id=949, page=1, 462.52798pt x 346.89601pt>
+<figs/linear_equality_example.pdf, id=1034, page=1, 462.52798pt x 346.89601pt>
 File: figs/linear_equality_example.pdf Graphic file (type pdf)
 <use figs/linear_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/linear_equality_example.pdf , page1 used on input line 218.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
-<figs/multiple_equality_example.pdf, id=951, page=1, 462.52798pt x 346.89601pt>
+<figs/multiple_equality_example.pdf, id=1036, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_equality_example.pdf Graphic file (type pdf)
 <use figs/multiple_equality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_equality_example.pdf , page1 used on input line 238.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
- [28]
-<figs/multiple_inequality_example.pdf, id=959, page=1, 462.52798pt x 346.89601pt>
+ [30]
+<figs/multiple_inequality_example.pdf, id=1045, page=1, 462.52798pt x 346.89601pt>
 File: figs/multiple_inequality_example.pdf Graphic file (type pdf)
 <use figs/multiple_inequality_example.pdf, page 1>
 Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on input line 255.
@@ -1067,40 +1087,40 @@ Package pdftex.def Info: figs/multiple_inequality_example.pdf , page1 used on in
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.262 \par
-           We give the solution to the deep declarative nodes of constrained... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>]) [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+           We give the solution to the deep declarative nodes of constrained... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/linear_equality_example.pdf>]) [32pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.131 
-       </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_equality_example.pdf>] [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+       </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_equality_example.pdf>] [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.132 \part
-           {Deep Declarative Nodes: Non-regular Solution} </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf>] [32
+           {Deep Declarative Nodes: Non-regular Solution} </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/multiple_inequality_example.pdf>] [34
 
-] [33] [34] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
+] [35] [36] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/overviewpart2.tex
 Chapter 4.
-[35
+[37
 
 ]
-<figs/overdetermined.pdf, id=1071, page=1, 462.52798pt x 346.89601pt>
+<figs/overdetermined.pdf, id=1154, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined.pdf Graphic file (type pdf)
 <use figs/overdetermined.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined.pdf , page1 used on input line 22.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
- [36pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+ [38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.33 \end{equation}
-                    </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf>]
-<figs/overdetermined-gradient.pdf, id=1100, page=1, 462.52798pt x 346.89601pt>
+l.26 \begin{equation}
+                      </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined.pdf>]
+<figs/overdetermined-gradient.pdf, id=1189, page=1, 462.52798pt x 346.89601pt>
 File: figs/overdetermined-gradient.pdf Graphic file (type pdf)
 <use figs/overdetermined-gradient.pdf, page 1>
 Package pdftex.def Info: figs/overdetermined-gradient.pdf , page1 used on input line 48.
@@ -1108,24 +1128,24 @@ Package pdftex.def Info: figs/overdetermined-gradient.pdf , page1 used on input 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+ [39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.59 $$
         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/overdetermined-gradient.pdf>]
-<figs/rankdeficient.pdf, id=1127, page=1, 462.52798pt x 346.89601pt>
+<figs/rankdeficient.pdf, id=1221, page=1, 462.52798pt x 346.89601pt>
 File: figs/rankdeficient.pdf Graphic file (type pdf)
 <use figs/rankdeficient.pdf, page 1>
 Package pdftex.def Info: figs/rankdeficient.pdf , page1 used on input line 68.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
- [38pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.78 \end{equation}
-                    </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf>]
-<figs/gradient-rank-deficient.pdf, id=1155, page=1, 462.52798pt x 346.89601pt>
+l.72 \begin{equation}
+                      </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/rankdeficient.pdf>]
+<figs/gradient-rank-deficient.pdf, id=1255, page=1, 462.52798pt x 346.89601pt>
 File: figs/gradient-rank-deficient.pdf Graphic file (type pdf)
 <use figs/gradient-rank-deficient.pdf, page 1>
 Package pdftex.def Info: figs/gradient-rank-deficient.pdf , page1 used on input line 99.
@@ -1133,121 +1153,120 @@ Package pdftex.def Info: figs/gradient-rank-deficient.pdf , page1 used on input 
 
 Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [39pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.103 
        </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-rank-deficient.pdf>]
-<figs/nonconvex.pdf, id=1184, page=1, 462.52798pt x 346.89601pt>
+<figs/nonconvex.pdf, id=1291, page=1, 462.52798pt x 346.89601pt>
 File: figs/nonconvex.pdf Graphic file (type pdf)
 <use figs/nonconvex.pdf, page 1>
 Package pdftex.def Info: figs/nonconvex.pdf , page1 used on input line 118.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
-<figs/gradient-non-convex.pdf, id=1187, page=1, 462.52798pt x 346.89601pt>
+<figs/gradient-non-convex.pdf, id=1298, page=1, 462.52798pt x 346.89601pt>
 File: figs/gradient-non-convex.pdf Graphic file (type pdf)
 <use figs/gradient-non-convex.pdf, page 1>
 Package pdftex.def Info: figs/gradient-non-convex.pdf , page1 used on input line 125.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5331) has occurred while \output is active []
 
- [40pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+ [42pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.141 $$
-         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf>] [41pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+         </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/nonconvex.pdf>] [43pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
 l.148 \par
-           \textbf{Overdetermined system.} The approximation of the solution... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf>]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [42] [43] [44
+           \textbf{Overdetermined system.} There are various approximations ... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/gradient-non-convex.pdf>]
+Overfull \hbox (0.10263pt too wide) in paragraph at lines 148--149
+\T1/pplx/m/n/10.95 the overde-ter-mined sys-tem. The most clas-si-cal ap-proach is the or-di-nary least squares,
+ []
+
+) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/results.tex [44] [45] [46
 
 ]
 Chapter 5.
-[45]
-<figs/least-square.pdf, id=1311, page=1, 462.52798pt x 346.89601pt>
+[47]
+<figs/least-square.pdf, id=1428, page=1, 462.52798pt x 346.89601pt>
 File: figs/least-square.pdf Graphic file (type pdf)
 <use figs/least-square.pdf, page 1>
 Package pdftex.def Info: figs/least-square.pdf , page1 used on input line 46.
 (pdftex.def)             Requested size: 329.14275pt x 246.86955pt.
- [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.65 \end{equation}
-                    </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/least-square.pdf>]
-<figs/orthogonal-gradient.pdf, id=1359, page=1, 498.36188pt x 227.34938pt>
+ [48]
+<figs/orthogonal-gradient.pdf, id=1445, page=1, 498.36188pt x 227.34938pt>
 File: figs/orthogonal-gradient.pdf Graphic file (type pdf)
 <use figs/orthogonal-gradient.pdf, page 1>
 Package pdftex.def Info: figs/orthogonal-gradient.pdf , page1 used on input line 70.
 (pdftex.def)             Requested size: 329.14275pt x 150.15512pt.
-<figs/a-orthogonal-example.pdf, id=1361, page=1, 433.62pt x 433.62pt>
+ [49pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.73 \par
+          Figure~\ref{fig:ortho-gradient} shows the gradient update from $x_... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/least-square.pdf>]
+<figs/a-orthogonal-example.pdf, id=1478, page=1, 433.62pt x 433.62pt>
 File: figs/a-orthogonal-example.pdf Graphic file (type pdf)
 <use figs/a-orthogonal-example.pdf, page 1>
 Package pdftex.def Info: figs/a-orthogonal-example.pdf , page1 used on input line 81.
 (pdftex.def)             Requested size: 246.85863pt x 246.8616pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.93 \end{equation}
-                    </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf>]
-<figs/conjugate-gradient.pdf, id=1375, page=1, 433.62pt x 433.62pt>
+<figs/conjugate-gradient.pdf, id=1481, page=1, 433.62pt x 433.62pt>
 File: figs/conjugate-gradient.pdf Graphic file (type pdf)
 <use figs/conjugate-gradient.pdf, page 1>
 Package pdftex.def Info: figs/conjugate-gradient.pdf , page1 used on input line 104.
 (pdftex.def)             Requested size: 246.85863pt x 246.8616pt.
- [49pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.115     $$
-             </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/a-orthogonal-example.pdf>] [50pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
+l.107 \par
+           The completed conjugate gradient method can be concluded as follows: </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/orthogonal-gradient.pdf>] [51pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.130 \par
-           Using the transformed conjugate gradient method to solve linear s... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/conjugate-gradient.pdf>] [51]
-Underfull \vbox (badness 1122) has occurred while \output is active []
-
- [52pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) has been already used, duplicate ignored
+l.121 \begin{equation}
+                       </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/a-orthogonal-example.pdf>] [52pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.171 \subsection
-                 {Strategies in Applications}]
-<figs/sudoku.pdf, id=1455, page=1, 365.365pt x 365.365pt>
+l.133 \section
+              {Rank Deficiency} </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/conjugate-gradient.pdf>] [53]
+<figs/sudoku.pdf, id=1564, page=1, 365.365pt x 365.365pt>
 File: figs/sudoku.pdf Graphic file (type pdf)
 <use figs/sudoku.pdf, page 1>
 Package pdftex.def Info: figs/sudoku.pdf , page1 used on input line 176.
 (pdftex.def)             Requested size: 164.56822pt x 164.56883pt.
- [53pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
+ [54pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.185 \par
-           There are multiple efficient solution algorithms for constrained ... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/sudoku.pdf>]
+l.181 
+      ]
 Overfull \hbox (1.37119pt too wide) in paragraph at lines 185--186
 []\T1/pplx/m/n/10.95 There are mul-ti-ple ef-fi-cient so-lu-tion al-go-rithms for con-strained op-ti-miza-tion prob-
  []
 
-[54]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [55] [56
+[55pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.186 \par
+           In non-linear Lagrangian, the Lagrange function makes the duality... </Users/sukays/Desktop/Research Project/master-thesis/thesis/figs/sudoku.pdf>]
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+ [56]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/conclusion.tex [57] [58
 
 ]
 Chapter 6.
-[57]) [58] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
+[59]) [60] (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.bbl (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.brf)
 \tf@brf=\write8
 \openout8 = `thesis.brf'.
 
- [59
+ [61
 
 
 ]
@@ -1258,9 +1277,9 @@ LaTeX Font Info:    No file T1uop.fd. on input line 102.
 LaTeX Font Warning: Font shape `T1/uop/m/n' undefined
 (Font)              using `T1/cmr/m/n' instead on input line 102.
 
-[60] [61] [62]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [63] [64
+[62] [63] [64]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/appendix.tex [65] [66
 
-] [65] [66] [67]
+] [67] [68] [69]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\begingroup' on input line 148.
@@ -1292,16 +1311,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [68]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [69]
+ [70]) (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.ind) [71]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
  (/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 6F1EC1AB608211159E362B2416D4483D;5014.
+(rerunfilecheck)             Checksum: AC4D7CF6FD782CC8D6216FB48C1CAA0C;5194.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 1165C6F7C3A8201BF20B1C3B00FDD7F6;5120.
+(rerunfilecheck)             Checksum: DB1AEE8496657DABB039648BC6B00941;6421.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1309,18 +1328,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 34216 strings out of 492616
- 770924 string characters out of 6129480
- 1100991 words of memory out of 5000000
- 37102 multiletter control sequences out of 15000+600000
+ 34269 strings out of 492616
+ 771725 string characters out of 6129480
+ 1101992 words of memory out of 5000000
+ 37141 multiletter control sequences out of 15000+600000
  80975 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,96p,1417b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,96p,1491b,819s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmbi.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (83 pages, 575901 bytes).
+Output written on "/Users/sukays/Desktop/Research Project/master-thesis/thesis/thesis.pdf" (85 pages, 611553 bytes).
 PDF statistics:
- 1804 PDF objects out of 2073 (max. 8388607)
- 1430 compressed objects within 15 object streams
- 295 named destinations out of 1000 (max. 500000)
- 716 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1948 PDF objects out of 2073 (max. 8388607)
+ 1552 compressed objects within 16 object streams
+ 307 named destinations out of 1000 (max. 500000)
+ 742 words of extra memory for PDF output out of 10000 (max. 10000000)
 

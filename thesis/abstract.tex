@@ -1,9 +1,8 @@
 \chapter*{Abstract}
 \addcontentsline{toc}{chapter}{Abstract}
 \vspace{-1em}
-Put your abstract here.
-
-%%% Local Variables: 
-%%% mode: latex
-%%% TeX-master: "paper"
-%%% End: 
+Constructing an end-to-end differentiable network to solve constrained optimization problems is one of the most elusive
+and long-standing challenges in Artificial Intelligence. In this thesis, we focus on the deep declarative network: a new class of end-to-end models with implicit defined differentiable nodes. Compared to traditional explicit defined neural networks, this general differentiable network constructs each layer as a constrained optimization problem. 
+\par We tackles the problem of multiple constraints nodes in the deep declarative network: how to build a general implicit differentiable network to solve constrained optimization problems and deal with the non-regular solution. On the one hand, adopting the solution of constrained optimization problems as the output of the node or layer provides a distinct pathway to implement the neural network. On the other hand, if we can obtain a heuristic solution or explore different optimality conditions for non-regular solution, it would be a crucial technology for more general and broad applications.
+\par This thesis consists of two parts. In the first part, we aim to cover the essence of numerical optimization and present our efforts at implementing deep declarative nodes. More importantly, several examples of constrained optimization problems and their corresponding gradient solutions are provided. We also summarize recent advances in the differentiable network and discuss future research directions in the deep declarative network. 
+\par In the second part of this thesis, we investigate how to solve the non-regular solution in the deep declarative network. In particular, we proposed two different research directions: 1) how to approximate the heuristic solution for the overdetermined and underdetermined system; and 2) how to find the exact solution based on the different optimality conditions. We experimented and analyzed these ideas in solving non-regular points. We believe that applying these approaches to the deep declarative network holds great promises for future optimization technologies. 
